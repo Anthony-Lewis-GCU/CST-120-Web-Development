@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+
+    <!-- Import Custom Font for Website title (Anthony S. Lewis)-->
+    <style>
+        @font-face {
+            font-family: 'PageNameFont';
+            src: url('../Sources/fonts/distropiax-wpyma-webfont.woff2') format('woff2'),
+                url('../Sources/fonts/distropiax-wpyma-webfont.woff') format('woff');
+        }
+
+        /* Apply custom Font to H3 Tag with ID PageTitle */
+        h3.pageTitle {
+            font-family: 'PageNameFont', sans-serif;
+        }
+    </style>
+</head>
+
+<body style="margin: 0; padding-bottom: 20px;">
+    <header>
+        <!-- This is the main page header that contains the navigation bar and website Title-->
+        <div id="header" style="border: 1px solid black; height:50px; width:60%; margin: 0 auto;">
+            <div style="float: left; Padding-left:20px;">
+                <!-- Website Title -->
+                <h3 class="page-title" style="display: inline-block; vertical-align: middle; font-family: 'PageNameFont', sans-serif; font-size: 37px; margin: 0; 
+                padding: 0; color:#9400D3">Anthony S. Lewis</h3>
+
+            </div>
+
+            <!--This is the main navigation section of the webpage that links to all the other pages on the site-->
+            <nav style="Float: right; padding-top:15px; margin-top: 0 auto; margin-bottom: 0 auto;">
+                <a href="index.html" style="padding: 0px 20px 0px 20px;"><strong>About Me</strong></a>
+                <a href="hobbies.html" style="padding: 0px 20px 0px 20px;"><strong>Hobbies</strong></a>
+                <a href="music.html" style="padding: 0px 20px 0px 20px;"><strong>Music</strong></a>
+                <a href="education.html" style="padding: 0px 20px 0px 20px;"><strong>Education</strong></a>
+                <a href="experience.html" style="padding: 0px 20px 0px 20px;"><strong>Work History</strong></a>
+                <a href="recovery.html" style="padding: 0px 20px 0px 20px;"><strong>Recovery</strong></a>
+                <a href="contact.html" style="padding: 0px 20px 0px 20px;"><strong>Contact Me</strong></a>
+            </nav>
+        </div>
+    </header>
+
+    <main style="border-left: 1px solid black; border-right: 1px solid black; width:60%; margin: 0 auto;">
+
+        <!--This is the main body content, it will be divided into sections that will hold individual components of the content to be held within the body-->
+        <section id="ContentHeader">
+            <!--This will be a header section for the content which will only hold the Title for the Main Body Section-->
+            <h1 id="PageTitle" style="margin: 0; padding-top: 20px; font-size: 46px; text-align: center;">Hobbies</h1>
+            <!--End of content header div-->
+        </section>
+
+        <!--This section will cover my interest in Anime tv series-->
+        <section id="anime-section" style="width: 80%; margin: 0 auto;">
+            <h2>Anime</h2>
+
+            <!-- Anime Posters -->
+            <div class="AnimePosters">
+                <!-- This container holds the movie poster Title and Season Count of Sword Art Online-->
+                <figure class="AnimePoster">
+                    <img src="../Sources/images/hobbies/SAO-poster.jpg" alt="Sword Art Online Movie Poster">
+                    <figcaption class="AnimeTitle">Sword Art Online</figcaption>
+                    <figcaption class="Seasons">4 Seasons</figcaption>
+                </figure>
+
+                <!-- This container holds the movie poster Title and Season Count of Attack on Titan-->
+                <figure class="AnimePoster">
+                    <img src="../Sources/images/hobbies/AttackOnTitan.jpg" alt="Attack on Titan Movie Poster">
+                    <figcaption class="AnimeTitle">Attack on Titan</figcaption>
+                    <figcaption class="Seasons">4 Seasons</figcaption>
+                </figure>
+
+                <!-- This container holds the movie poster Title and Season Count of Black Clover-->
+                <figure class="AnimePoster">
+                    <img src="../Sources/images/hobbies/Black Clover.jpg" alt="Black Clover Movie Poster">
+                    <figcaption class="AnimeTitle">Black Clover</figcaption>
+                    <figcaption class="Seasons">4 Seasons</figcaption>
+                </figure>
+
+                <!-- This container holds the movie poster Title and Season Count of Bleach-->
+                <figure class="AnimePoster">
+                    <img src="../Sources/images/hobbies/Bleach.jpg" alt="Bleach Movie Poster">
+                    <div class="AnimeTitle">Bleach</div>
+                    <div class="Seasons">12 Seasons</div>
+                </figure>
+
+                <!-- This container holds the movie poster Title and Season Count of Avatar: The Last Airbender-->
+                <figure class="AnimePoster">
+                    <img src="../Sources/images/hobbies/Avatar The Last Airbender.jpg"
+                        alt="Avatar: The Last Airbender Movie Poster">
+                    <figcaption class="AnimeTitle">Avatar</figcaption>
+                    <figcaption class="Seasons">3 Seasons</figcaption>
+                </figure>
+            </div>
+
+            <!-- Description Section -->
+            <div id="AnimeDescription" style="width: 100%; border: 1px solid black;">
+                <p style="text-align: center;"><em>Only one of the following entries will be displayed at atime
+                        depending on the movie poster the person clicks on</em></p>
+
+                <!-- This is the description for Sword Art Online that will be displayed when the user clicks on the Sword Art Online Movie Poster-->
+                <article class="AnimeDescription">
+                    <h4>Sword Art Online: </h4>
+                    <p><em> 
+                        In 2022, thousands of players log into a revolutionary VRMMORPG, only to
+                        find they can’t log out. The game’s creator reveals that
+                        clearing all 100 floors is the only escape — and dying in the game means dying in real life.
+                        Kirito, a skilled solo player, teams
+                        up with Asuna to battle powerful bosses, survive deadly challenges, and uncover the truth
+                        behind the virtual prison.<br><br>
+
+                        Why it’s good:<br>
+                        It blends high‑stakes tension with immersive worldbuilding, memorable characters, and
+                        emotional relationships. The action is dynamic,
+                        the settings are visually rich, and the mix of romance, adventure, and mystery keeps viewers
+                        invested from start to finish
+                    </em></p>
+                </article>
+
+                <!-- This is the description for Bleach that will be displayed when the user clicks on the Bleach Movie Poster-->
+                <article class="AnimeDescription">
+                    <h4>Bleach: </h4>
+                
+                    <p><em> 
+                        Ichigo Kurosaki, a high school student with the ability to see spirits, gains
+                        the powers of a Soul Reaper after
+                        Rukia Kuchiki saves him from a deadly Hollow. With these powers, he defends humans from evil
+                        spirits and guides souls to the afterlife.
+                        When Rukia is sentenced to death for giving him her powers, Ichigo and his friends journey
+                        to the Soul Society to rescue her — uncovering
+                        deep conspiracies and facing powerful enemies along the way.<br><br>
+
+                        Why it’s good:<br>
+                        It blends high‑stakes tension with immersive worldbuilding, memorable characters, and
+                        emotional relationships. The action is dynamic,
+                        the settings are visually rich, and the mix of romance, adventure, and mystery keeps viewers
+                        invested from start to finish
+                    </em></p>
+                </article>
+
+                <!-- This is the description for Black Clover that will be displayed when the user clicks on the Black Clover Movie Poster-->
+                <article class="AnimeDescription">
+                    <h4>Black Clover: </h4>
+                    
+                    <p><em> In a magical world where most people are born with mana, orphaned friends
+                        Asta and Yuno dream of becoming the Wizard
+                        King. Yuno is a prodigy with wind magic, while Asta has no magic at all — until he obtains a
+                        rare five‑leaf grimoire that grants anti‑magic
+                        powers. Their rivalry drives them to join different Magic Knight squads, face dangerous foes
+                        from other kingdoms and realms, and uncover
+                        secrets about the elves, devils, and the Clover Kingdom itself.<br><br>
+
+                        Why it’s good:<br>
+                        It combines classic shōnen energy with fast‑paced battles, creative magic systems, and a
+                        large, colorful cast. The underdog‑versus‑prodigy
+                        rivalry between Asta and Yuno adds heart, while the world expands through diverse arcs and
+                        high‑stakes conflicts. Over time,
+                        the characters gain depth, the action sequences become more polished, and the story delivers
+                        consistent excitement.
+                    </em></p>
+                </article>
+
+                <!-- This is the description for Avatar The Last Airbender that will be displayed when the user clicks on the Avatar Movie Poster-->
+                <article class="AnimeDescription">
+                    <h4>Avatar: The Last Airbender:</h4>
+                    
+                    <p><em>
+                        In a world divided into four nations — Water, Earth, Fire, and Air — some people
+                        can “bend” their nation’s element.
+                        Only the Avatar can master all four and maintain balance. After a century of war led by the
+                        Fire Nation, siblings Katara and
+                        Sokka discover Aang, the last Airbender and current Avatar, frozen in ice. Together, they
+                        journey across the world so Aang can
+                        master all elements and defeat Fire Lord Ozai to restore peace.<br><br>
+
+                        Why it’s good:<br>
+                        It blends rich worldbuilding with deep themes like war, friendship, and redemption. The
+                        characters — from Aang’s playful wisdom
+                        to Zuko’s complex redemption arc — are memorable and layered. Stunning action sequences,
+                        cultural depth, and emotional storytelling
+                        make it one of the most acclaimed animated series ever.
+                    </em></p>
+                </article>
+
+                <!-- This is the description for Attack on Titan that will be displayed when the user clicks on the Attack On Titan Movie Poster-->
+                <article class="AnimeDescription">
+                    <h4>Attack on Titan:</h4>
+
+                    <p><em> 
+                        Humanity lives within massive walled cities to protect themselves from
+                        Titans — giant humanoid creatures that devour
+                        humans. After a colossal Titan breaches the outer wall, Eren Yeager, Mikasa Ackerman, and
+                        Armin Arlert join the Survey Corps to fight
+                        back. As they battle, they uncover shocking truths about the Titans, the world beyond the
+                        walls, and the political forces controlling
+                        their fate.<br><br>
+
+                        Why it’s good:<br>
+                        It’s a gripping mix of mystery, intense action, and emotional storytelling. The series
+                        constantly raises the stakes with bold plot twists,
+                        morally complex characters, and stunning animation. Themes of freedom, survival, and the
+                        cost of war resonate deeply, making it one of the
+                        most impactful anime of its generation.
+                    </em></p>
+                </article>
+            </div>
+        </section>
+
+        <!--This section will cover my interest in Plex-->
+        <section id="PlexSection" style="width: 80%; margin: 0 auto;">
+            <!-- Section Header-->
+            <h2>Plex</h2>
+
+            <!-- This container holds the Plex Media Server portion of my Plex overview -->
+            <article id="PlexServerArticle" style="margin-bottom: 10px;">
+                <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                    <img src="../Sources/images/hobbies/PlexServerLogo128.png" alt="Plex Media Server"
+                        style="margin-right: 10px;">
+
+                    <div
+                        style="height: 110px; border: 1px solid #000; background-color: black; color:yellow; padding: 8px; flex: 1;">
+                        PLEX MEDIA SERVER<br><em>This section will expand accordion style to show the description
+                            content below</em>
+                    </div>
+                </div>
+
+                <!-- This section will give a description of the Plex Media Server in Plex section it will expand after clicking the File Management Dropdown-->
+                <div style="border: 1px solid #000; padding: 8px; flex: 1;">
+                    <h4>PLEX SERVER<em> - This section will be hidden until the user selects the above section on
+                            the right</em></h4>
+
+                    <p><i>
+                        Plex Media Server is a powerful software platform that lets you organize, stream, and
+                            access
+                            your personal media collection—movies, TV shows, music, photos, and more—from
+                            virtually any device. It transforms your computer, NAS, or compatible server into a
+                            centralized media hub, making your content available across your home network or
+                            remotely
+                            over the internet.<br><br>
+
+                            At its core, Plex scans your media folders, automatically fetching metadata like cover
+                            art,
+                            cast info, episode summaries, and ratings to create a polished, Netflix-style interface.
+                            It supports a wide range of file formats and codecs, and can transcode media on the fly
+                            to
+                            ensure smooth playback on different devices, including smartphones, tablets, smart TVs,
+                            game consoles, and web browsers.<br><br>
+
+                            One of Plex’s standout features is remote access. Once configured, you can stream your
+                            media
+                            from anywhere in the world, without needing to upload it to the cloud. Plex also
+                            supports
+                            user accounts and parental controls, allowing you to share your library with friends or
+                            family while managing what each person can see.<br><br>
+
+                            Beyond personal media, Plex offers free ad-supported streaming of movies, shows, and
+                            live TV
+                            channels. It also integrates with services like TIDAL for music streaming and supports
+                            plugins for added functionality.<br><br>
+
+                            For enthusiasts, Plex provides advanced features like library customization, metadata
+                            editing, and server monitoring. You can tag content, create collections, and even track
+                            watched status across devices. With Plex Pass (its premium subscription), you unlock
+                            extras
+                            like mobile sync, hardware-accelerated transcoding, DVR for live TV, and early access
+                            to new features.<br><br>
+
+                            In short, Plex Media Server is a versatile, user-friendly solution for managing and
+                            enjoying
+                            your media collection, whether you're at home or on the go.</i></p>
+                </div>
+            </article>
+
+            <article id="PlexMediaPlayerSection" style="width: 100%; margin: 0 auto;">
+                <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                    <img src="../Sources/images/hobbies/PlexMediaPlayerLogo128.png" alt="Plex Media Server"
+                        style="margin-right: 10px;">
+
+                    <!-- This is the clickable field that will dropdown a description of the Plex Media Player when clicked-->
+                    <div
+                        style="height: 110px; border: 1px solid #000; background-color: black; color:yellow; padding: 8px; flex: 1;">
+                        PLEX MEDIA PLAYER<br><em>This section will expand accordion style to show the description
+                            content below</em>
+                    </div>
+                </div>
+
+                <!-- This section will give a description of the Plex Media Player in Plex section it will expand after clicking the File Management Dropdown-->
+                <div style="border: 1px solid #000; padding: 8px; flex: 1; margin-bottom: 10px;">
+                    <h4>PLEX MEDIA PLAYER<em> - This section will be hidden until the user selects the above section
+                            on the right</em></h4>
+
+                    <p><i>Plex Movies & TV is the viewer-facing experience of Plex, offering a sleek, intuitive
+                            interface for streaming both personal and free content. Whether you're watching your
+                            own media collection or exploring Plex’s free streaming library, the platform delivers a
+                            polished, cinematic experience across devices.<br><br>
+
+                            For personal libraries, Plex displays your movies and shows with rich metadata—cover
+                            art,
+                            cast lists, trailers, and episode summaries—making your collection feel like a
+                            professional streaming service. You can resume playback across devices, track what
+                            you've
+                            watched, and create custom playlists or collections. Plex supports subtitles,
+                            multiple audio tracks, and even lets you adjust playback speed.<br><br>
+
+                            Beyond your own media, Plex offers free ad-supported streaming of thousands of movies
+                            and TV
+                            shows from major studios, plus live TV channels covering news, sports, and
+                            entertainment. You don’t need a subscription to access this content, and it’s available
+                            globally.<br><br>
+
+                            The viewer interface is designed for flexibility: you can stream on smart TVs, mobile
+                            apps,
+                            web browsers, or game consoles. Plex also supports watch together sessions,
+                            so you can sync playback with friends remotely.<br><br>
+
+                            In short, Plex Movies & TV gives you a unified, elegant way to enjoy both personal and
+                            free
+                            streaming content—no matter where you are or what device you're using.</i></p>
+                </div>
+
+
+                <!-- This container holds the File Management portion of my Plex overview -->
+                <article id="PlexFileManagementArticle">
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <img src="../Sources/images/hobbies/FileExplorerLogo128.png" alt="Plex Media Server"
+                            style="margin-right: 10px;">
+
+                        <!-- This is the clickable field that will dropdown a description of the content when clicked-->
+                        <div
+                            style="height: 110px; border: 1px solid #000; background-color: black; color:yellow; padding: 8px; flex: 1;">
+                            FILE MANAGEMENT<br><em>This section will expand accordion style to show the description
+                                content below</em>
+                        </div>
+                    </div>
+
+                    <!-- This section will give a description of the file management required in Plex it will expand after clicking the File Management Dropdown-->
+                    <div style="border: 1px solid #000; padding: 8px; flex: 1;">
+                        <h4>FILE MANAGEMENT<em> - This section will be hidden until the user selects the above section
+                                on the right</em></h4>
+                        <p><i>Managing files for Plex Media Server requires a clean, organized approach to ensure smooth
+                                scanning, accurate metadata matching, and a seamless viewing experience.
+                                Plex doesn’t store your media—it indexes and streams it—so your folder structure and
+                                naming
+                                conventions play a critical role.<br><br>
+
+                                At the core, Plex expects your media to be stored in clearly separated folders by type:
+                                <ul>
+                                    <li>Movies should follow the hierarchy, ideally with each film in a subfolder named
+                                        after the title and year:<br>
+                                        Movies/Inception (2010)/Inception (2010).mp4<br><br>
+                                    </li>
+
+                                    <li>TV Shows should follow the hierarchy:<br>
+                                        TV Shows/Breaking Bad/Season 01/Breaking Bad - S01E01.mkv<br><br>
+                                    </li>
+
+                                    <li>Music should follow the hierarchy:<br>
+                                        Music/Radiohead/In Rainbows/01 - 15 Step.mp3<br><br>
+
+                                        This helps Plex identify episodes and seasons correctly.
+                                    </li>
+                                </ul>
+
+                                Plex uses filenames and folder names to match metadata from online databases. Including
+                                the
+                                release year, season/episode codes, and avoiding clutter (like extra tags or scene
+                                release info) improves accuracy. You can also add local metadata—like posters,
+                                subtitles,
+                                and NFO files—if you want full control.<br><br>
+
+                                Storage-wise, Plex supports internal drives, external USBs, NAS devices, and network
+                                shares.
+                                It’s best to keep your media on a drive with fast read speeds, especially for
+                                high-resolution content. You can add multiple libraries in Plex, each pointing to
+                                different
+                                folders or drives.<br><br>
+
+                                Once your files are organized, Plex scans them and builds your library. You can trigger
+                                manual scans or set up automatic updates. If you move or rename files, Plex may lose
+                                track of them unless you refresh the library.<br><br>
+
+                                In short, Plex thrives on tidy folders, consistent naming, and thoughtful structure. A
+                                well-managed media library means faster scans, better metadata, and a smoother
+                                experience across all your devices.</i></p>
+                    </div>
+                </article>
+        </section>
+
+        <!--This section will cover my interest in Video Games-->
+        <section id="GamesSection" style="width: 80%; margin: 0 auto; padding-bottom: 20px;">
+            <h2>Games</h2>
+
+            <!-- This is the section that displays four game titles I like-->
+            <div class="GamesPosters">
+
+                <!-- This is the Image displaying my interest in Zelda the user can click it to expand a video and a description-->
+                <figure class="Titles">
+                    <img src="../Sources/images/hobbies/Zelda.png" alt="Zelda Ocarina of Time Image">
+                    <figcaption class="title">Zelda</figcaption>
+                    <figcaption class="seasons">20 Games</figcaption>
+                </figure>
+
+                <!-- This is the Image displaying my interest in Kingdom Hearts the user can click it to expand a video and a description-->
+                <figure class="Titles">
+                    <img src="../Sources/images/hobbies/KingdomHearts.png" alt="Kingdom Hearts Image">
+                    <figcaption class="title">Kingdom Hearts</figcaption>
+                    <figcaption class="seasons">8 Games</figcaption>
+                </figure>
+
+                <!-- This is the Image displaying my interest in Pokemon the user can click it to expand a video and a description-->
+                <figure class="Titles">
+                    <img src="../Sources/images/hobbies/Pokemon200.png" alt="Pokemon Image">
+                    <figcaption class="Title">Pokemon</figcaption>
+                    <figcaption class="TitleCount">24 Games</figcaption>
+                </figure>
+
+                <!-- This is the Image displaying my interest in Magic the Gathering the user can click it to expand a video and a description-->
+                <figure class="Titles">
+                    <img src="../Sources/images/hobbies/mtg.png" alt="Magic The Gathering Image">
+                    <figcaption class="Title">Magic: The Gathering</figcaption>
+                    <figcaption class="TitleCount">98 Main Releases</figcaption>
+                </figure>
+            </div>
+
+            <!-- This section will hold the videos that will display when the user clicks on one of the game images above-->
+            <div id="GameTrailers" style="width: 100%; margin: 0 auto;">
+                <div style="margin: 20px 0px;">
+
+                    <!-- This is the video that will display and play when the user clicks on the Zelda Image-->
+                    <video controls width="100%" height="auto" display="block">
+                        <source src="../Sources/Video/hobbies/ZeldaDemo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <!-- This is the video that will display and play when the user clicks on the Kingdom Hearts Image-->
+                    <video controls width="100%" height="auto" display="block">
+                        <source src="../Sources/Video/hobbies/KingdomHearts3Demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <!-- This is the video that will display and play when the user clicks on the Pokemon Image-->
+                    <video controls width="100%" height="auto" display="block">
+                        <source src="../Sources/Video/hobbies/PokemonDemo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <!-- This is the video that will display and play when the user clicks on the Magic The Gathering Image-->
+                    <video controls width="100%" height="auto" display="block">
+                        <source src="../Sources/Video/hobbies/MagicDemo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <!-- This section will hold the descriptions that will display when the user clicks on one of the game images above-->
+            <div id="GameDescription" style="width: 100%; border: 1px solid black;">
+                <!-- This will be removed from the final page just illustrating intent during design-->
+                <p style="text-align: center;"><em>Only one of the following entries will be displayed at atime
+                        depending on the movie poster the person clicks on</em></p>
+
+                <!-- This is the description that will be displayed when the user clicks on the Zelda Image-->
+                <h4>The Legend of Zelda: </h4>
+                <p id="Zelda"><i>
+                        The Legend of Zelda is a fantasy action-adventure series where players guide Link, a
+                        courageous hero, through epic quests to rescue Princess Zelda and protect the kingdom of
+                        Hyrule.
+                        Each game features exploration, puzzle-solving, and combat across richly designed worlds
+                        filled with dungeons, secrets, and legendary artifacts like the Master Sword and Triforce.
+                        The series evolves with each installment, offering new mechanics, timelines, and lore while
+                        maintaining its iconic themes of courage, wisdom, and power.<br><br>
+
+                        Why it’s good:<br>
+                        It blends immersive worldbuilding with clever gameplay and emotional storytelling.
+                        From classic 2D adventures to expansive open-world epics, Zelda games consistently deliver
+                        memorable experiences that challenge players’ minds and reward curiosity.
+                    </i></p>
+
+                <!-- This is the description that will be displayed when the user clicks on the Kingdom Hearts Image-->
+                <h4>Kingdom Hearts: </h4>
+                <p id="KingdomHearts"><i>
+                        Kingdom Hearts is an action RPG series that blends the worlds of Disney and Final Fantasy
+                        into a unique, emotionally rich adventure.
+                        Players follow Sora, a Keyblade wielder, as he travels across diverse worlds to battle
+                        darkness, rescue friends, and uncover the mysteries of hearts and identity.
+                        The gameplay combines fast-paced combat, exploration, and cinematic storytelling, with each
+                        installment deepening the lore and character relationships.<br><br>
+
+                        Why it’s good:<br>
+                        It offers a heartfelt narrative wrapped in imaginative worlds, iconic characters, and
+                        dynamic gameplay.
+                        With its blend of nostalgia, philosophical depth, and real-time action, Kingdom Hearts
+                        stands out as a genre-defining series that continues to captivate fans across generations.
+                    </i></p>
+
+                <!-- This is the description that will be displayed when the user clicks on the Pokemon Image-->
+                <h4>Pokemon: </h4>
+                <p id="Pokemon"><i>
+                        Pokémon is a global phenomenon where players become Trainers, capturing and battling
+                        fantastical creatures called Pokémon.
+                        Each Pokémon has unique abilities, types, and evolutions, and the goal is to build a team,
+                        train them, and compete in turn-based battles.
+                        The franchise spans multiple regions, each with its own story, legendary Pokémon, and
+                        challenges, encouraging exploration and strategy.<br><br>
+
+                        Why it’s good:<br>
+                        It combines adventure, collection, and tactical gameplay in a vibrant world filled with
+                        memorable characters and creatures.
+                        With its blend of nostalgia, competitive depth, and constant innovation across generations,
+                        Pokémon remains one of the most beloved and enduring game series ever.</i></p>
+
+                <!-- This is the description that will be displayed when the user clicks on the Magic the Gathering Image-->
+                <h4>Magic The Gathering:</h4>
+                <p id="Magic"><i>
+                        Magic: The Gathering is a strategic trading card game where players take on the role of
+                        powerful spellcasters called Planeswalkers.
+                        Using customized decks built from thousands of unique cards, players summon creatures, cast
+                        spells, and battle opponents across diverse fantasy worlds.
+                        The game blends tactical depth with rich lore, spanning decades of storytelling across
+                        planes like Dominaria, Ravnica, and Zendikar.<br><br>
+
+                        Why it’s good:<br>
+                        It offers endless strategic variety, rewarding creativity and skill. With constantly
+                        evolving sets, competitive formats, and immersive worldbuilding,
+                        Magic appeals to casual players and tournament veterans alike. Its blend of collectible art,
+                        deep mechanics, and narrative depth makes it a cornerstone of modern gaming.</i></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer style="border: 1px solid black; height: 40px; width: 60%; margin: 0 auto; text-align: center; line-height: 40px;">
+        <div id="SocialLinks">
+            <a href="https://www.facebook.com/anthony.lewis.37" style="display: inline-block;">
+                <!--This is the Link to my Facebook Profile-->
+                <img src="../Sources/icons/footer/Facebook_icon_48px.png" 
+                     alt="Facebook Icon that links to my Facebook profile"
+                     style="width: 24px; height: 24px; vertical-align: middle;">
+            </a>
+
+            <a href="https://www.linkedin.com/in/anthony-lewis-1866bba7/"
+                style="display: inline-block; margin-left: 200px;">
+                <!--This is the Link to my LinkedIn Profile-->
+                <img src="../Sources/icons/footer/Linkedin_icon_48px.png" 
+                     alt="LinkedIn Icon that links to my LinkedIn Profile"
+                     style="width: 24px; height: 24px; vertical-align: middle;">
+            </a>
+
+            <a href="https://github.com/Anthony-Lewis-GCU/CST-120-Web-Development"
+                style="display: inline-block; margin-left: 200px;">
+                <!--This is the Link to my GitHub Repository-->
+                <img src="../Sources/icons/footer/Github_icon_48px.png"
+                     alt="Github Icon that links to my Repository for this site"
+                     style="width: 24px; height: 24px; vertical-align: middle;">
+            </a>
+
+            <a href="https://anthony-lewis-gcu.github.io/CST-120-Web-Development/" style="display: inline-block; margin-left: 200px;">
+                <!--This is the Link to my Website Landing Page-->
+                <em><strong>Back to Landing Page</strong></em>
+            </a>
+        </div>
+
+        <div id="Attribution">
+            <a href="https://www.flaticon.com/free-icons/drum-set" title="drum set icons">Drum set icons created by Icongeek26 - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/electric-guitar" title="electric guitar icons">Electric guitar icons created by juicy_fish - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/piano" title="piano icons">Piano icons created by Freepik - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/flute" title="flute icons">Flute icons created by Freepik - Flaticon</a>
+        </div>
+    </footer>
+</body>
+
+</html>

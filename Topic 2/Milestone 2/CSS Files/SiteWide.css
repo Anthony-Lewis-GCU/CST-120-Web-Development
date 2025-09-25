@@ -1,0 +1,107 @@
+@font-face 
+{
+    font-family: 'PageTitleFont';
+    src: url('../Sources/fonts/distropiax-wpyma-webfont.woff2') format('woff2'),
+         url('../Sources/fonts/distropiax-wpyma-webfont.woff') format('woff');
+}
+
+body 
+{ 
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    border: 1px solid black;
+    height: 50px; 
+    width: 60%; 
+    margin: 0 auto;
+}
+
+#PageTitle 
+{
+    float: left; 
+    Padding-left:20px;
+}
+
+h3.PageTitle 
+{ 
+    font-family: 'PageTitleFont', sans-serif;
+    display: inline-block; 
+    vertical-align: middle; 
+    font-size: 37px; 
+    margin: 0; 
+    padding-left: 10px; 
+    color:#9400D3
+}
+
+nav
+{
+    Float: right; 
+    padding-top:15px; 
+    margin-top: 0 auto; 
+    margin-bottom: 0 auto;
+}
+
+.NavLink
+{
+    padding: 0px 20px 0px 20px;
+    font-weight: bold;
+}
+
+main
+{
+    border-left: 1px solid black; 
+    border-right: 1px solid black; 
+    margin: 0 auto; 
+    width:60%;
+}
+
+footer 
+{
+  border: 1px solid black;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+#SocialLinks 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem; /* evenly spaced */
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+#SocialLinks a 
+{
+  display: inline-flex;
+  align-items:center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+#SocialLinks img 
+{
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+#Attribution 
+{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  font-size: xx-small;
+  padding: 0.5rem;
+}
+
+
+
