@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="../CSS Files/SiteWide.css">
+    <link rel="stylesheet" href="../CSS Files/index.css">
+</head>
+
+<body>
+    <header>
+        
+        <!-- This is the in place styling of the main Website Name Font -->
+        <div id="SiteTitle">
+            <h3 class="SiteTitle">Anthony S. Lewis</h3>
+        </div>
+
+        <!--This is the main navigation section of the webpage that links to all the other pages on the site-->
+        <nav>
+            <a class="NavLink active" href="index.html">About Me</a>
+            <a class="NavLink" href="hobbies.html">Hobbies</a>
+            <a class="NavLink" href="music.html">Music</a>
+            <a class="NavLink" href="education.html">Education</a>
+            <a class="NavLink" href="experience.html">Work History</a>
+            <a class="NavLink" href="recovery.html">Recovery</a>
+            <a class="NavLink" href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="ContentHeader">
+            <!--This will be a header section for the content which will only hold the Title for the Main Body Section-->
+            <h1>About Me</h1>
+        </section>
+
+        <!--This is the first section of the about me page it will hold a text block with a brief autobio -->
+        <section class="BodySection">
+            <h2>Biography</h2>
+
+            <p class="article" title="Formative years">
+                I grew up in Healdsburg, California—a quiet town surrounded by vineyards
+                and redwoods. It was the kind of place where you could hear your own thoughts, and I spent a lot
+                of time doing just that. I was always searching for something—some deeper meaning, some sense of
+                direction. I didn’t know what it was yet, but I knew I wanted my life to matter.
+            </p>
+
+            <p class="article" title="Young Adult years">
+                When I moved to Santa Rosa for high school, things shifted. I graduated in
+                2009, and like a lot of people my age, I didn’t have a clear path laid out. So I enrolled at Santa
+                Rosa Junior College and spent nearly a decade exploring different programs. I dabbled in
+                everything—from music to tech to design—trying to figure out what truly resonated with me. At the
+                same time, I worked a string of jobs, each one teaching me something new about myself, even if none
+                of them felt like “the one.”
+            </p>
+
+            <p class="article" title="Responsible years">
+                Eventually, I found my calling in Information Technology. It clicked. I
+                enrolled at Empire College and earned my Associate of Science in IT. That was a turning point. I
+                started working in the industry and built a solid foundation over seven years. I was proud of the
+                work I was doing, and for a while, it felt like I was finally on track.
+            </p>
+
+            <p class="article" title="The Lost Years">
+                But life doesn’t always move in a straight line. Somewhere along the way, I
+                lost myself. I got caught up in the party scene, started using cocaine, and before I knew it, it had
+                taken over my life. What started as weekend fun became a daily habit. I was spiraling—my job was on
+                the line, my health was deteriorating, and I felt completely disconnected from who I used to be.<br><br>
+            
+                I tried to escape by moving out of town for a fresh start. I managed to
+                stay sober for about six months, but then I relapsed. The depression hit hard, and I fell back into
+                the cycle. That’s when I made the hardest, most important, and best decision of my life: I checked
+                into Touchstone Recovery Center in Fresno, California.<br><br>
+            
+                I spent 30 days in inpatient rehab, facing everything I had been running
+                from. It wasn’t easy. But it was necessary. After that, I continued with aftercare, and slowly, I
+                started rebuilding. As of September 21, 2025, I’ve been sober for 19 months. That number means
+                everything to me. It’s not just time—it’s proof that I can change.
+            </p>
+
+            <p class="article" title="Present Day">
+                Now, I’m enrolled at Grand Canyon University. I’m taking my life back, one
+                step at a time. I’m not the same person I used to be—and I don’t want to be. I’ve learned that
+                healing isn’t linear, and growth doesn’t come without pain. But I’m here. I’m present. And I’m
+                building a future that reflects who I truly am.
+            </p>
+        </section>
+
+        <!-- 📅 Timeline Section -->
+        <section class="BodySection">
+            <h2>Time Line</h2>
+
+            <!--The main container that holds all the event details including the navigation control buttons-->
+            <div class="timeline-nav">
+
+                <!--The button that will navigate to the previous event when clicked-->
+                <button id="prev-event">&#8592;</button>
+
+                <!--Container that holds all the events in the timeline-->
+                <div class="timeline">
+
+                    <!--Event details for the 1st Event in the timeline-->
+                    <figure class="event" id="1">
+                        <div class="event-dot"></div>
+                        <figcaption class="event-box">
+                            <p>Growing Up in Healdsburg</p>
+                            <p>I spent my childhood in Healdsburg, surrounded by redwoods and quiet streets.</p>
+                            <p class="event-timeframe">1997–2005</span>
+                        </figcaption>
+                    </figure>
+
+                        <!--Event details for the 2nd Event in the timeline-->
+                        <figure class="event" id="2">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>Moving to Santa Rosa</p>
+                                <p>Transitioning to Santa Rosa for high school was a big shift. The environment was
+                                    larger, faster-paced, and full of new challenges that pushed me out of my comfort
+                                    zone.</p>
+                                <p class="event-timeframe">2005</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 3rd Event in the timeline-->
+                        <figure class="event" id="3">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>High School Graduation</p>
+                                <p>I graduated in 2009, unsure of what came next but determined to carve out my own
+                                    path.</p>
+                                <p class="event-timeframe">2009</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 4th Event in the timeline-->
+                        <figure class="event" id="4">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>Enrolling at SRJC</p>
+                                <p>I started at Santa Rosa Junior College and spent nearly a decade exploring different
+                                    academic paths, trying to figure out what truly resonated with me.</p>
+                                <p class="event-timeframe">2008</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 5th Event in the timeline-->
+                        <figure class="event" id="5">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>Academic Exploration</p>
+                                <p>I dabbled in [List of courses attempted]. Each program taught me something—even if it
+                                    wasn’t the final destination.</p>
+                                <p class="event-timeframe">2008–2017</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 6th Event in the timeline-->
+                        <figure class="event" id="6">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>Working Through Adulthood</p>
+                                <p>I held down a variety of jobs while trying to find a career that felt meaningful.
+                                    Every role
+                                    added a layer to my experience.</p>
+                                <p class="event-timeframe">2004–2017</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 7th Event in the timeline-->
+                        <figure class="event" id="7">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>Discovering IT</p>
+                                <p>Eventually, I realized that Information Technology was where I thrived. Systems,
+                                    logic, and
+                                    hardware just made sense to me.</p>
+                                <p class="event-timeframe">2015</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 8th Event in the timeline-->
+                        <figure class="event" id="8">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>Enrolling at Empire College</p>
+                                <p>I committed to the IT path and enrolled at Empire College to formalize my skills and
+                                    build
+                                    something real.</p>
+                                <p class="event-timeframe">2017</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 9th Event in the timeline-->
+                        <figure class="event" id="9">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>Earning My AS in IT</p>
+                                <p>Getting my degree felt like a major milestone. It validated the path I’d chosen and
+                                    gave me
+                                    confidence to move forward. I was the first in my family to get a degree at this
+                                    level.</p>
+                                <p class="event-timeframe">2019</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 10th Event in the timeline-->
+                        <figure class="event" id="10">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>Building My IT Career</p>
+                                <p>I worked in the industry for roughly 7 years, specializing in hardware optimization,
+                                    system
+                                    troubleshooting, and network configuration.</p>
+                                <p class="event-timeframe">2017–2024</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 11th Event in the timeline-->
+                        <figure class="event" id="11">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>Falling into Addiction</p>
+                                <p>Cocaine became my escape. What started as weekend partying turned into daily use, and
+                                    I began
+                                    to lose control of everything.</p>
+                                <p class="event-timeframe">2022</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 12th Event in the timeline-->
+                        <figure class="event" id="12">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>Attempting a Fresh Start</p>
+                                <p>I moved out of town, hoping to reset my life and escape the chaos.</p>
+                                <p class="event-timeframe">November 2022</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 13th Event in the timeline-->
+                        <figure class="event" id="13">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>First Sobriety Streak</p>
+                                <p>I managed six months sober. It was progress, but I relapsed and fell back into
+                                    depression and
+                                    daily use.</p>
+                                <p class="event-timeframe">December 2022</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 14th Event in the timeline-->
+                        <figure class="event" id="14">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>Hitting Rock Bottom</p>
+                                <p>The relapse hit hard. I was stuck in a cycle I couldn’t break, and everything felt
+                                    like it
+                                    was slipping away.</p>
+                                <p class="event-timeframe">January 2024</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 15th Event in the timeline-->
+                        <figure class="event" id="15">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>Entering Rehab</p>
+                                <p>I checked into Touchstone Recovery Center in Fresno. It was the hardest decision I’ve
+                                    ever
+                                    made—but also the most important.</p>
+                                <p class="event-timeframe">February 21, 2024</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 16th Event in the timeline-->
+                        <figure class="event" id="16">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>Completing Inpatient Treatment</p>
+                                <p>I spent 30 days confronting everything I’d buried. It was painful, but it marked the
+                                    beginning of real healing.</p>
+                                <p class="event-timeframe">March 17, 2024</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 17th Event in the timeline-->
+                        <figure class="event" id="17">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>Continuing Aftercare</p>
+                                <p>After inpatient, I stayed committed. Therapy, support groups, and reflection became
+                                    part of my daily life.</p>
+                                <p class="event-timeframe">Spring 2024</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 18th Event in the timeline-->
+                        <figure class="event" id="18">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>1-Month Chip</p>
+                                <p>I have been sober for 30 Days.</p>
+                                <p class="event-timeframe">March 21, 2024</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 19th Event in the timeline-->
+                        <figure class="event" id="19">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>2-Month Chip</p>
+                                <p>I have been sober for 60 Days.</p>
+                                <p class="event-timeframe">April 21, 2024</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 20th Event in the timeline-->
+                        <figure class="event" id="20">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>3-Month Chip</p>
+                                <p>I have been sober for 90 Days.</p>
+                                <p class="event-timeframe">May 21, 2024</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 21st Event in the timeline-->
+                        <figure class="event" id="event-21">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>Enrolling at GCU</p>
+                                <p>I took another leap and enrolled at Grand Canyon University. Education became my way
+                                    of
+                                    reclaiming my future.</p>
+                                <p class="event-timeframe">June 2024</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 22nd Event in the timeline-->
+                        <figure class="event" id="22">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>6-Month Chip</p>
+                                <p>I have been sober for 6 Months.</p>
+                                <p class="event-timeframe">August 21, 2024</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 23rd Event in the timeline-->
+                        <figure class="event" id="23">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>9-Month Chip</p>
+                                <p>I have been sober for 9 Months.</p>
+                                <p class="event-timeframe">December 21, 2024</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 24th Event in the timeline-->
+                        <figure class="event" id="24">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>12-Month Chip</p>
+                                <p>I have been sober for 12 Months.</p>
+                                <p class="event-timeframe">February 21, 2025</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 25th Event in the timeline-->
+                        <figure class="event" id="25">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>18-Month Chip</p>
+                                <p>I have been sober for 18 Months.</p>
+                                <p class="event-timeframe">August 21, 2025</p>
+                            </figcaption>
+                        </figure>
+
+                        <!--Event details for the 26th Event in the timeline-->
+                        <figure class="event" id="26">
+                            <div class="event-dot"></div>
+                            <figcaption class="event-box">
+                                <p>Building My Portfolio (Present Day)</p>
+                                <p>Now I’m creating a site that tells my story—technical, personal, and honest. It’s not
+                                    just a portfolio. It’s a declaration.
+                                </p>
+                                <p class="event-timeframe">September 2025</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <!--Arrow button to navigate through events forward-->
+                    <button id="next-event">&#8594;</button>
+                </div>
+            <!-- 📅 End of Timeline Section -->
+            </section>
+
+            <!-- 💡 Core Value Description Section -->
+            <section class="BodySection">
+                <h2>Core Values</h2>
+                <div class="CoreValueGrid">
+                   
+                <!--Row 1 of Core Values Table-->
+                <div id="CoreValueRow1" style="display: table-row;">
+                    <!-- Left Column -->
+                    <div id="CoreValueC1R1">
+                        <button class="core-btn">Integrity</button>
+                    </div>
+
+                    <!-- Center Column -->
+                    <div id="CoreValueC2R1">
+                        <button class="MiddleCoreBtn">Resilliance</button>
+                        <button class="MiddleCoreBtn">Curiosity</button>
+                        <button class="MiddleCoreBtn">Authenticity</button>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div id="CoreValueC3R1">
+                        <button class="core-btn">Discipline</button>
+                    </div>
+                </div>
+
+                <!--Row 2 of Core Values Table-->
+                <div id="CoreValueRow2">
+                    <!-- Left Column -->
+                    <div id="CoreValueC1R2">
+                        <button class="core-btn">Growth</button>
+                    </div>
+
+                    <!-- Center Column -->
+                    <div id="CoreValueC2R2">
+                        <p id="DisplayedCoreValue">
+                        The Core value descriptions listed below will appear here. <br>
+                        It will swap the description message based on selected core value</p>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div id="CoreValueC3R2">
+                        <button class="core-btn">Accountability</button>
+                    </div>
+                </div>
+
+                <!--Row 3 of Core Values Table-->
+                <div id="CoreValueRow3">                   
+                    <!-- Left Column -->
+                    <div id="CoreValueC1R1">
+                        <button class="core-btn">Empathy</button>
+                    </div>
+
+                    <!-- Center Column -->
+                    <div id="CoreValueC2R1" style="width:80%; display: table-cell; padding: 0 20px; vertical-align: middle;">
+                        <button class="core-btn" style="margin: 0 10%;">Creativity</button>
+                    <button class="core-btn" style="margin: 0 10%;">Mastery</button>
+                    <button class="core-btn" style="margin: 0 10%;">Community</button>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div id="CoreValueC3R1" style="width:10%; display: table-cell; text-align: center; vertical-align: middle;">
+                        <button class="core-btn">Courage</button>
+                    </div>
+                </div>
+
+                <!--Core value description to be displayed when the user clicks the "Courage" Value-->
+                <div class="core-value-text">
+                        <!-- The default text that will display in the description field when the page is loaded -->
+                        <p id="CoreValueDefault"><i>Click on one of the core value Icons for more information</i></p>
+
+                        <!--Core value description to be displayed when the user clicks the "Integrity" Value-->
+                        <h4>Integrity</h4>
+                        <p id="Integrity">Living in alignment with my principles even when no one is watching. Integrity
+                            means owning my choices, honoring my word, and staying grounded in truth, especially when it
+                            is inconvenient.</p>
+
+                        <!--Core value description to be displayed when the user clicks the "Resilience" Value-->
+                        <h4>Resilience</h4>
+                        <p id="Resilience">The ability to rise after falling. Resilience is not just about surviving
+                            hardship—it is about transforming it into strength, insight, and forward motion. I have
+                            learned to bend without breaking.</p>
+
+                        <!--Core value description to be displayed when the user clicks the "Curiosity" Value-->
+                        <h4>Curiosity</h4>
+                        <p id="Curiosity">A relentless drive to understand how things work—whether it is a broken
+                            system, a piece of lore, or the wiring behind a motherboard. Curiosity fuels my creativity
+                            and keeps me evolving.</p>
+
+                        <!--Core value description to be displayed when the user clicks the "Authenticity" Value-->
+                        <h4>Authenticity</h4>
+                        <p id="Authenticity">I do not hide behind filters or polish. My story is raw, real, and mine.
+                            Authenticity means showing up as I am—flaws, growth, and all—and inviting others to do the
+                            same.</p>
+
+                        <!--Core value description to be displayed when the user clicks the "Discipline" Value-->
+                        <h4>Discipline</h4>
+                        <p id="Discipline">The quiet force behind every breakthrough. Discipline is what gets me through
+                            late-night debugging, recovery milestones, and academic grind. It is the structure that
+                            supports my ambition.</p>
+
+                        <!--Core value description to be displayed when the user clicks the "Growth" Value-->
+                        <h4>Growth</h4>
+                        <p id="Growth">I am not who I was—and I will not stay who I am. Growth is my commitment to
+                            becoming better, wiser, and more capable with every challenge I face. It is the heartbeat of
+                            my transformation.</p>
+
+                        <!--Core value description to be displayed when the user clicks the "Accountability" Value-->
+                        <h4>Accountability</h4>
+                        <p id="Accountability">I own my actions, my past, and my future. Accountability means facing
+                            consequences, making amends, and building trust through consistency—not excuses.</p>
+
+                        <!--Core value description to be displayed when the user clicks the "Empathy" Value-->
+                        <h4>Empathy</h4>
+                        <p id="Empathy">Understanding others is not just emotional—it is strategic. Empathy helps me
+                            build better systems, better relationships, and better communities. It is how I connect and
+                            collaborate.</p>
+
+                        <!--Core value description to be displayed when the user clicks the "Creativity" Value-->
+                        <h4>Creativity</h4>
+                        <p id="Creativity">Whether I am designing wireframes or composing music, creativity is how I
+                            solve problems and express truth. It is the spark that turns logic into art and chaos into
+                            clarity.</p>
+
+                        <!--Core value description to be displayed when the user clicks the "Mastery" Value-->
+                        <h4>Mastery</h4>
+                        <p id="Mastery">I do not settle for “good enough.” Mastery is my pursuit of excellence—through
+                            repetition, refinement, and obsession with detail. It is the difference between knowing and
+                            owning.</p>
+                        
+                        <!--Core value description to be displayed when the user clicks the "Community" Value-->
+                        <h4>Community</h4>
+                        <p id="Community">I thrive in connection—whether it is a coding meetup, a recovery circle, or a
+                            shared playlist. Community gives my work meaning and my story context. I build with others
+                            in mind.</p>
+                        
+                        <!--Core value description to be displayed when the user clicks the "Courage" Value-->
+                        <h4>Courage</h4>
+                        <p id="Courage">Courage is not loud, it is the quiet decision to keep going. It is walking into
+                            rehab, sharing my truth, and choosing growth over comfort. It is the backbone of every value
+                            I live by.</p>
+                    </div>
+
+                    <div class="core-value-text"> 
+                    <!--Core Value message to be displayed below my core value table stating that I am not perfect-->
+                        <h4>Disclaimer:</h4>
+                        <p id="Disclaimer"><em>I definitely do not adhere to these core values with perfection, by any means. 
+                            I strive to get as close as I can, making weekly reflections, so that I may make any necessary
+                            adjustments to my actions as needed.</em></p>
+                    </div>
+                </div>
+            </section><br>
+            <!-- 💡 End of Core Values Section -->
+        </div>
+    </main>
+
+    <footer>
+        <div id="SocialLinks">
+            <a id="FirstLink" href="https://www.facebook.com/anthony.lewis.37">
+                <!--This is the Link to my Facebook Profile-->
+                <img src="../Sources/icons/footer/Facebook_icon_48px.png" alt="Facebook Icon that links to my Facebook profile">
+            </a>
+
+            <a href="https://www.linkedin.com/in/anthony-lewis-1866bba7/">
+                <!--This is the Link to my LinkedIn Profile-->
+                <img src="../Sources/icons/footer/Linkedin_icon_48px.png" alt="LinkedIn Icon that links to my LinkedIn Profile">
+            </a>
+
+            <a href="https://github.com/Anthony-Lewis-GCU/CST-120-Web-Development">
+                <!--This is the Link to my GitHub Repository-->
+                <img src="../Sources/icons/footer/Github_icon_48px.png" alt="Github Icon that links to my Repository for this site">
+            </a>
+
+            <!--This is the Link to my Website Landing Page-->
+            <a href="https://anthony-lewis-gcu.github.io/CST-120-Web-Development/">Back to Landing Page</a>                
+        </div>
+    </footer>
+</body>
+</html>

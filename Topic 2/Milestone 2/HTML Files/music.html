@@ -71,10 +71,14 @@
             </i></p>
         </section>
 
+        <!-- This will be the moodboard that demonstrates some of my taste in music over various genre's-->
         <section id="Moodboard" style="width: 80%; margin: 0 auto;">
-            <h3>Moodboard</h3>
+            <!-- Moodboard Section Header-->
+            <h3>Moodboard</h3> 
 
+            <!-- Moodboard Section Table Display will show record images of the listed artists-->
             <table style="width: 100%; border: 1px solid black;">
+                <!-- Moodboard Table Row - Metal-->
                 <tr>
                     <th style="background-color: Black; color: white; height: width;">Metal</th>
                     <td>Lamb Of God</td>
@@ -84,6 +88,7 @@
                     <td>Slayer</td>
                 </tr>
 
+                <!-- Moodboard Table Row - Dubstep-->
                 <tr>
                     <th style="background-color: Black; color: white;">Dubstep</th>
                     <td>Skrillex</td>
@@ -93,6 +98,7 @@
                     <td>Deadmau5</td>
                 </tr>
 
+                <!-- Moodboard Table Row - Alternative-->
                 <tr>
                     <th style="background-color: Black; color: white;">Alternative</th>
                     <td>Breaking Benjamin</td>
@@ -102,8 +108,9 @@
                     <td>Lincoln Park</td>
                 </tr>
 
+                <!-- Moodboard Table Row - Rock-->
                 <tr>
-                    <th style="background-color: Black; color: white;">80's</th>
+                    <th style="background-color: Black; color: white;">Rock</th>
                     <td>Journey</td>
                     <td>Queen</td>
                     <td>Motley Crue</td>
@@ -111,8 +118,9 @@
                     <td>The Eagles</td>
                 </tr>
 
+                <!-- Moodboard Table Row - Folk-->
                 <tr>
-                    <th style="background-color: Black; color: white;">Folk Rock</th>
+                    <th style="background-color: Black; color: white;">Folk</th>
                     <td>The Beatles</td>
                     <td>Simon & Garfunkel</td>
                     <td>John Denver</td>
@@ -122,33 +130,37 @@
             </table>
         </section>
 
+        <!-- Music Theory - I depict my personal experience with various instruments in this section-->
         <section id="MusicTheory" style="width: 80%; margin: 0 auto;">
+            <!-- Music Theory< Section Header-->
             <h3>Music Theory</h3>
 
+            <!-- Icons that represent which instruments I have learned to play-->
             <div class="MusicIcons">
-                <Figure style="display: inline-block; width: 64px; border: 1px solid black;">
+                <Figure style="display: inline-block; width: 64px; border: 1px solid black;"> <!-- Flute-->
                     <img src="../Sources/icons/music/flute.png">
                     <figcaption style="text-align: center">Flute</figcaption>
                 </Figure>
-                <Figure style="display: inline-block; width: 64px; border: 1px solid black;">
+                <Figure style="display: inline-block; width: 64px; border: 1px solid black;"> <!-- Piano-->
                     <img src="../Sources/icons/music/piano.png">
                     <figcaption style="text-align: center">Piano</figcaption>
                 </Figure>
-                <Figure style="display: inline-block; width: 64px; border: 1px solid black;">
+                <Figure style="display: inline-block; width: 64px; border: 1px solid black;"> <!-- Guitar-->
                     <img src="../Sources/icons/music/electric-guitar.png">
                     <figcaption style="text-align: center">Guitar</figcaption>
                 </Figure>
-                <Figure style="display: inline-block; width: 64px; border: 1px solid black;">
+                <Figure style="display: inline-block; width: 64px; border: 1px solid black;"> <!-- Drums-->
                     <img src="../Sources/icons/music/drums.png">
                     <figcaption style="text-align: center">Drums</figcaption>
                 </Figure>
-                <Figure style="display: inline-block; width: 64px; border: 1px solid black;">
+                <Figure style="display: inline-block; width: 64px; border: 1px solid black;"> <!-- FL Studio - Production Software-->
                     <img src="../Sources/icons/music/FLStudio.png">
                     <figcaption style="text-align: center">FL Studio</figcaption>
                 </Figure>
             </div>
 
             <div id="MusicExperience" style="width: 100%; border: 1px solid black;">
+                <!-- Experience description with the flute-->
                 <article class="Instruments">
                     <h4>Flute:</h4>
 
@@ -164,6 +176,7 @@
                     </i></p>
                 </article>
 
+                <!-- Experience description with the Piano-->
                 <article class="Instruments">
                     <h4>Piano:</h4>
 
@@ -181,6 +194,7 @@
                     </i></p>
                 </article>
 
+                <!-- Experience description with the Guitar-->
                 <article class="Instruments">
                     <h4>Guitar:</h4>
 
@@ -197,6 +211,7 @@
                     </i></p>
                 </article>
 
+                <!-- Experience description with the Drums-->
                 <article class="Instruments">
                     <h4>Drums:</h4>
 
@@ -214,6 +229,7 @@
                     </i></p>
                 </article>
 
+                <!-- Experience description with FL Studio-->
                 <article class="Instruments">
                     <h4>FL Studio:</h4>
 
@@ -233,13 +249,16 @@
             </div>
         </section>
 
-        <section id="AudioVideoEmbed" style="width: 80%; margin: 0 auto;">
+        <!-- Playback section Where I link to playlists in spotify that match the moodboard above -->
+        <section id="SpotifyPlayback" style="width: 80%; margin: 0 auto;">
+            <!-- Spotify Section Header-->
             <h3>Spotify Samples</h3>
+            <!-- Spotify Playlist Tasble -->
             <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+                <!-- Link to Metal Spotify Playlist -->
                 <tr style="width: 100%;">
-                    <td id="Spotify" style="border: 1px solid black;" colspan="5">
-                        <!-- Link to Metal Spotify Playlist -->
-                        <iframe class="Spotify"
+                    <td class="Spotify" style="border: 1px solid black;" colspan="5">
+                        <iframe
                             id="Metal" data-testid="embed-iframe" style="border-radius:12px" width="100%" height="400px"
                             src="https://open.spotify.com/embed/playlist/6HoLBdXMzv0BeLuywoWrVa?utm_source=generator&theme=0"
                             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
@@ -248,11 +267,10 @@
                     </td>
                 </tr>
 
-
+                <!-- Link to Dubstep Spotify Playlist -->
                 <tr style="width: 100%;">
                     <td class="Spotify" style="border: 1px solid black;" colspan="5">
-                        <!-- Link to Dubstep Spotify Playlist -->
-                        <iframe class="Spotify"
+                        <iframe
                             id="Dubstep" data-testid="embed-iframe" style="border-radius:12px" width="100%" height="400px"
                             src="https://open.spotify.com/embed/playlist/1oCqn0z2YhsnGmb8Xwe45q?utm_source=generator&theme=0"
                             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
@@ -261,6 +279,7 @@
                     </td>
                 </tr>
                     
+                <!-- Link to Alternative Spotify Playlist -->
                 <tr style="width: 100%;">
                     <td class="Spotify" style="border: 1px solid black;" colspan="5">
                         <iframe class="Spotify"
@@ -272,9 +291,9 @@
                     </td>
                 </tr>
 
+                <!-- Link to Rock Spotify Playlist -->
                 <tr class="Spotify" style="width: 100%;">
                     <td class="Spotify" style="border: 1px solid black;" colspan="5">
-                        <!-- Link to Rock Spotify Playlist-->
                         <iframe class="Spotify"
                             src="https://open.spotify.com/embed/playlist/5NOiy06pjBvySue4dpsBYU?utm_source=generator&theme=0"
                             id="Rock" data-testid="embed-iframe" style="border-radius:12px" width="100%" frameBorder="0" height="400px"
@@ -284,9 +303,9 @@
                     </td>
                 </tr>
                 
+                <!-- Link to Folk Rock Spotify Playlist-->
                 <tr class="Spotify" style="width: 100%;">    
                     <td class="Spotify" style="border: 1px solid black;" colspan="5">   
-                        <!-- Link to Folk Rock Spotify Playlist-->
                         <iframe class="Spotify"
                             src="https://open.spotify.com/embed/playlist/3pCatVALi27pxALYI7R1vJ?utm_source=generator&theme=0" 
                             id="Folk Rock" data-testid="embed-iframe" style="border-radius:12px" width="100%" height="400px"
@@ -297,38 +316,42 @@
                 </tr>
 
                 
-                <!-- Third row that Lists Genre Selections (the same ones from the mood board)-->
+                <!-- Second row that Lists Genre Selections (the same ones from the mood board)-->
                 <tr class="Spotify">
                     <!-- These table items will display while the Spotify player is selected-->
-                    <td class="Spotify" style="width: 20%;"><button style="width: 100%; margin: 0; padding: 0;">Metal</button></td>
-                    <td class="Spotify" style="width: 20%;"><button style="width: 100%; margin: 0; padding: 0;">Dubstep</button></td>
-                    <td class="Spotify" style="width: 20%;"><button style="width: 100%; margin: 0; padding: 0;">Alternative</button></td>
-                    <td class="Spotify" style="width: 20%;"><button style="width: 100%; margin: 0; padding: 0;">Rock</button></td>
-                    <td class="Spotify" style="width: 20%;"><button style="width: 100%; margin: 0; padding: 0;">Folk</button></td>
+                    <td class="Genre" style="width: 20%;"><button style="width: 100%; margin: 0; padding: 0;">Metal</button></td>
+                    <td class="Genre" style="width: 20%;"><button style="width: 100%; margin: 0; padding: 0;">Dubstep</button></td>
+                    <td class="Genre" style="width: 20%;"><button style="width: 100%; margin: 0; padding: 0;">Alternative</button></td>
+                    <td class="Genre" style="width: 20%;"><button style="width: 100%; margin: 0; padding: 0;">Rock</button></td>
+                    <td class="Genre" style="width: 20%;"><button style="width: 100%; margin: 0; padding: 0;">Folk</button></td>
                 </tr>
             </table>
         </section>
     </main>
 
+    <!-- This is the footer section of the webpage that will hold links to my social media profiles and other relevant links-->
     <footer>
+        <!-- Links to social media and landing page-->
         <div id="SocialLinks">
+            <!--This is the Link to my Facebook Profile-->
             <a id="FirstLink" href="https://www.facebook.com/anthony.lewis.37">
-                <!--This is the Link to my Facebook Profile-->
                 <img src="../Sources/icons/footer/Facebook_icon_48px.png" alt="Facebook Icon that links to my Facebook profile">
             </a>
 
+            <!--This is the Link to my LinkedIn Profile-->
             <a href="https://www.linkedin.com/in/anthony-lewis-1866bba7/">
-                <!--This is the Link to my LinkedIn Profile-->
                 <img src="../Sources/icons/footer/Linkedin_icon_48px.png" alt="LinkedIn Icon that links to my LinkedIn Profile">
             </a>
 
+            <!--This is the Link to my GitHub Repository-->
             <a href="https://github.com/Anthony-Lewis-GCU/CST-120-Web-Development">
-                <!--This is the Link to my GitHub Repository-->
-                <img src="../Sources/icons/footer/Github_icon_48px.png" alt="Github Icon that links to my Repository for this site">
+                <img src="../Sources/icons/footer/Github_icon_48px.png" alt="Github Icon that links to my Repository for this site" style="border-radius: 3px;">
             </a>
 
             <!--This is the Link to my Website Landing Page-->
-            <a href="https://anthony-lewis-gcu.github.io/CST-120-Web-Development/">Back to Landing Page</a>                
+            <a href="https://anthony-lewis-gcu.github.io/CST-120-Web-Development/"> 
+                <img src="../Sources/icons/footer/LandingPage_icon_48px.png" alt="Icon that takes the user back to my github pages landing page" style="border-radius: 3px;">    
+            </a>           
         </div>
 
         <div id="Attribution">
