@@ -17,3 +17,97 @@
     text-indent: 2em;
 }
 
+.CoreValueGrid
+{
+    Display: Table;
+
+}
+
+#CoreValueRow1
+{
+    display: table-row;
+}
+
+#CoreValueC1R1
+{
+    width:10%; 
+    display: table-cell; 
+    text-align: center; 
+    vertical-align: middle;
+}
+
+#CoreValueC2R1
+{
+    width:80%; 
+    display: table-cell; 
+    padding: 0 20px; 
+    vertical-align: middle;
+}
+
+#CoreValueC2R1 .MiddleCoreBtn
+{
+    margin: 0 10%;
+}
+
+#CoreValueC3R1
+{
+    width:10%; 
+    display: table-cell; 
+    text-align: center; 
+    vertical-align: middle;
+}
+
+#CoreValueRow2
+{
+    width:100%; 
+    overflow: hidden; 
+    display: table-row;
+}
+
+#CoreValueC1R2
+{
+    width:10%; 
+    display: table-cell; 
+    text-align: center; 
+    vertical-align: middle;
+}
+
+#CoreValueC2R2
+{
+    width:80%; 
+    display: table-cell; 
+    padding: 0 20px; 
+    vertical-align: middle;
+}
+
+#DisplayedCoreValue
+{
+    border: black 1px solid; 
+    padding: 10px; 
+    text-align: Center;
+}
+
+#CoreValueC3R2
+{
+    width:10%; 
+    display: table-cell; 
+    text-align: center; 
+    vertical-align: middle;
+}
+
+#CoreValueRow3
+{
+    width:100%; 
+    margin: 0 auto; 
+    display: table-row;
+}
+
+#CoreValueC1R1
+{
+    width:10%; 
+    display: table-cell; 
+    text-align: center; 
+    vertical-align: middle;
+}
+
+
