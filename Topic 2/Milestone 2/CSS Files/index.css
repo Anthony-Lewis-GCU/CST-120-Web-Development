@@ -1,0 +1,18 @@
+#ContentHeader h1
+{
+    margin: 0; 
+    padding-top: 20px; 
+    font-size: 46px; 
+    text-align: center;
+}
+
+.BodySection
+{
+    width: 80%; 
+    margin: 0 auto;
+}
+
+.BodySection p
+{
+    text-indent: 2em;
+}
