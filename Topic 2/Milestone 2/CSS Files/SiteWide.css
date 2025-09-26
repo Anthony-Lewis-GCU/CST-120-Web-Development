@@ -19,13 +19,13 @@ header
     margin: 0 auto;
 }
 
-#PageTitle 
+#SiteTitle
 {
     float: left; 
     Padding-left:20px;
 }
 
-h3.PageTitle 
+h3.SiteTitle
 { 
     font-family: 'PageTitleFont', sans-serif;
     display: inline-block; 
@@ -64,7 +64,6 @@ footer
   width: 60%;
   margin: 0 auto;
   text-align: center;
-  padding: 1rem 0;
 }
 
 #SocialLinks 
@@ -74,7 +73,7 @@ footer
   align-items: center;
   gap: 8rem; /* evenly spaced */
   flex-wrap: wrap;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0 0.5;
 }
 
 #SocialLinks a 
