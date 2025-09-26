@@ -12,7 +12,8 @@
     margin: 0 auto;
 }
 
-.BodySection p
+.BodySection p .article
 {
     text-indent: 2em;
 }
+

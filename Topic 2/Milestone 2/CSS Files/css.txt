@@ -1,0 +1,116 @@
+/* Theme Variables */
+:root {
+  --purple-glow: #a020f0;
+  --silver-base: #c0c0c0;
+  --silver-glow: #e0e0e0;
+  --bg-dark: #111;
+  --text-light: #f8f8f8;
+  --transition-fast: 0.3s ease;
+  --transition-slow: 0.6s ease;
+}
+
+/* Global Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+/* Header Styling */
+header {
+  background: linear-gradient(135deg, var(--silver-base), var(--silver-glow));
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow:
+    0 0 10px var(--silver-glow),
+    0 0 20px var(--silver-glow),
+    0 0 40px var(--silver-glow);
+  border-bottom: 2px solid var(--purple-glow);
+}
+
+/* Site Title Glow */
+#SiteTitle .SiteTitle {
+  font-size: 2.5rem;
+  color: var(--bg-dark);
+  text-shadow:
+    0 0 5px var(--silver-glow),
+    0 0 10px var(--silver-glow),
+    0 0 15px var(--silver-glow);
+  margin: 0;
+}
+
+/* Navigation Links */
+nav {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.NavLink {
+  color: var(--purple-glow);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all var(--transition-fast);
+}
+
+.NavLink:hover {
+  background-color: rgba(160, 32, 240, 0.2);
+  box-shadow:
+    0 0 8px var(--purple-glow),
+    0 0 16px var(--purple-glow);
+  transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 3rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 2px solid var(--purple-glow);
+  background-color: #1a1a1a;
+}
+
+/* Social Links */
+#SocialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#SocialLinks a {
+  display: inline-block;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+#SocialLinks img {
+  width: 48px;
+  height: 48px;
+  filter: drop-shadow(0 0 5px var(--purple-glow));
+  transition: filter var(--transition-fast), transform var(--transition-fast);
+}
+
+#SocialLinks a:hover img {
+  filter: drop-shadow(0 0 10px var(--purple-glow));
+  transform: scale(1.2);
+}
+
+/* Back to Landing Page Link */
+#SocialLinks a:last-child {
+  color: var(--purple-glow);
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 1rem;
+  display: block;
+}
+
+#SocialLinks a:last-child:hover {
+  text-decoration: underline;
+  text-shadow: 0 0 8px var(--purple-glow);
+}

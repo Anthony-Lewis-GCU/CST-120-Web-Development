@@ -11,6 +11,7 @@
 
 <body>
     <header>
+        
         <!-- This is the in place styling of the main Website Name Font -->
         <div id="SiteTitle">
             <h3 class="SiteTitle">Anthony S. Lewis</h3>
@@ -18,7 +19,7 @@
 
         <!--This is the main navigation section of the webpage that links to all the other pages on the site-->
         <nav>
-            <a class="NavLink" href="index.html">About Me</a>
+            <a class="NavLink active" href="index.html">About Me</a>
             <a class="NavLink" href="hobbies.html">Hobbies</a>
             <a class="NavLink" href="music.html">Music</a>
             <a class="NavLink" href="education.html">Education</a>
@@ -38,14 +39,14 @@
         <section class="BodySection">
             <h2>Biography</h2>
 
-            <p title="Formative years">
+            <p class="article" title="Formative years">
                 I grew up in Healdsburg, California—a quiet town surrounded by vineyards
                 and redwoods. It was the kind of place where you could hear your own thoughts, and I spent a lot
                 of time doing just that. I was always searching for something—some deeper meaning, some sense of
                 direction. I didn’t know what it was yet, but I knew I wanted my life to matter.
             </p>
 
-            <p title="Young Adult years">
+            <p class="article" title="Young Adult years">
                 When I moved to Santa Rosa for high school, things shifted. I graduated in
                 2009, and like a lot of people my age, I didn’t have a clear path laid out. So I enrolled at Santa
                 Rosa Junior College and spent nearly a decade exploring different programs. I dabbled in
@@ -54,14 +55,14 @@
                 of them felt like “the one.”
             </p>
 
-            <p title="Responsible years">
+            <p class="article" title="Responsible years">
                 Eventually, I found my calling in Information Technology. It clicked. I
                 enrolled at Empire College and earned my Associate of Science in IT. That was a turning point. I
                 started working in the industry and built a solid foundation over seven years. I was proud of the
                 work I was doing, and for a while, it felt like I was finally on track.
             </p>
 
-            <p title="The Lost Years">
+            <p class="article" title="The Lost Years">
                 But life doesn’t always move in a straight line. Somewhere along the way, I
                 lost myself. I got caught up in the party scene, started using cocaine, and before I knew it, it had
                 taken over my life. What started as weekend fun became a daily habit. I was spiraling—my job was on
@@ -78,7 +79,7 @@
                 everything to me. It’s not just time—it’s proof that I can change.
             </p>
 
-            <p title="Present Day">
+            <p class="article" title="Present Day">
                 Now, I’m enrolled at Grand Canyon University. I’m taking my life back, one
                 step at a time. I’m not the same person I used to be—and I don’t want to be. I’ve learned that
                 healing isn’t linear, and growth doesn’t come without pain. But I’m here. I’m present. And I’m
@@ -87,7 +88,7 @@
         </section>
 
         <!-- 📅 Timeline Section -->
-        <section id="timeline-section" style="width:80%; margin: 0 auto;">
+        <section class="BodySection">
             <h2>Time Line</h2>
 
             <!--The main container that holds all the event details including the navigation control buttons-->
@@ -100,24 +101,24 @@
                 <div class="timeline">
 
                     <!--Event details for the 1st Event in the timeline-->
-                    <Figure class="event" id="1">
+                    <figure class="event" id="1">
                         <div class="event-dot"></div>
-                        <figCaption class="event-box">
-                            <h4>Growing Up in Healdsburg</h4>
+                        <figcaption class="event-box">
+                            <p>Growing Up in Healdsburg</p>
                             <p>I spent my childhood in Healdsburg, surrounded by redwoods and quiet streets.</p>
-                            <span class="event-timeframe">1997–2005</span>
-                        </figCaption>
-                    </Figure>
+                            <p class="event-timeframe">1997–2005</span>
+                        </figcaption>
+                    </figure>
 
                         <!--Event details for the 2nd Event in the timeline-->
                         <figure class="event" id="2">
                             <div class="event-dot"></div>
                             <figcaption class="event-box">
-                                <h4>Moving to Santa Rosa</h4>
+                                <p>Moving to Santa Rosa</p>
                                 <p>Transitioning to Santa Rosa for high school was a big shift. The environment was
                                     larger, faster-paced, and full of new challenges that pushed me out of my comfort
                                     zone.</p>
-                                <span class="event-timeframe">2005</span>
+                                <p class="event-timeframe">2005</p>
                             </figcaption>
                         </figure>
 
@@ -125,10 +126,10 @@
                         <figure class="event" id="3">
                             <div class="event-dot"></div>
                             <figcaption class="event-box">
-                                <h4>High School Graduation</h4>
+                                <p>High School Graduation</p>
                                 <p>I graduated in 2009, unsure of what came next but determined to carve out my own
                                     path.</p>
-                                <span class="event-timeframe">2009</span>
+                                <p class="event-timeframe">2009</p>
                             </figcaption>
                         </figure>
 
@@ -136,10 +137,10 @@
                         <figure class="event" id="4">
                             <div class="event-dot"></div>
                             <figcaption class="event-box">
-                                <h4>Enrolling at SRJC</h4>
+                                <p>Enrolling at SRJC</p>
                                 <p>I started at Santa Rosa Junior College and spent nearly a decade exploring different
                                     academic paths, trying to figure out what truly resonated with me.</p>
-                                <span class="event-timeframe">2008</span>
+                                <p class="event-timeframe">2008</p>
                             </figcaption>
                         </figure>
 
@@ -147,10 +148,10 @@
                         <figure class="event" id="5">
                             <div class="event-dot"></div>
                             <figcaption class="event-box">
-                                <h4>Academic Exploration</h4>
+                                <p>Academic Exploration</p>
                                 <p>I dabbled in [List of courses attempted]. Each program taught me something—even if it
                                     wasn’t the final destination.</p>
-                                <span class="event-timeframe">2008–2017</span>
+                                <p class="event-timeframe">2008–2017</p>
                             </figcaption>
                         </figure>
 
@@ -158,11 +159,11 @@
                         <figure class="event" id="6">
                             <div class="event-dot"></div>
                             <figcaption class="event-box">
-                                <h4>Working Through Adulthood</h4>
+                                <p>Working Through Adulthood</p>
                                 <p>I held down a variety of jobs while trying to find a career that felt meaningful.
                                     Every role
                                     added a layer to my experience.</p>
-                                <span class="event-timeframe">2004–2017</span>
+                                <p class="event-timeframe">2004–2017</p>
                             </figcaption>
                         </figure>
 

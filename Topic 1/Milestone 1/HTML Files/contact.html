@@ -1,41 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-
-    <style>
-        @font-face {
-        font-family: 'PageNameFont';
-        src: url('../Sources/fonts/distropiax-wpyma-webfont.woff2') format('woff2'),
-             url('../Sources/fonts/distropiax-wpyma-webfont.woff') format('woff');
-        }
-        h3.pageTitle {
-        font-family: 'PageNameFont', sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="../CSS Files/SiteWide.css">
 </head>
-<body style="margin: 0; padding: 0;">
+
+<body>
     <header>
-        <div id="header" style="border: 1px solid black; height:50px; width:60%; margin: 0 auto;">
-            <div style="float: left; Padding-left:20px;">
-                <h3 class="page-title" style="display: inline-block; vertical-align: middle; font-family: 'PageNameFont', sans-serif; font-size: 37px; margin: 0; 
-                padding: 0; color:#9400D3">Anthony S. Lewis</h3>
-
-            </div>
-
-            <!--This is the main navigation section of the webpage that links to all the other pages on the site-->
-            <nav style="Float: right; padding-top:15px; margin-top: 0 auto; margin-bottom: 0 auto;">
-                <a href="index.html" style="padding: 0px 20px 0px 20px;"><strong>About Me</strong></a>
-                <a href="hobbies.html" style="padding: 0px 20px 0px 20px;"><strong>Hobbies</strong></a>
-                <a href="music.html" style="padding: 0px 20px 0px 20px;"><strong>Music</strong></a>
-                <a href="education.html" style="padding: 0px 20px 0px 20px;"><strong>Education</strong></a>
-                <a href="experience.html" style="padding: 0px 20px 0px 20px;"><strong>Work History</strong></a>
-                <a href="recovery.html" style="padding: 0px 20px 0px 20px;"><strong>Recovery</strong></a>
-                <a href="contact.html" style="padding: 0px 20px 0px 20px;"><strong>Contact Me</strong></a>
-            </nav>
+        <!-- This is the in place styling of the main Website Name Font -->
+        <div id="SiteTitle">
+            <h3 class="SiteTitle">Anthony S. Lewis</h3>
         </div>
+
+        <!--This is the main navigation section of the webpage that links to all the other pages on the site-->
+        <nav>
+            <a class="NavLink" href="index.html">About Me</a>
+            <a class="NavLink" href="hobbies.html">Hobbies</a>
+            <a class="NavLink" href="music.html">Music</a>
+            <a class="NavLink" href="education.html">Education</a>
+            <a class="NavLink" href="experience.html">Work History</a>
+            <a class="NavLink" href="recovery.html">Recovery</a>
+            <a class="NavLink active" href="contact.html">Contact Me</a>
+        </nav>
     </header>
 
     <main>

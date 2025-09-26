@@ -1,3 +1,13 @@
+:root {
+  --purple-glow: #9400D3;
+  --silver-base: #c0c0c0;
+  --silver-glow: #e0e0e0;
+  --bg-dark: #111;
+  --text-light: #f8f8f8;
+  --transition-fast: 0.3s ease;
+  --transition-slow: 0.6s ease;
+}
+
 @font-face 
 {
     font-family: 'PageTitleFont';
@@ -13,42 +23,58 @@ body
 
 header
 {
-    border: 1px solid black;
-    height: 50px; 
+    height: 150px; 
     width: 60%; 
     margin: 0 auto;
-}
-
-#SiteTitle
-{
-    float: left; 
-    Padding-left:20px;
+    border: 1px solid black;
+    background: linear-gradient(135deg, var(--silver-base), var(--silver-glow));
+    box-shadow: 0 0 10px var(--silver-glow), 0 0 20px var(--silver-glow), 0 0 40px var(--silver-glow);
 }
 
 h3.SiteTitle
 { 
     font-family: 'PageTitleFont', sans-serif;
-    display: inline-block; 
-    vertical-align: middle; 
-    font-size: 37px; 
-    margin: 0; 
-    padding-left: 10px; 
-    color:#9400D3
+    text-align: center; 
+    font-size: 72pt; 
+    color:#9400D3;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-shadow:
+    0 0 5px var(--silver-glow),
+    0 0 10px var(--silver-glow),
+    0 0 15px var(--silver-glow);
 }
 
 nav
 {
-    Float: right; 
-    padding-top:15px; 
-    margin-top: 0 auto; 
-    margin-bottom: 0 auto;
+  margin: -35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .NavLink
 {
-    padding: 0px 20px 0px 20px;
-    font-weight: bold;
+    color: var(--purple-glow);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all var(--transition-fast);
 }
+
+.NavLink:hover {
+  font-size: 1.1rem;                /*  or use pt/px if you're matching your font system  */
+  color: #9400D3;                 /*  Optional: reinforce with your purple highlight    */
+  text-shadow: 0 0 6px #9400D3;   /*  Optional glow                                     */
+}
+
+.NavLink.active {
+  font-size: 1.1rem;                /*  or use pt/px if you're matching your font system  */
+  color: #9400D3;                 /*  Optional: reinforce with your purple highlight    */
+  text-shadow: 0 0 6px #9400D3;   /*  Optional glow                                     */
+}
+
 
 main
 {
@@ -64,6 +90,7 @@ footer
   width: 60%;
   margin: 0 auto;
   text-align: center;
+  background-color: Silver;
 }
 
 #SocialLinks 
@@ -71,9 +98,19 @@ footer
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8rem; /* evenly spaced */
+  gap: 8rem;                
   flex-wrap: wrap;
-  margin: 0.5rem 0 0.5;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+#SocialLinks a 
+{
+  display: inline-flex;
+  align-items:center;
+  gap: 0.5rem;
+  text-decoration: none;
+
+  
 }
 
 #SocialLinks a 
@@ -84,6 +121,13 @@ footer
   text-decoration: none;
 }
 
+#SocialLinks a:hover 
+{
+  transform: rotate(15deg);             /* Slight tilt */ 
+  transform: scale(1.2);                /* Slight zoom */
+  box-shadow: 0 0 10px #9400D3;       /* Glow effect */ 
+}
+
 #SocialLinks img 
 {
   width: 24px;
@@ -91,7 +135,7 @@ footer
   vertical-align: middle;
 }
 
-#Attribution 
+#Attribution
 {
   display: flex;
   justify-content: center;
@@ -101,6 +145,3 @@ footer
   font-size: xx-small;
   padding: 0.5rem;
 }
-
-
-
