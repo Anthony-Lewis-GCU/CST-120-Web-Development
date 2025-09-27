@@ -4,107 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Assignment Matrix</title>
+
+    <link rel="stylesheet" href="./css/mysite.css">
+
+    <style>
+        #course-matrix-table { border-collapse: collapse; }
+        #course-matrix-table th, td { border: 1px solid black; }
+        #course-matrix-table th { color: white; background-color: #4f2fb6; }
+        #course-matrix-table tr:first-child { background: #CCC; }
+        #course-matrix-table td:nth-child { font-weight: bold; }
+
+   </style>
 </head>
+
 <body>
     <div align="Center">
         <h1>Course Assignment Matrix</h1>
 
-        <table width="50%" border="1px">
-            <tr align="Center">
-                <th width="33%">Assignment</th>
-                <th width="33%">Week Due</th>
-                <th width="33%">Points</th>
-            </tr>
-            <tr align="Center" >
-                <td align="Left">Milestone 1: Iteration 1 of Web Site</td>
-                <td align="Center">2</td>
-                <td align="Center">85</td>
-            </tr>
-            <tr align="Center">
-                <td align="Left">Activity 1: Tools Install and Basic HTML </td>
-                <td align="Center">2</td>
-                <td align="Center">35</td>
-            </tr>
+        <table width="50%" id="course-matrix-table">
+            <thead>
+                <tr align="Center">
+                    <th width="33%">Assignment</th>
+                    <th width="33%">Week Due</th>
+                    <th width="33%">Points</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr align="Center" >
+                    <td align="Left">Milestone 1: Iteration 1 of Web Site</td>
+                    <td align="Center">2</td>
+                    <td align="Center">85</td>
+                </tr>
+
+                <tr align="Center">
+                    <td align="Left">Activity 1: Tools Install and Basic HTML </td>
+                    <td align="Center">2</td>
+                    <td align="Center">35</td>
+                </tr>
             
-            <tr align="Center">
-                <td align="Left">Milestone 2: Iteration 2 of Web Site</td>
-                <td align="Center">4</td>
-                <td align="Center">85</td>
-            </tr>
-            <tr align="Center">
-                <td align="Left">Activity 2: Advanced HTML</td>
-                <td align="Center">4</td>
-                <td align="Center">35</td>
-            </tr>
-            <tr align="Center">
-                <td align="Left">Milestone 3: Iteration 3 of Web Site</td>
-                <td align="Center">6</td>
-                <td align="Center">85</td>
-            </tr>
-            <tr align="Center">
-                <td align="Left">Activity 3: CSS</td>
-                <td align="Center">6</td>
-                <td align="Center">35</td>
-            </tr>
-            <tr align="Center">
-                <td align="Left">Milestone 4: Iteration 4 of Web Site</td>
-                <td align="Center">8</td>
-                <td align="Center">60</td>
-            </tr>
-            <tr align="Center">
-                <td align="Left">Activity 4: JavaScript</td>
-                <td align="Center">8</td>
-                <td align="Center">35</td>
-            </tr>
-            <tr align="Center">
-                <td align="Left">Milestone 5: Iteration 5 of Web Site</td>
-                <td align="Center">10</td>
-                <td align="Center">85</td>
-            </tr>
-            <tr align="Center">
-                <td align="Left">Activity 5: Advanced JavaScript</td>
-                <td align="Center">10</td>
-                <td align="Center">35</td>
-            </tr>
-            <tr align="Center">
-                <td align="Left">Milestone 6: Iteration 6 of Web Site</td>
-                <td align="Center">13</td>
-                <td align="Center">85</td>
-            </tr>
-            <tr align="Center">
-                <td align="Left">Activity 6: jQuery and Bootstrap</td>
-                <td align="Center">13</td>
-                <td align="Center">35</td>
-            </tr>
-            <tr align="Center">
-                <td align="Left">Milestone 7: Final Web Site</td>
-                <td align="Center">15</td>
-                <td align="Center">85</td>
-            </tr>
-            <tr align="Center">
-                <td align="Left">Activity 7: HTML Forms Processing</td>
-                <td align="Center">15</td>
-                <td align="Center">35</td>
-            </tr>
-            <tr align="Center">
-                <td align="Left">Milestone 7: Final Project Presentation</td>
-                <td align="Center">15</td>
-                <td align="Center">35</td>
-            </tr>
-            <tr align="Center">
-                <td align="Left">Participation (10 points per week)</td>
-                <td align="Center">1–15</td>
-                <td align="Center">150</td>
-            </tr>
-            <tr align="Center">
-                <td align="Left">Total</td>
-                <td align="Center"></td>
-                <td align="Center">1000</td>
-            </tr>
+                <tr align="Center">
+                    <td align="Left">Milestone 2: Iteration 2 of Web Site</td>
+                    <td align="Center">4</td>
+                    <td align="Center">85</td>
+                </tr>
+            
+                <tr align="Center">
+                    <td align="Left">Activity 2: Advanced HTML</td>
+                    <td align="Center">4</td>
+                    <td align="Center">35</td>
+                </tr>
+
+                <tr align="Center">
+                    <td align="Left">Milestone 3: Iteration 3 of Web Site</td>
+                    <td align="Center">6</td>
+                    <td align="Center">85</td>
+                </tr>
+
+                <tr align="Center">
+                    <td align="Left">Activity 3: CSS</td>
+                    <td align="Center">6</td>
+                    <td align="Center">35</td>
+                </tr>
+
+                <tr align="Center">
+                    <td align="Left">Milestone 4: Iteration 4 of Web Site</td>
+                    <td align="Center">8</td>
+                    <td align="Center">60</td>
+                </tr>
+                <tr align="Center">
+                    <td align="Left">Activity 4: JavaScript</td>
+                    <td align="Center">8</td>
+                    <td align="Center">35</td>
+                </tr>
+                <tr align="Center">
+                    <td align="Left">Milestone 5: Iteration 5 of Web Site</td>
+                    <td align="Center">10</td>
+                    <td align="Center">85</td>
+                </tr>
+                <tr align="Center">
+                    <td align="Left">Activity 5: Advanced JavaScript</td>
+                    <td align="Center">10</td>
+                    <td align="Center">35</td>
+                </tr>
+                <tr align="Center">
+                    <td align="Left">Milestone 6: Iteration 6 of Web Site</td>
+                    <td align="Center">13</td>
+                    <td align="Center">85</td>
+                </tr>
+                <tr align="Center">
+                    <td align="Left">Activity 6: jQuery and Bootstrap</td>
+                    <td align="Center">13</td>
+                    <td align="Center">35</td>
+                </tr>
+                <tr align="Center">
+                    <td align="Left">Milestone 7: Final Web Site</td>
+                    <td align="Center">15</td>
+                    <td align="Center">85</td>
+                </tr>
+                <tr align="Center">
+                    <td align="Left">Activity 7: HTML Forms Processing</td>
+                    <td align="Center">15</td>
+                    <td align="Center">35</td>
+                </tr>
+                <tr align="Center">
+                    <td align="Left">Milestone 7: Final Project Presentation</td>
+                    <td align="Center">15</td>
+                    <td align="Center">35</td>
+                </tr>
+                <tr align="Center">
+                    <td align="Left">Participation (10 points per week)</td>
+                    <td align="Center">1–15</td>
+                    <td align="Center">150</td>
+                </tr>
+                <tr align="Center">
+                    <td align="Left">Total</td>
+                    <td align="Center"></td>
+                    <td align="Center">1000</td>
+                </tr>
+            </tbody>
         </table>
     </div>
     <div style="text-align:center;">
-        <a href="index.html"><em>Back to Main Page</em></a>
+        <a href="index.html"><i><b>Back to Main Page</b></a>
     </div>
 </body>
 </html>

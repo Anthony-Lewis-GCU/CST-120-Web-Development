@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video and Audio Media</title>
+
+    <link rel="stylesheet" href="./css/mysite.css">
+
+    <style>
+        @keyframes blinker { 50% { opacity: 0; } }
+        .blink_me_alarm { animation: blinker .5s step-start infinite; color: red;}
+
+        .div1       { text-align: Center; width: 300px; height: 25px; border: 1px solid #4f2fb6; transition: transform 2s; margin: 0 auto; margin-bottom: 20px; }
+        .div1:hover { width: 300px; height: 25px; transform: rotate(360deg);  }
+    </style>
 </head>
 
 <body>
@@ -14,44 +24,28 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/JdVLnLKC-pk?si=jPWnmQQIh1zec3t4"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <!--<h4>Grand Canyon University Doctrinal Statement</h4>-->
-        <svg width="400" height="20">
-            <text x="68" y="15" fill="red">
-                Grand Canyon University Doctrinal Statement
-                <animate attributeType="CSS" attributeName="Opacity" values="1;0;1" dur="3s" repeatCount="indefinite" />
-            </text>
-            Sorry, your browser does not support inline SVG.
-        </svg><br>
+        <h4>Grand Canyon University Doctrinal Statement</h4>
 
         <video width="320" height="240" controls>
             <source src="media/DramaticOcean.mp4" type="video/mp4">
             Your Browser does not support the video tag.
-        </video><br><br>
+        </video>
         <!--<h4>Student Support Video Clip</h4><br>-->
-        <svg width="400" height="20">
-            <text x="125" y="15" fill="red">
-                Student Support Video Clip
-                <animate attributeType="CSS" attributeName="Opacity" values="1;0;1" dur="3s" repeatCount="indefinite" />
-            </text>
-            Sorry, your browser does not support inline SVG.
-        </svg><br><br><br><br>
+        <h4 class="blink_me_alarm">Student Support Video Clip</h4>
 
         <audio controls>
             <source src="media/SymphonyNo.5.mp3" type="audio/mp3">
             Your browser does not support the audio tag.
-        </audio><br>
-        <!--<h4>Student Support Video Clip</h4>-->
-        <svg width="400" height="20">
-            <text x="125" y="15" fill="red">
-                Student Support Audio Clip
-                <animate attributeType="CSS" attributeName="Opacity" values="1;0;1" dur="3s" repeatCount="indefinite" />
-            </text>
-            Sorry, your browser does not support inline SVG.
-        </svg><br><br>
+        </audio>
+        <h4 class="blink_me_alarm">Student Support Audio Clip</h4>
     </div>
+
+    <div class="div1">GCU is a great university</div>
+
     <div id="nav" style="text-align:center;">
-        <a href="index.html"><em>Back to Main Page</em></a>
+        <a href="index.html"><i><b>Back to Main Page</b></i></a>
     </div>
 </body>
 
