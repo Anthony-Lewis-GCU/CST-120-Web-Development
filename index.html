@@ -1,44 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Choose a Site</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #000000;
-      text-align: center;
+    body
+    {
+      background-color: black;
+      color: white;
+      width: 40%;
       padding-top: 100px;
+      margin: auto;
     }
-    h1 {
-      font-size: 36px;
-      color: #FFFFFF;
+    .LinkTable 
+    {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 10px;
+      margin-bottom: 50px;
+      /* adds vertical gap between rows */
     }
-    a {
-      display: inline-block;
-      margin: 20px;
-      padding: 15px 30px;
-      font-size: 20px;
+
+    .LinkTable td 
+    {
+      padding: 10px;
+      background: #8d03b8;
+      text-align: Center;
+      border-radius: 8px;
+      height: 40px;
+    }
+
+    .LinkTable td a 
+    {
       text-decoration: none;
       color: white;
-      background-color: #9400D3;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
+      font-weight: bold;
+      font-size: 20px;
     }
-    a:hover {
-      background-color: #6a00a0;
+
+    .LinkTable td:not(.Gap):hover 
+    {
+      transform: scale(1.05);
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+    }
+
+    .LinkTable .Gap 
+    {
+      width: 100px;
+      background: black;
+      border: none;
+    }
+
+    .LinkTable th 
+    {
+      background: green;
+      color: white;
+      height: 60px;
+      font-weight: bold;
+      font-size: 24px;
+      text-align: center;
+      border-radius: 8px;
     }
   </style>
 </head>
+
 <body>
-  <h1>Select a Site to Visit</h1>
-  <a href="./Topic 1/Activity 1/part2/index.html">      Activity 1:  GCU Course Syllabus  </a>
-  <a href="./Topic 1/Milestone 1/HTML Files/index.html">Milestone 1: Anthony S. Lewis     </a>
-                                                                                              <br>
-  <a href="./Topic 2/Activity 2/index.html">            Activity 2:  GCU Course Syllabus  </a>
-  <a href="./Topic 2/Milestone 2/HTML Files/index.html">Milestone 2: Anthony S. Lewis     </a>
-                                                                                              <br>
-  <a href="./Topic 3/Activity 3/index.html">            Activity 3:  GCU Course Syllabus  </a>
-  <a href="./Topic 3/Milestone 3/HTML Files/index.html">Milestone 3: Anthony S. Lewis     </a>
+  <h1>Select a Site to Visit:</h1>
+
+  <table class="LinkTable">
+    <tr>
+      <th colspan="3">Current Assignment:</th>
+    </tr>
+
+    <tr>
+      <td class="SiteLink"><a href="./Topic 3/Activity 3/index.html" id="">Activity 3: GCU Course Syllabus</a></td>
+      <td class="Gap"></td>
+      <td class="SiteLink"><a href="./Topic 3/Milestone 3/HTML Files/index.html" id="">Milestone 3: Anthony S. Lewis</a></td>
+    </tr>
+  </table>
+
+  <table class="LinkTable">
+    <tr>
+      <th colspan="3">Older Iterations:</th>
+    </tr>
+
+    <tr>
+      <td class="SiteLink"><a href="./Topic 2/Activity 2/index.html" id="">Activity 2: GCU Course Syllabus</a></td>
+      <td class="Gap"></td>
+      <td class="SiteLink"><a href="./Topic 2/Milestone 2/HTML Files/index.html">Milestone 2: Anthony S. Lewis</a></td>
+    </tr>
+
+    <tr>
+      <td class="SiteLink"><a href="./Topic 1/Activity 1/part2/index.html">Activity 1: GCU Course Syllabus</a></td>
+      <td class="Gap"></td>
+      <td class="SiteLink"><a href="./Topic 1/Milestone 1/HTML Files/index.html">Milestone 1: Anthony S. Lewis</a></td>
+    </tr>
+  </table>
 </body>
+
 </html>
