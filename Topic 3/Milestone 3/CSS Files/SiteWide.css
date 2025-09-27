@@ -19,6 +19,9 @@ body
 { 
     margin: 0;
     padding: 0;
+    background-color: black;;
+    background-image: url('../Sources/images/backgrounds/Rockwall.png');
+    color: #CCCCCC;
 }
 
 header
@@ -27,7 +30,16 @@ header
     width: 60%; 
     margin: 0 auto;
     border: 1px solid black;
-    background: linear-gradient(135deg, var(--silver-base), var(--silver-glow));
+    border-radius: 8px 8px 0 0;
+    background: linear-gradient(
+    to right,
+    #d9d9d9,   /* soft silver */
+    #f2f2f2,   /* highlight */
+    #c0c0c0,   /* mid-tone chrome */
+    #e6e6e6,   /* light reflection */
+    #b0b0b0    /* deeper steel */
+  );
+
     box-shadow: 0 0 10px var(--silver-glow), 0 0 20px var(--silver-glow), 0 0 40px var(--silver-glow);
 }
 
@@ -75,13 +87,40 @@ nav
   text-shadow: 0 0 6px #9400D3;   /*  Optional glow                                     */
 }
 
-
 main
 {
     border-left: 1px solid black; 
     border-right: 1px solid black; 
     margin: 0 auto; 
     width:60%;
+    background: linear-gradient(to right, #2a2a2a, #3e3e3e, #4f4f4f, #5e5e5e);
+
+  box-shadow: 0 0 10px var(--silver-glow), 0 0 20px var(--silver-glow), 0 0 40px var(--silver-glow);
+
+}
+
+#ContentHeader h1
+{
+    margin: 0; 
+    padding-top: 20px; 
+    font-size: 46px; 
+    text-align: center;
+}
+
+.BodySection
+{
+    width: 80%; 
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+
+.BodySection p.article
+{
+    text-indent: 2em;
 }
 
 footer 
@@ -91,6 +130,16 @@ footer
   margin: 0 auto;
   text-align: center;
   background-color: Silver;
+  border-radius: 0 0 8px 8px ;
+  background: linear-gradient(
+    to right,
+    #d9d9d9,   /* soft silver */
+    #f2f2f2,   /* highlight */
+    #c0c0c0,   /* mid-tone chrome */
+    #e6e6e6,   /* light reflection */
+    #b0b0b0    /* deeper steel */
+  );
+  box-shadow: 0 0 10px var(--silver-glow), 0 0 20px var(--silver-glow), 0 0 40px var(--silver-glow);
 }
 
 #SocialLinks 

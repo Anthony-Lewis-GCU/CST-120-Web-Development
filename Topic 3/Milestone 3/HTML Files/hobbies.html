@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies</title>
     <link rel="stylesheet" href="../CSS Files/SiteWide.css">
+    <link rel="stylesheet" href="../CSS Files/hobbies.css">
 </head>
 
 <body>
@@ -20,24 +21,21 @@
             <a class="NavLink" href="index.html">About Me</a>
             <a class="NavLink active" href="hobbies.html">Hobbies</a>
             <a class="NavLink" href="music.html">Music</a>
-            <a class="NavLink" href="education.html">Education</a>
-            <a class="NavLink" href="experience.html">Work History</a>
-            <a class="NavLink" href="recovery.html">Recovery</a>
+            <a class="NavLink" href="recovery.html">Recovery</a>          
             <a class="NavLink" href="contact.html">Contact Me</a>
         </nav>
     </header>
 
-    <main style="border-left: 1px solid black; border-right: 1px solid black; width:60%; margin: 0 auto;">
-
-        <!--This is the main body content, it will be divided into sections that will hold individual components of the content to be held within the body-->
+    <main>
+    <!--This is the main body content, it will be divided into sections that will hold individual components of the content to be held within the body-->
         <section id="ContentHeader">
             <!--This will be a header section for the content which will only hold the Title for the Main Body Section-->
-            <h1 style="margin: 0; padding-top: 20px; font-size: 46px; text-align: center;">Hobbies</h1>
+            <h1 >Hobbies</h1>
             <!--End of content header div-->
         </section>
 
         <!--This section will cover my interest in Anime tv series-->
-        <section id="anime-section" style="width: 80%; margin: 0 auto;">
+        <section class="BodySection" id="AnimeSection">
             <h2>Anime</h2>
 
             <!-- Anime Posters -->
@@ -80,7 +78,7 @@
             </div>
 
             <!-- Description Section -->
-            <div id="AnimeDescription" style="width: 100%; border: 1px solid black;">
+            <div id="AnimeDescription">
                 <p style="text-align: center;"><em>Only one of the following entries will be displayed at atime
                         depending on the movie poster the person clicks on</em></p>
 
@@ -193,25 +191,23 @@
         </section>
 
         <!--This section will cover my interest in Plex-->
-        <section id="PlexSection" style="width: 80%; margin: 0 auto;">
+        <section id="PlexSection" class="BodySection">
             <!-- Section Header-->
             <h2>Plex</h2>
 
             <!-- This container holds the Plex Media Server portion of my Plex overview -->
-            <article id="PlexServerArticle" style="margin-bottom: 10px;">
-                <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                    <img src="../Sources/images/hobbies/PlexServerLogo128.png" alt="Plex Media Server"
-                        style="margin-right: 10px;">
+            <article id="PlexArticle">
+                <div class="PlexArticleWrapper">
+                    <img clas="PlexIcons" src="../Sources/images/hobbies/PlexServerLogo128.png" alt="Plex Media Server">
 
-                    <div
-                        style="height: 110px; border: 1px solid #000; background-color: black; color:yellow; padding: 8px; flex: 1;">
+                    <div class="AccordianBanner">
                         PLEX MEDIA SERVER<br><em>This section will expand accordion style to show the description
                             content below</em>
                     </div>
                 </div>
 
                 <!-- This section will give a description of the Plex Media Server in Plex section it will expand after clicking the File Management Dropdown-->
-                <div style="border: 1px solid #000; padding: 8px; flex: 1;">
+                <div>
                     <h4>PLEX SERVER<em> - This section will be hidden until the user selects the above section on
                             the right</em></h4>
 
@@ -257,21 +253,19 @@
                 </div>
             </article>
 
-            <article id="PlexMediaPlayerSection" style="width: 100%; margin: 0 auto;">
-                <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                    <img src="../Sources/images/hobbies/PlexMediaPlayerLogo128.png" alt="Plex Media Server"
-                        style="margin-right: 10px;">
+            <article id="PlexMediaPlayerSection">
+                <div class="PlexArticleWrapper">
+                    <img clas="PlexIcons" src="../Sources/images/hobbies/PlexMediaPlayerLogo128.png" alt="Plex Media Server">
 
                     <!-- This is the clickable field that will dropdown a description of the Plex Media Player when clicked-->
-                    <div
-                        style="height: 110px; border: 1px solid #000; background-color: black; color:yellow; padding: 8px; flex: 1;">
+                    <div class="AccordianBanner">
                         PLEX MEDIA PLAYER<br><em>This section will expand accordion style to show the description
                             content below</em>
                     </div>
                 </div>
 
                 <!-- This section will give a description of the Plex Media Player in Plex section it will expand after clicking the File Management Dropdown-->
-                <div style="border: 1px solid #000; padding: 8px; flex: 1; margin-bottom: 10px;">
+                <div>
                     <h4>PLEX MEDIA PLAYER<em> - This section will be hidden until the user selects the above section
                             on the right</em></h4>
 
@@ -303,24 +297,23 @@
                             free
                             streaming content—no matter where you are or what device you're using.</i></p>
                 </div>
+            </article>
 
 
                 <!-- This container holds the File Management portion of my Plex overview -->
                 <article id="PlexFileManagementArticle">
-                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                        <img src="../Sources/images/hobbies/FileExplorerLogo128.png" alt="Plex Media Server"
-                            style="margin-right: 10px;">
+                    <div class="PlexArticleWrapper">
+                        <img class="PlexIcons" src="../Sources/images/hobbies/FileExplorerLogo128.png" alt="Plex Media Server">
 
                         <!-- This is the clickable field that will dropdown a description of the content when clicked-->
-                        <div
-                            style="height: 110px; border: 1px solid #000; background-color: black; color:yellow; padding: 8px; flex: 1;">
+                        <div class="AccordianBanner">
                             FILE MANAGEMENT<br><em>This section will expand accordion style to show the description
                                 content below</em>
                         </div>
                     </div>
 
                     <!-- This section will give a description of the file management required in Plex it will expand after clicking the File Management Dropdown-->
-                    <div style="border: 1px solid #000; padding: 8px; flex: 1;">
+                    <div>
                         <h4>FILE MANAGEMENT<em> - This section will be hidden until the user selects the above section
                                 on the right</em></h4>
                         <p><i>Managing files for Plex Media Server requires a clean, organized approach to ensure smooth
@@ -373,7 +366,7 @@
         </section>
 
         <!--This section will cover my interest in Video Games-->
-        <section id="GamesSection" style="width: 80%; margin: 0 auto; padding-bottom: 20px;">
+        <section class="BodySection" id="GamesSection">
             <h2>Games</h2>
 
             <!-- This is the section that displays four game titles I like-->
@@ -409,8 +402,8 @@
             </div>
 
             <!-- This section will hold the videos that will display when the user clicks on one of the game images above-->
-            <div id="GameTrailers" style="width: 100%; margin: 0 auto;">
-                <div style="margin: 20px 0px;">
+            <div id="GameTrailers">
+                <div>
 
                     <!-- This is the video that will display and play when the user clicks on the Zelda Image-->
                     <video controls width="100%" height="auto" display="block">
@@ -439,7 +432,7 @@
             </div>
 
             <!-- This section will hold the descriptions that will display when the user clicks on one of the game images above-->
-            <div id="GameDescription" style="width: 100%; border: 1px solid black;">
+            <div id="GameDescription">
                 <!-- This will be removed from the final page just illustrating intent during design-->
                 <p style="text-align: center;"><em>Only one of the following entries will be displayed at atime
                         depending on the movie poster the person clicks on</em></p>
@@ -514,42 +507,27 @@
 
     </main>
 
-    <footer style="border: 1px solid black; height: 40px; width: 60%; margin: 0 auto; text-align: center; line-height: 40px;">
+    <footer>
         <div id="SocialLinks">
-            <a href="https://www.facebook.com/anthony.lewis.37" style="display: inline-block;">
+            <a id="FirstLink" href="https://www.facebook.com/anthony.lewis.37">
                 <!--This is the Link to my Facebook Profile-->
-                <img src="../Sources/icons/footer/Facebook_icon_48px.png" 
-                     alt="Facebook Icon that links to my Facebook profile"
-                     style="width: 24px; height: 24px; vertical-align: middle;">
+                <img src="../Sources/icons/footer/Facebook_icon_48px.png" alt="Facebook Icon that links to my Facebook profile">
             </a>
 
-            <a href="https://www.linkedin.com/in/anthony-lewis-1866bba7/"
-                style="display: inline-block; margin-left: 200px;">
+            <a href="https://www.linkedin.com/in/anthony-lewis-1866bba7/">
                 <!--This is the Link to my LinkedIn Profile-->
-                <img src="../Sources/icons/footer/Linkedin_icon_48px.png" 
-                     alt="LinkedIn Icon that links to my LinkedIn Profile"
-                     style="width: 24px; height: 24px; vertical-align: middle;">
+                <img src="../Sources/icons/footer/Linkedin_icon_48px.png" alt="LinkedIn Icon that links to my LinkedIn Profile">
             </a>
 
-            <a href="https://github.com/Anthony-Lewis-GCU/CST-120-Web-Development"
-                style="display: inline-block; margin-left: 200px;">
+            <a href="https://github.com/Anthony-Lewis-GCU/CST-120-Web-Development">
                 <!--This is the Link to my GitHub Repository-->
-                <img src="../Sources/icons/footer/Github_icon_48px.png"
-                     alt="Github Icon that links to my Repository for this site"
-                     style="width: 24px; height: 24px; vertical-align: middle;">
+                <img src="../Sources/icons/footer/Github_icon_48px.png" alt="Github Icon that links to my Repository for this site">
             </a>
 
-            <a href="https://anthony-lewis-gcu.github.io/CST-120-Web-Development/" style="display: inline-block; margin-left: 200px;">
-                <!--This is the Link to my Website Landing Page-->
-                <em><strong>Back to Landing Page</strong></em>
-            </a>
-        </div>
-
-        <div id="Attribution">
-            <a href="https://www.flaticon.com/free-icons/drum-set" title="drum set icons">Drum set icons created by Icongeek26 - Flaticon</a>
-            <a href="https://www.flaticon.com/free-icons/electric-guitar" title="electric guitar icons">Electric guitar icons created by juicy_fish - Flaticon</a>
-            <a href="https://www.flaticon.com/free-icons/piano" title="piano icons">Piano icons created by Freepik - Flaticon</a>
-            <a href="https://www.flaticon.com/free-icons/flute" title="flute icons">Flute icons created by Freepik - Flaticon</a>
+            <!--This is the Link to my Website Landing Page-->
+            <a href="https://anthony-lewis-gcu.github.io/CST-120-Web-Development/">
+                <img src="../Sources/icons/footer/LandingPage_icon_48px.png" alt="Landing Page Icon that links to my Landing Page">
+            </a>                
         </div>
     </footer>
 </body>

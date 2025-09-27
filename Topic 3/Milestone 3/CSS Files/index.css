@@ -1,21 +1,163 @@
-#ContentHeader h1
-{
-    margin: 0; 
-    padding-top: 20px; 
-    font-size: 46px; 
-    text-align: center;
+.TimelineNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 2rem 0;
 }
 
-.BodySection
-{
-    width: 80%; 
-    margin: 0 auto;
+.TimelineSlider {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+  min-height: 300px;
+  min-height: auto;
+
+
 }
 
-.BodySection p .article
-{
-    text-indent: 2em;
+.TimelineTrack {
+  display: flex;
+  transition: transform 0.4s ease;
+  min-height: 700px;
+
 }
+
+
+
+.Timeline {
+  display: flex;
+  gap: 6rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 0;
+  min-height: auto;
+  color: black;
+}
+
+.Timeline::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #ccc;
+  z-index: 0;
+}
+
+.Event {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  flex: 0 0 10%; /* 5 events per view */
+  box-sizing: border-box;
+  padding: 2rem 1rem;
+
+  overflow: visible;
+}
+
+
+.EventAnchor {
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -47%);
+  width: 30px;
+  height: 30px;
+  border: 4px solid Black;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+
+}
+
+.EventDot {
+  width: 12px;
+  height: 12px;
+  border: 4px solid black;     
+  background: purplke;           
+  border-radius: 50%;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+
+.EventDetails {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-width: 600px;
+  width: 150px;
+  margin: 0 auto;
+  text-align: left;
+  z-index: 1;
+}
+
+.TopEvent .EventDetails,
+.BottomEvent .EventDetails {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 400px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+.TopEvent .EventDetails {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50px); /* pushes it up */
+}
+
+.BottomEvent .EventDetails {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50px); /* pushes it down */
+
+}
+
+.EventConnector {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  background: black;
+  z-index: 0;
+
+
+}
+
+.TopEvent .EventConnector {
+  bottom: calc(50% + 12px); /* starts just above the dot */
+  height: 80px;
+    z-index: 0;
+}
+
+.BottomEvent .EventConnector {
+  top: calc(50% + 12px); /* starts just below the dot */
+  height: 80px;
+  z-index: 0;
+}
+
+
+
 
 .CoreValueGrid
 {
@@ -44,7 +186,7 @@
     vertical-align: middle;
 }
 
-#CoreValueC2R1 .MiddleCoreBtn
+.MiddleCoreBtn
 {
     margin: 0 10%;
 }
@@ -102,7 +244,7 @@
     display: table-row;
 }
 
-#CoreValueC1R1
+#CoreValueC1R3
 {
     width:10%; 
     display: table-cell; 
@@ -110,4 +252,24 @@
     vertical-align: middle;
 }
 
+#CoreValueC2R3
+{
+    width:80%; 
+    display: table-cell; 
+    padding: 0 20px; 
+    vertical-align: middle;
+}
+
+#CoreValueC3R3
+{
+    width:10%; 
+    display: table-cell; 
+    text-align: center; 
+    vertical-align: middle;
+}
+.CoreValueText
+{
+    display: block;
+    text-align: Center;
+}
 
