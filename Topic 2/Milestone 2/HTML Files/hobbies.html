@@ -5,26 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies</title>
-    <link rel="stylesheet" href="../CSS Files/SiteWide.css">
+    <style>
+        /* This is a custom font declaration for the Main Website Title - Anthony S. Lewis
+        Placed here to ensure that the font loads before the webPage so that FOUT is eliminated*/
+        @font-face {
+            font-family: 'PageNameFont';
+            src: url('../Sources/fonts/distropiax-wpyma-webfont.woff2') format('woff2'),
+                url('../Sources/fonts/distropiax-wpyma-webfont.woff') format('woff');
+        }
+
+        /* This targets the H3 tag that holds the custom font and applies its style */
+        h3.pageTitle {
+            font-family: 'PageNameFont', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body style="margin: 0; padding: 0;">
     <header>
         <!-- This is the in place styling of the main Website Name Font -->
-        <div id="SiteTitle">
-            <h3 class="SiteTitle">Anthony S. Lewis</h3>
-        </div>
+        <div id="header" style="border: 1px solid black; height:50px; width:60%; margin: 0 auto;">
+            <div style="float: left; Padding-left:20px;">
+                <h3 class="page-title" style="display: inline-block; vertical-align: middle; font-family: 'PageNameFont', sans-serif; font-size: 37px; margin: 0; 
+                padding: 0; color:#9400D3">Anthony S. Lewis</h3>
 
-        <!--This is the main navigation section of the webpage that links to all the other pages on the site-->
-        <nav>
-            <a class="NavLink" href="index.html">About Me</a>
-            <a class="NavLink active" href="hobbies.html">Hobbies</a>
-            <a class="NavLink" href="music.html">Music</a>
-            <a class="NavLink" href="education.html">Education</a>
-            <a class="NavLink" href="experience.html">Work History</a>
-            <a class="NavLink" href="recovery.html">Recovery</a>
-            <a class="NavLink" href="contact.html">Contact Me</a>
-        </nav>
+            </div>
+
+            <!--This is the main navigation section of the webpage that links to all the other pages on the site-->
+            <nav style="Float: right; padding-top:15px; margin-top: 0 auto; margin-bottom: 0 auto;">
+                <a href="index.html" style="padding: 0px 20px 0px 20px;"><strong>About Me</strong></a>
+                <a href="hobbies.html" style="padding: 0px 20px 0px 20px;"><strong>Hobbies</strong></a>
+                <a href="music.html" style="padding: 0px 20px 0px 20px;"><strong>Music</strong></a>
+                <a href="education.html" style="padding: 0px 20px 0px 20px;"><strong>Education</strong></a>
+                <a href="experience.html" style="padding: 0px 20px 0px 20px;"><strong>Work History</strong></a>
+                <a href="recovery.html" style="padding: 0px 20px 0px 20px;"><strong>Recovery</strong></a>
+                <a href="contact.html" style="padding: 0px 20px 0px 20px;"><strong>Contact Me</strong></a>
+            </nav>
+        </div>
     </header>
 
     <main style="border-left: 1px solid black; border-right: 1px solid black; width:60%; margin: 0 auto;">
@@ -511,45 +528,31 @@
                         deep mechanics, and narrative depth makes it a cornerstone of modern gaming.</i></p>
             </div>
         </section>
-
     </main>
 
-    <footer style="border: 1px solid black; height: 40px; width: 60%; margin: 0 auto; text-align: center; line-height: 40px;">
-        <div id="SocialLinks">
+    <footer>
+    <!--This is the footer section where I will add a couple navigation links to social medaia and to my websites landing page-->
+        <div id="footer" style="border: 1px solid black; height: 40px; width: 100%; margin: 0 auto; text-align: center; line-height: 40px;">
             <a href="https://www.facebook.com/anthony.lewis.37" style="display: inline-block;">
                 <!--This is the Link to my Facebook Profile-->
-                <img src="../Sources/icons/footer/Facebook_icon_48px.png" 
-                     alt="Facebook Icon that links to my Facebook profile"
-                     style="width: 24px; height: 24px; vertical-align: middle;">
+                <img src="../Sources/icons/footer/Facebook_icon_48px.png" alt="Facebook Icon that links to my Facebook profile"
+                    style="width: 24px; height: 24px; vertical-align: middle;">
             </a>
-
-            <a href="https://www.linkedin.com/in/anthony-lewis-1866bba7/"
-                style="display: inline-block; margin-left: 200px;">
+            <a href="https://www.linkedin.com/in/anthony-lewis-1866bba7/" style="display: inline-block; margin-left: 200px;">
                 <!--This is the Link to my LinkedIn Profile-->
-                <img src="../Sources/icons/footer/Linkedin_icon_48px.png" 
-                     alt="LinkedIn Icon that links to my LinkedIn Profile"
-                     style="width: 24px; height: 24px; vertical-align: middle;">
+                <img src="../Sources/icons/footer/Linkedin_icon_48px.png" alt="LinkedIn Icon that links to my LinkedIn Profile"
+                    style="width: 24px; height: 24px; vertical-align: middle;">
             </a>
-
-            <a href="https://github.com/Anthony-Lewis-GCU/CST-120-Web-Development"
-                style="display: inline-block; margin-left: 200px;">
+            <a href="https://github.com/Anthony-Lewis-GCU/CST-120-Web-Development" style="display: inline-block; margin-left: 200px;">
                 <!--This is the Link to my GitHub Repository-->
-                <img src="../Sources/icons/footer/Github_icon_48px.png"
-                     alt="Github Icon that links to my Repository for this site"
+                <img src="../Sources/icons/footer/Github_icon_48px.png" alt="Github Icon that links to my Repository for this site"
                      style="width: 24px; height: 24px; vertical-align: middle;">
             </a>
-
             <a href="https://anthony-lewis-gcu.github.io/CST-120-Web-Development/" style="display: inline-block; margin-left: 200px;">
                 <!--This is the Link to my Website Landing Page-->
-                <em><strong>Back to Landing Page</strong></em>
+                <img src="../Sources/icons/footer/LandingPage_icon_48px.png" alt="Github Icon that links to my Repository for this site"
+                     style="width: 24px; height: 24px; vertical-align: middle;">
             </a>
-        </div>
-
-        <div id="Attribution">
-            <a href="https://www.flaticon.com/free-icons/drum-set" title="drum set icons">Drum set icons created by Icongeek26 - Flaticon</a>
-            <a href="https://www.flaticon.com/free-icons/electric-guitar" title="electric guitar icons">Electric guitar icons created by juicy_fish - Flaticon</a>
-            <a href="https://www.flaticon.com/free-icons/piano" title="piano icons">Piano icons created by Freepik - Flaticon</a>
-            <a href="https://www.flaticon.com/free-icons/flute" title="flute icons">Flute icons created by Freepik - Flaticon</a>
         </div>
     </footer>
 </body>
