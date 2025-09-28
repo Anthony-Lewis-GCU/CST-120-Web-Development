@@ -37,6 +37,36 @@
   color: #AEEFFF;
 }
 
+#DefaultDescription
+{
+  display: contents;
+}
+
+#SAODescription
+{
+  display: none;
+}
+
+#BleachDescription
+{
+  display: none;
+}
+
+#BlackCloverDescription
+{
+  display: none;
+}
+
+#AvatarDescription
+{
+  display: none;
+}
+
+#AOTDescription
+{
+  display: none;
+}
+
 /**      Plex Section      **/
 .PlexArticleWrapper
 {
@@ -57,6 +87,21 @@
   color:yellow; 
   padding: 8px; 
   flex: 1;
+}
+
+#PlxServerFolded
+{
+  display: none;
+}
+
+#PlxMediaFolded
+{
+  display: none;
+}
+
+#FileManagementFolded
+{
+  display: none;
 }
 
 
@@ -115,4 +160,37 @@
 #GameTrailers
 {
     margin-top: 20px;
+    display: none;
+}
+
+#GameDescription
+{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#DefaultDescription
+{
+  text-align: center;
+  display: contents;
+}
+
+.ZeldaDescription
+{
+  display: none;
+}
+
+.KingdomHeartsDescription
+{
+  display: none;
+}
+
+.PokemonDescription
+{
+  display: none;
+}
+
+.MagicDescription
+{
+  display: none;
 }

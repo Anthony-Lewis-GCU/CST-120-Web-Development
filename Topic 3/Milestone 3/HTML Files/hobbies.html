@@ -28,7 +28,7 @@
 
     <main>
     <!--This is the main body content, it will be divided into sections that will hold individual components of the content to be held within the body-->
-        <section id="ContentHeader">
+        <section class="BodySection" id="ContentHeader">
             <!--This will be a header section for the content which will only hold the Title for the Main Body Section-->
             <h1 >Hobbies</h1>
             <!--End of content header div-->
@@ -79,11 +79,12 @@
 
             <!-- Description Section -->
             <div id="AnimeDescription">
-                <p style="text-align: center;"><em>Only one of the following entries will be displayed at atime
-                        depending on the movie poster the person clicks on</em></p>
+                <p style="text-align: center;" id="DefaultDescription"><em>Please click on a poster above and it will 
+                    expand a section holding a description of the selected anime. 
+                </em></p>
 
                 <!-- This is the description for Sword Art Online that will be displayed when the user clicks on the Sword Art Online Movie Poster-->
-                <article class="AnimeDescription">
+                <article class="AnimeDescription" id="SAODescription">
                     <h4>Sword Art Online: </h4>
                     <p><em> 
                         In 2022, thousands of players log into a revolutionary VRMMORPG, only to
@@ -102,7 +103,7 @@
                 </article>
 
                 <!-- This is the description for Bleach that will be displayed when the user clicks on the Bleach Movie Poster-->
-                <article class="AnimeDescription">
+                <article class="AnimeDescription" id="BleachDescription">
                     <h4>Bleach: </h4>
                 
                     <p><em> 
@@ -115,7 +116,7 @@
                         deep conspiracies and facing powerful enemies along the way.<br><br>
 
                         Why it’s good:<br>
-                        It blends high‑stakes tension with immersive worldbuilding, memorable characters, and
+                        It blends high‑stakes tension with immersive world-building, memorable characters, and
                         emotional relationships. The action is dynamic,
                         the settings are visually rich, and the mix of romance, adventure, and mystery keeps viewers
                         invested from start to finish
@@ -123,7 +124,7 @@
                 </article>
 
                 <!-- This is the description for Black Clover that will be displayed when the user clicks on the Black Clover Movie Poster-->
-                <article class="AnimeDescription">
+                <article class="AnimeDescription" id="BlackCloverDescription">
                     <h4>Black Clover: </h4>
                     
                     <p><em> In a magical world where most people are born with mana, orphaned friends
@@ -145,7 +146,7 @@
                 </article>
 
                 <!-- This is the description for Avatar The Last Airbender that will be displayed when the user clicks on the Avatar Movie Poster-->
-                <article class="AnimeDescription">
+                <article class="AnimeDescription" id="AvatarDescription">
                     <h4>Avatar: The Last Airbender:</h4>
                     
                     <p><em>
@@ -167,7 +168,7 @@
                 </article>
 
                 <!-- This is the description for Attack on Titan that will be displayed when the user clicks on the Attack On Titan Movie Poster-->
-                <article class="AnimeDescription">
+                <article class="AnimeDescription" id="AOTDescription">
                     <h4>Attack on Titan:</h4>
 
                     <p><em> 
@@ -191,14 +192,14 @@
         </section>
 
         <!--This section will cover my interest in Plex-->
-        <section id="PlexSection" class="BodySection">
+        <section class="BodySection" id="PlexSection">
             <!-- Section Header-->
             <h2>Plex</h2>
 
             <!-- This container holds the Plex Media Server portion of my Plex overview -->
             <article id="PlexArticle">
                 <div class="PlexArticleWrapper">
-                    <img clas="PlexIcons" src="../Sources/images/hobbies/PlexServerLogo128.png" alt="Plex Media Server">
+                    <img class="PlexIcons" src="../Sources/images/hobbies/PlexServerLogo128.png" alt="Plex Media Server">
 
                     <div class="AccordianBanner">
                         PLEX MEDIA SERVER<br><em>This section will expand accordion style to show the description
@@ -207,7 +208,7 @@
                 </div>
 
                 <!-- This section will give a description of the Plex Media Server in Plex section it will expand after clicking the File Management Dropdown-->
-                <div>
+                <div id="PlxServerFolded">
                     <h4>PLEX SERVER<em> - This section will be hidden until the user selects the above section on
                             the right</em></h4>
 
@@ -255,7 +256,7 @@
 
             <article id="PlexMediaPlayerSection">
                 <div class="PlexArticleWrapper">
-                    <img clas="PlexIcons" src="../Sources/images/hobbies/PlexMediaPlayerLogo128.png" alt="Plex Media Server">
+                    <img class="PlexIcons" src="../Sources/images/hobbies/PlexMediaPlayerLogo128.png" alt="Plex Media Server">
 
                     <!-- This is the clickable field that will dropdown a description of the Plex Media Player when clicked-->
                     <div class="AccordianBanner">
@@ -265,7 +266,7 @@
                 </div>
 
                 <!-- This section will give a description of the Plex Media Player in Plex section it will expand after clicking the File Management Dropdown-->
-                <div>
+                <div id="PlxMediaFolded">
                     <h4>PLEX MEDIA PLAYER<em> - This section will be hidden until the user selects the above section
                             on the right</em></h4>
 
@@ -313,7 +314,7 @@
                     </div>
 
                     <!-- This section will give a description of the file management required in Plex it will expand after clicking the File Management Dropdown-->
-                    <div>
+                    <div id="FileManagementFolded">
                         <h4>FILE MANAGEMENT<em> - This section will be hidden until the user selects the above section
                                 on the right</em></h4>
                         <p><i>Managing files for Plex Media Server requires a clean, organized approach to ensure smooth
@@ -434,12 +435,12 @@
             <!-- This section will hold the descriptions that will display when the user clicks on one of the game images above-->
             <div id="GameDescription">
                 <!-- This will be removed from the final page just illustrating intent during design-->
-                <p style="text-align: center;"><em>Only one of the following entries will be displayed at atime
+                <p id="DefaultDescription"><em>Only one of the following entries will be displayed at atime
                         depending on the movie poster the person clicks on</em></p>
 
                 <!-- This is the description that will be displayed when the user clicks on the Zelda Image-->
-                <h4>The Legend of Zelda: </h4>
-                <p id="Zelda"><i>
+                <h4 class="ZeldaDescription">The Legend of Zelda: </h4>
+                <p class="ZeldaDescription" id="Zelda"><i>
                         The Legend of Zelda is a fantasy action-adventure series where players guide Link, a
                         courageous hero, through epic quests to rescue Princess Zelda and protect the kingdom of
                         Hyrule.
@@ -455,8 +456,8 @@
                     </i></p>
 
                 <!-- This is the description that will be displayed when the user clicks on the Kingdom Hearts Image-->
-                <h4>Kingdom Hearts: </h4>
-                <p id="KingdomHearts"><i>
+                <h4 class="KingdomHeartsDescription">Kingdom Hearts: </h4>
+                <p class="KingdomHeartsDescription" id="KingdomHearts"><i>
                         Kingdom Hearts is an action RPG series that blends the worlds of Disney and Final Fantasy
                         into a unique, emotionally rich adventure.
                         Players follow Sora, a Keyblade wielder, as he travels across diverse worlds to battle
@@ -472,8 +473,8 @@
                     </i></p>
 
                 <!-- This is the description that will be displayed when the user clicks on the Pokemon Image-->
-                <h4>Pokemon: </h4>
-                <p id="Pokemon"><i>
+                <h4 class="PokemonDescription">Pokemon: </h4>
+                <p class="PokemonDescription" id="Pokemon"><i>
                         Pokémon is a global phenomenon where players become Trainers, capturing and battling
                         fantastical creatures called Pokémon.
                         Each Pokémon has unique abilities, types, and evolutions, and the goal is to build a team,
@@ -488,8 +489,8 @@
                         Pokémon remains one of the most beloved and enduring game series ever.</i></p>
 
                 <!-- This is the description that will be displayed when the user clicks on the Magic the Gathering Image-->
-                <h4>Magic The Gathering:</h4>
-                <p id="Magic"><i>
+                <h4 class="MagicDescription">Magic The Gathering:</h4>
+                <p class="MagicDescription" id="Magic"><i>
                         Magic: The Gathering is a strategic trading card game where players take on the role of
                         powerful spellcasters called Planeswalkers.
                         Using customized decks built from thousands of unique cards, players summon creatures, cast

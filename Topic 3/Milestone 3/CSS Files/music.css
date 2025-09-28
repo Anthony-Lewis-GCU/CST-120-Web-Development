@@ -3,3 +3,138 @@
     width: 80%; 
     margin: 0 auto;
 }
+
+.article p
+{
+    text-indent: 2em;
+}
+
+#MoodboardTable
+{
+    width: 100%; 
+    border: 1px solid black;
+}
+
+#MoodboardTable th
+{
+    background-color: Black; 
+    color: white; 
+    height: width;
+}
+
+.MusicIcons figure
+{
+    display: inline-block; 
+    width: 100px; 
+    border: 1px solid black;
+}
+
+.MusicIcons figcaption
+{   
+    text-align: center;
+}
+
+#MusicExperience
+{
+    width: 100%; 
+    border: 1px solid black;
+}
+
+#FluteExperience
+{
+    display: none;
+}
+
+#PianoExperience
+{
+    display: none;
+}
+
+#GuitarExperience
+{
+    display: none;
+}
+
+#DrumsExperience
+{
+    display: none;
+}
+
+#FLStudioExperience
+{
+    display: none;
+}
+
+#AudioVideoEmbed table
+{
+    width: 100%; 
+    border-collapse: collapse; 
+    table-layout: fixed;
+}
+
+#AudioVideoEmbed table tr
+{   
+    width: 100%;
+}
+
+#AudioVideoEmbed table tr td
+{
+    border: 1px solid black;
+}
+
+.Spotify iframe
+{
+    border-radius:12px;
+}
+
+
+.GenreSelection td
+{
+    width: 20%;
+}
+
+.GenreSelection button
+{
+    width: 100%; 
+    margin: 0; 
+    padding: 0;
+}
+
+#DefaultMessage
+{
+    text-align: Center;
+    font-style: italic;
+    display: contents;
+}
+
+#MetalPlaylist
+{
+    display: none;
+}
+
+#DubstepPlaylist
+{
+    display: none;
+}
+
+#AlternativePlaylist
+{
+    display: none;
+}
+
+#RockPlaylist
+{
+    display: none;
+}
+
+#FolkPlaylist
+{
+    display: none;
+}
+
+
+
+
+
+
+

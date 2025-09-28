@@ -111,8 +111,7 @@ main
 {
     width: 80%; 
     margin: 0 auto;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    Padding-bottom: 20px;
     position: relative;
     z-index: 1;
 }
