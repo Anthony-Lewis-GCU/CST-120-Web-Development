@@ -120,6 +120,7 @@ main
 .BodySection p.article
 {
     text-indent: 2em;
+    font-style: italic;
 }
 
 footer 

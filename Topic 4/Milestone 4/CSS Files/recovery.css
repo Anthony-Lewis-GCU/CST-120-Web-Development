@@ -1,0 +1,50 @@
+#ChipTable 
+{
+    width: 100%;
+}
+
+#ChipTable tr
+{
+    width: 100%;
+}
+
+#ChipTable td
+{
+    width: calc(100% / 8);
+}
+
+.SectionHeader 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    width: 100%; /* ensures full horizontal stretch */
+    box-sizing: border-box; /* includes padding in width */
+}
+
+.SectionHeader h2 
+{
+    margin: 0;
+    font-size: 1.5rem;
+    flex-shrink: 0; /* prevents squishing */
+}
+
+#NavLink 
+{
+    padding: 0.4em 0.8em;
+    font-size: 1rem;
+    cursor: pointer;
+    flex-shrink: 0;
+    border-radius: .5em;
+    background-color: linear-gradient(
+     to right,
+     #d9d9d9,   /* soft silver */
+     #f2f2f2,   /* highlight */
+     #c0c0c0,   /* mid-tone chrome */
+     #e6e6e6,   /* light reflection */
+     #b0b0b0    /* deeper steel */
+    );
+
+    box-shadow: 0 0 10px var(--silver-glow), 0 0 20px var(--silver-glow), 0 0 40px var(--silver-glow); green;
+}
