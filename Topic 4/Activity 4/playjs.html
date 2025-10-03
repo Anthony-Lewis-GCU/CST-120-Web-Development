@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function playjs() {
+            // Variables and Assignments
+            var age = 60;
+            let name = 'Mark';
+
+            // Print the values to the console log
+            console.log("My name is " + name);
+            console.log("My age is " + age);
+
+            // Math Operators and Comparison Operators
+            var number1 = 10;
+            var number2 = 5;
+
+            // Perform math operations and assign the result to a variable
+
+            //     Addition
+            var result = number1 + number2;
+            console.log("Addition result is " + result);
+
+            //     Subtraction
+            result = number1 - number2;
+            console.log("Subtraction result is " + result);
+
+            //     Multiplication
+            result = number1 * number2;
+            console.log("Multiplication result is " + result);
+
+            //     Division
+            result = number1 / number2;
+            console.log("Division result is " + result);
+
+            //     Increment 
+            ++number1;
+            console.log("Increment result is " + number1);
+
+            //     Decrement
+            --number1;
+            console.log("Decrement result is " + number1);
+
+            //     Exponentiation 
+            result = number1 ** number2;
+            console.log("Exponentiation result is " + result);
+
+            // Perform some comparison operators
+            console.log("Equality for 10 is:  " + (number1 == 10));
+            console.log("Equality for 2 numbers:  " + (number1 == number2));
+            console.log("Equality for 2 numbers and type: " + (number1 === number2));
+            console.log("Inequality for 2 numbers: " + (number1 != number2));
+            console.log("Greater than for 2 numbers: " + (number1 > number2));
+            console.log("Less than for 2 numbers: " + (number1 < number2));
+
+            // STRINGS
+            //  Basic strings
+            let string1 = 'A String enclosed in Single Quotes'; // String using Single Quotes
+            console.log("String with single quotes " + string1); // Log to console
+            let string2 = "A String enclosed in Double Quotes"; // String using Double Quotes
+            console.log("String with double quotes " + string2); // Log to console
+            let string3 = 'A String \'\"\\ needs to be escaped'; // String being escaped
+            console.log("String with escaped chars " + string3); // Log to console
+            let string4 = 'A String \n on two lines'; // String with new line
+            console.log("String with a newline " + string4); // Log to console
+
+            //  Common String Methods
+            let string5 = "Grand Canyon University";
+            console.log("String length is " + string5.length); // String length
+            console.log("String in upper case is " + string5.toUpperCase()); // String to upper case
+            console.log("String in lower case is " + string5.toLowerCase()); // String to lower case
+            console.log("Search for Grand is at " + string5.indexOf('Grand')); // String searching
+            console.log("Search for Canyon is at " + string5.indexOf('Canyon')); // String searching
+
+
+            // NUMBERS
+            let numberStr = "1"; // Declare a numeric string variable
+            let numberNum = 1; // Declare a real number variable
+            console.log("numberStr variable is of type " + (typeof numberStr)); // Check variable data type
+            console.log("numberNum variable is of type " + (typeof numberNum)); // Check variable data type
+            console.log("Convert string to a number " + Number(numberStr)); // Convert string to number
+            console.log("Convert number to a string " + numberNum.toString()); // Convert string to number
+            console.log("Convert boolean to a number " + Number(false)); // Convert boolean to number
+            console.log("Convert invalid number to a number " + Number("AZB")); // Convert invalid number to number
+            console.log("Parse a int number string to a number " + parseInt("10")); // Parse a string number to number
+            console.log("Parse a float number string to a number " + parseInt(
+                "10.5")); // Parse a string number to number
+            console.log("Generate a random number " + Math.random()); // Generate a random number 0 to 1
+
+            // ARRAYS
+            // Arrays hold common data elements into a single variable. Each data element is separated by a comma, first element is at index 0.
+            let shapes1 = ['Triangle', 'Circle', 'Square']; // Create an array using [a, b, c] syntax
+            let shapes2 = new Array('Triangle', 'Circle', 'Square'); // Create an array using the Array object
+            console.log("First shape is " + shapes1[0]); // Access first array element at index 0
+            console.log("Last shape is " + shapes1[shapes1.length - 1]); // Access last array element at length – 1
+
+            // Common Array Methods
+            shapes1.sort();
+            console.log("First shape in sorted array is " + shapes1[0]); // Access first array element at index 0
+            console.log("Last shape in sorted array is " + shapes1[shapes1.length -
+            1]); // Access last array element at length – 1
+            shapes1.reverse();
+            console.log("First shape in reversed array is " + shapes1[0]); // Access first array element at index 0
+            console.log("Last shape in reversed array is " + shapes1[shapes1.length -
+            1]); // Access last array element at length – 1
+            shapes1.push('Rectangle');
+            console.log("Last shape in array is " + shapes1[shapes1.length - 1]); // Add to the end of the array
+            shapes1.pop();
+            console.log("Last shape in array is " + shapes1[shapes1.length - 1]); // Remove from the end of the array
+            shapes1.splice(0, 0, 'Oval');
+            console.log("First shape in spliced array is " + shapes1[0]); // Splice is great for ALL array operations
+
+            // Iteration (also see the forEach) however this requires the use of functions()
+            for (let shape of shapes1) // Loop over the shapes1 array
+            {
+                console.log("The shape in " + shape); // Display the current element in array
+            }
+
+            // DATES AND FUNCTIONS
+            // Some examples of creating dates and time
+            let now = new Date(); // Create a date variable for "now"
+            let birthday = new Date(1960, 9, 17, 0, 0, 0); // Create a date in the past
+            console.log("Current date and time is " + now); // Display the current date and time
+            console.log("Past date and time is " + birthday); // Display the past date and time
+            console.log("Time difference is " + (now.getYear() - birthday.getYear())); // Display difference in years
+
+
+            // FUNCTIONS
+            // Some examples of calling functions
+            reusableCode(); // Simple function
+            result = add(15, 20);
+            console.log("Result is " + result); // Function with parameters and return value
+            result = multiply(15, 20);
+            console.log("Result is " + result); // Function with parameters and return value
+            shapes1.forEach(displayArray); // Iterate thru an array using a callback function
+
+
+            /**
+             * Functions are a way to repeatable code by calling a set of code statements by a name.
+             * You can also pass variables to a function and return values from a function.
+             */
+            function reusableCode() {
+                // Put any number of code statements that you want to execute every time this method is called.
+                console.log("Called the reusableCode() function");
+            }
+
+            // Function to add 2 numbers specified by the caller and can be reused in your application
+            function add(num1, num2) {
+                console.log("Adding numbers " + num1 + " and " + num2);
+                return num1 + num2;
+            }
+
+            // Function to multiply 2 numbers specified by the caller and can be reused in your application
+            function multiply(num1, num2) {
+                console.log("Multiplying numbers " + num1 + " and " + num2);
+                return num1 * num2;
+            }
+
+            // Reusable function to display a value from an array (can be used when using forEach() on an array)
+            function displayArray(value, index) {
+                console.log("From displayArray() the array value in " + value + " at " + index);
+            }
+        }
+    </script>
+</head>
+<body onload="playjs()">
+    <h1>Just some text for display</h1>
+</body>
+</html>
