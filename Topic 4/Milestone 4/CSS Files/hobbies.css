@@ -1,45 +1,49 @@
 
 /**      Anime Posters Section      **/
-.AnimePosters {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-
+.AnimePosters 
+{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);  /* Responsive columns */
+  gap: .5rem;
+  margin-top: 1rem;
 }
 
-.AnimePoster {
+.AnimePoster 
+{
+  text-align: center;
   background-color: #1a1a1a;
   color: #D6C3FF;
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 0 10px rgba(214, 195, 255, 0.3);
-  margin: 15px;
+  margin: 0px;
+  
+  border-radius: 4px;
 }
 
-.AnimePoster:hover {
-  transform: scale(1.05);
-}
-
-.AnimePoster img {
-  width: 148px;
+.AnimePoster img 
+{
+  height: auto;
+  width: 135px;
   border-bottom: 2px solid #D6C3FF;
 }
 
-.AnimeTitle {
-  font-size: 1.1rem;
+.AnimeTitle, .Seasons 
+{
+  margin-top: 0.1rem;
   font-weight: bold;
-  margin-top: 8px;
 }
 
-.Seasons {
-  font-size: 0.9rem;
-  margin-bottom: 12px;
-  color: #AEEFFF;
+.AnimePoster:hover 
+{
+  transform: scale(1.05);
 }
 
 #DefaultDescription
 {
   display: contents;
+  text-align: center;
+  font-style: italic;
 }
 
 #SAODescription
@@ -108,27 +112,26 @@
 /**      Game Posters Section      **/
 
 .GamesPosters {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+  gap: 0;
   padding-top: 10px;
 }
 
 .Titles {
-  flex: 1 1 calc(25% - 20px); /* Four per row with spacing */
-  max-width: calc(25% - 20px);
   text-align: center;
   background: linear-gradient(
     to right,
-    #d9d9d9,   /* soft silver */
-    #f2f2f2,   /* highlight */
-    #c0c0c0,   /* mid-tone chrome */
-    #e6e6e6,   /* light reflection */
-    #b0b0b0    /* deeper steel */
+    #d9d9d9,   
+    #f2f2f2,   
+    #c0c0c0,
+    #e6e6e6,   
+    #b0b0b0   
   );
   border-radius: 8px;
   padding: 5px;
-  margin: 0 5px 0 5px;
+  width: 160px;
+  margin: 0px;
   transition: transform 0.3s ease;
 }
 

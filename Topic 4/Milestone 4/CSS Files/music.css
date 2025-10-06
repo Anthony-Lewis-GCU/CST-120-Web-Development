@@ -9,30 +9,59 @@
     text-indent: 2em;
 }
 
-#MoodboardTable
+.MoodboardGrid 
 {
-    width: 100%; 
-    border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr repeat(5, 1fr); /* Genre + 5 artists */
+  gap: 10px;
+  margin-top: 1rem;
 }
 
-#MoodboardTable th
+.Genre 
 {
-    background-color: Black; 
-    color: white; 
-    height: width;
+  font-weight: bold;
+  color: #CCCCCC;
+  background-color: black;
+  padding: 8px;
+  border-radius: 4px;
 }
 
-.MusicIcons figure
+.Artist 
 {
-    display: inline-block; 
-    width: 100px; 
-    border: 1px solid black;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
 }
 
-.MusicIcons figcaption
-{   
-    text-align: center;
+.MusicIcons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 16px;
+  margin-top: 1rem;
 }
+
+.MusicItem {
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 6px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.MusicItem img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.MusicItem figcaption {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
 
 #MusicExperience
 {

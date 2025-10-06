@@ -77,82 +77,84 @@
             </i></p>
         </section>
 
-        <section class="BodySection" id="Moodboard">
-            <h3>Moodboard</h3>
+        <section class="BodySection" id="Moodboard" aria-labelledby="moodboard-heading">
+            <h3 id="moodboard-heading">Moodboard</h3>
 
-            <table id="MoodboardTable">
-                <tr>
-                    <th>Metal</th>
-                    <td>Lamb Of God</td>
-                    <td>Megadeath</td>
-                    <td>Pantera</td>
-                    <td>Trivium</td>
-                    <td>Slayer</td>
-                </tr>
+            <!-- Grid container for music genres and artists -->
+            <div class="MoodboardGrid" role="grid" aria-label="Music genres and favorite artists">
 
-                <tr>
-                    <th>Dubstep</th>
-                    <td>Skrillex</td>
-                    <td>Zeds Dead</td>
-                    <td>Apex</td>
-                    <td>Modestep</td>
-                    <td>Deadmau5</td>
-                </tr>
+                <!-- Metal Row -->
+                <div class="Genre" role="rowheader" aria-label="Genre: Metal">Metal</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Lamb Of God">Lamb Of God</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Megadeath">Megadeath</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Pantera">Pantera</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Trivium">Trivium</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Slayer">Slayer</div>
 
-                <tr>
-                    <th>Alternative</th>
-                    <td>Breaking Benjamin</td>
-                    <td>Three Days Grace</td>
-                    <td>Shinedown</td>
-                    <td>Evanescence</td>
-                    <td>Lincoln Park</td>
-                </tr>
+                <!-- Dubstep Row -->
+                <div class="Genre" role="rowheader" aria-label="Genre: Dubstep">Dubstep</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Skrillex">Skrillex</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Zeds Dead">Zeds Dead</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Apex">Apex</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Modestep">Modestep</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Deadmau5">Deadmau5</div>
 
-                <tr>
-                    <th>Rock</th>
-                    <td>Journey</td>
-                    <td>Queen</td>
-                    <td>Motley Crue</td>
-                    <td>Metallica</td>
-                    <td>The Eagles</td>
-                </tr>
+                <!-- Alternative Row -->
+                <div class="Genre" role="rowheader" aria-label="Genre: Alternative">Alternative</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Breaking Benjamin">Breaking Benjamin</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Three Days Grace">Three Days Grace</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Shinedown">Shinedown</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Evanescence">Evanescence</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Lincoln Park">Lincoln Park</div>
 
-                <tr>
-                    <th>Folk Rock</th>
-                    <td>The Beatles</td>
-                    <td>Simon & Garfunkel</td>
-                    <td>John Denver</td>
-                    <td>Neil Young</td>
-                    <td>Don Mclean</td>
-                </tr>
-            </table>
+                <!-- Rock Row -->
+                <div class="Genre" role="rowheader" aria-label="Genre: Rock">Rock</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Journey">Journey</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Queen">Queen</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Motley Crue">Motley Crue</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Metallica">Metallica</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: The Eagles">The Eagles</div>
+
+                <!-- Folk Rock Row -->
+                <div class="Genre" role="rowheader" aria-label="Genre: Folk Rock">Folk Rock</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: The Beatles">The Beatles</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Simon & Garfunkel">Simon & Garfunkel</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: John Denver">John Denver</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Neil Young">Neil Young</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Don Mclean">Don Mclean</div>
+            </div>
         </section>
 
         <section class="BodySection" id="MusicTheory">
             <h3>Music Theory</h3>
 
-            <div class="MusicIcons">
-                <Figure>
-                    <img src="../Sources/icons/music/flute.png">
+            <div class="MusicIcons" role="grid" aria-label="Musical instrument icons">
+                <figure class="MusicItem" role="gridcell" aria-label="Instrument: Flute">
+                    <img src="../Sources/icons/music/flute.png" alt="Flute icon">
                     <figcaption>Flute</figcaption>
-                </Figure>
-                <Figure>
-                    <img src="../Sources/icons/music/piano.png">
+                </figure>
+
+                <figure class="MusicItem" role="gridcell" aria-label="Instrument: Piano">
+                    <img src="../Sources/icons/music/piano.png" alt="Piano icon">
                     <figcaption>Piano</figcaption>
-                </Figure>
-                <Figure>
-                    <img src="../Sources/icons/music/electric-guitar.png">
+                </figure>
+
+                <figure class="MusicItem" role="gridcell" aria-label="Instrument: Guitar">
+                    <img src="../Sources/icons/music/electric-guitar.png" alt="Electric guitar icon">
                     <figcaption>Guitar</figcaption>
-                </Figure>
-                <Figure>
-                    <img src="../Sources/icons/music/drums.png">
+                </figure>
+
+                <figure class="MusicItem" role="gridcell" aria-label="Instrument: Drums">
+                    <img src="../Sources/icons/music/drums.png" alt="Drums icon">
                     <figcaption>Drums</figcaption>
-                </Figure>
-                <Figure>
-                    <img src="../Sources/icons/music/FLStudio.png">
+                </figure>
+
+                <figure class="MusicItem" role="gridcell" aria-label="Software: FL Studio">
+                    <img src="../Sources/icons/music/FLStudio.png" alt="FL Studio icon">
                     <figcaption>FL Studio</figcaption>
-                </Figure>
+                </figure>
             </div>
+
 
             <div id="MusicExperience">
                 <article class="Instruments" id="FluteExperience">

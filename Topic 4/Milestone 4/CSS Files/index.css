@@ -140,131 +140,51 @@
   width: 2px;
   background: black;
   z-index: 0;
-
-
 }
 
-.TopEvent .EventConnector {
+.TopEvent .EventConnector 
+{
   bottom: calc(50% + 12px); /* starts just above the dot */
   height: 80px;
     z-index: 0;
 }
 
-.BottomEvent .EventConnector {
+.BottomEvent .EventConnector 
+{
   top: calc(50% + 12px); /* starts just below the dot */
   height: 80px;
   z-index: 0;
 }
 
-
-
-
-.CoreValueGrid
+.EventTitle
 {
-    Display: Table;
-
+  font-weight: bold;
 }
 
-#CoreValueRow1
+.Timeframe
 {
-    display: table-row;
-}
-
-#CoreValueC1R1
-{
-    width:10%; 
-    display: table-cell; 
-    text-align: center; 
-    vertical-align: middle;
-}
-
-#CoreValueC3R1
-{
-    width:10%; 
-    display: table-cell; 
-    text-align: center; 
-    vertical-align: middle;
-}
-
-.MiddleCoreBtn
-{
-    margin: 0 9%;
+  font-style: italic;
 }
 
 
-#CoreValueRow2
-{
-    width:100%; 
-    overflow: hidden; 
-    display: table-row;
+
+.CoreValueGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 3 equal columns */
+  gap: 1rem;
 }
 
-#CoreValueC1R2
+.CoreValueDescription 
 {
-    width:10%; 
-    display: table-cell; 
-    text-align: center; 
-    vertical-align: middle;
+  grid-column: 2 / span 3; /* spans columns 2 through 4 */
+  grid-row: 2;             /* places it in row 2 */
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  font-style: italic;
+  text-align: center;
 }
 
-#CoreValueC2R2
-{
-    width:80%; 
-    display: table-cell; 
-    padding: 0 20px; 
-    vertical-align: middle;
-}
-
-#DisplayedCoreValue
-{
-    border: black 1px solid; 
-    padding: 10px; 
-    text-align: Center;
-}
-
-#CoreValueC3R2
-{
-    width:10%; 
-    display: table-cell; 
-    text-align: center; 
-    vertical-align: middle;
-}
-
-#CoreValueRow3
-{
-    width:100%; 
-    margin: 0 auto; 
-    display: table-row;
-}
-
-#CoreValueC1R3
-{
-    width:10%; 
-    display: table-cell; 
-    text-align: center; 
-    vertical-align: middle;
-}
-
-#CoreValueC2R3
-{
-    width:80%; 
-    display: table-cell; 
-    padding: 0 20px; 
-    vertical-align: middle;
-}
-
-#CoreValueC3R3
-{
-    width:10%; 
-    display: table-cell; 
-    text-align: center; 
-    vertical-align: middle;
-}
-.CoreValueText
-{
-    display: block;
-    text-align: Center;
-}
 
 
 
