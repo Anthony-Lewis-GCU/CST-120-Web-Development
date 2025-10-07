@@ -45,13 +45,13 @@ header
 
 h3.SiteTitle
 { 
-    font-family: 'PageTitleFont', sans-serif;
-    text-align: center; 
-    font-size: 72pt; 
-    color:#9400D3;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-shadow:
+  font-family: 'PageTitleFont', sans-serif;
+  text-align: center; 
+  font-size: 72pt; 
+  color:#9400D3;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-shadow:
     0 0 5px var(--silver-glow),
     0 0 10px var(--silver-glow),
     0 0 15px var(--silver-glow);
@@ -67,7 +67,7 @@ nav
 
 .NavLink
 {
-    color: var(--purple-glow);
+  color: var(--purple-glow);
   text-decoration: none;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -75,16 +75,18 @@ nav
   transition: all var(--transition-fast);
 }
 
-.NavLink:hover {
-  font-size: 1.1rem;                /*  or use pt/px if you're matching your font system  */
-  color: #9400D3;                 /*  Optional: reinforce with your purple highlight    */
-  text-shadow: 0 0 6px #9400D3;   /*  Optional glow                                     */
+.NavLink:hover 
+{
+  font-size: 1.1rem;               
+  color: #9400D3;                
+  text-shadow: 0 0 6px #9400D3;  
 }
 
-.NavLink.active {
-  font-size: 1.1rem;                /*  or use pt/px if you're matching your font system  */
-  color: #9400D3;                 /*  Optional: reinforce with your purple highlight    */
-  text-shadow: 0 0 6px #9400D3;   /*  Optional glow                                     */
+.NavLink.active 
+{
+  font-size: 1.1rem;                
+  color: #9400D3;                 
+  text-shadow: 0 0 6px #9400D3;   
 }
 
 main
@@ -95,7 +97,7 @@ main
     width:60%;
     background: linear-gradient(to right, #2a2a2a, #3e3e3e, #4f4f4f, #5e5e5e);
 
-  box-shadow: 0 0 10px var(--silver-glow), 0 0 20px var(--silver-glow), 0 0 40px var(--silver-glow);
+    box-shadow: 0 0 10px var(--silver-glow), 0 0 20px var(--silver-glow), 0 0 40px var(--silver-glow);
 
 }
 
