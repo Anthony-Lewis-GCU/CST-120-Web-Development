@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+
+    <!-- CSS Stylesheets-->
+    <link rel="stylesheet" href="../CSS Files/SiteWide.css">
+    <link rel="stylesheet" href="../CSS Files/contact.css">
+    <!--<link rel="stylesheet" href="../CSS Files/music.css">-->
+</head>
+
+<body>
+    <header>
+        <div id="SiteTitle">
+            <h3 class="SiteTitle">Anthony S. Lewis</h3>
+        </div>
+
+        <!--This is the main navigation section of the webpage that links to all the other pages on the site-->
+        <nav>
+            <a class="NavLink" href="index.html">About Me</a>
+            <a class="NavLink" href="hobbies.html">Hobbies</a>
+            <a class="NavLink" href="music.html">Music</a>
+            <a class="NavLink" href="recovery.html">Recovery</a>
+            <a class="NavLink  active" href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <!--This is the main body content, it will be divided into sections that will hold individual components of the content to be held within the body-->
+    <main>
+        <section id="ContentHeader">
+            <h1>Contact Me</h1>
+        </section>
+
+        <section class="BodySection">
+            <h2>Send a Message</h2>
+
+            <form action="#" method="post" class="grid-form" role="form" aria-labelledby="contact-form-heading"
+                aria-describedby="contact-form-description">
+                <h2 id="contact-form-heading" class="visually-hidden">Contact Form</h2>
+                <p id="contact-form-description" class="visually-hidden">
+                    This form allows users to submit inquiries, feedback, or support requests anonymously. Required
+                    fields are marked and must be completed before submission.
+                </p>
+
+                <div class="form-grid">
+                    <!-- Left Column -->
+                    <div class="form-column">
+                        <label for="reason">Reason for Contact:</label>
+                        <select id="reason" name="reason" required aria-required="true">
+                            <option value="" disabled selected>Select a reason</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="support">Support</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="form-column">
+                        <figure class="form-img" role="img" aria-label="Personal photo with caption">
+                            <img src="" alt="Picture of myself">
+                            <figcaption>Caption</figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- Second Row -->
+                    <div class="form-column">
+                        <label for="SubjectLine">Subject:</label>
+                        <input type="text" id="SubjectLine" name="subject" required aria-required="true">
+
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+                    </div>
+
+                    <div class="form-column">
+                        <figure class="form-img" role="img" aria-label="Personal photo with caption">
+                            <img src="" alt="Picture of myself">
+                            <figcaption>Caption</figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- Full Width Row -->
+                    <div class="form-full">
+                        <div class="form-actions" role="group" aria-label="Form submission and consent">
+                            <button class="NavLink" type="submit" aria-label="Submit Contact Form">Submit</button>
+                            <label class="consent-wrapper">
+                                <input type="checkbox" name="consent" required aria-required="true"
+                                    aria-describedby="consent-description">
+                                <span id="consent-description">
+                                    I consent to having the information I submit stored and sent to Anthony's email
+                                    for the purpose of responding to my message. I understand this data may be
+                                    retained for future reference.
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-full">
+                        <p id="disclaimer" role="note">
+                            <i>This webpage is intended for educational purposes only.
+                                Responses submitted through this form may not be monitored closely or receive immediate
+                                attention.</i>
+                        </p>
+                    </div>
+                </div>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <div id="SocialLinks">
+            <a id="FirstLink" href="https://www.facebook.com/anthony.lewis.37">
+                <!--This is the Link to my Facebook Profile-->
+                <img src="../Sources/icons/footer/Facebook_icon_48px.png"
+                    alt="Facebook Icon that links to my Facebook profile">
+            </a>
+
+            <a href="https://www.linkedin.com/in/anthony-lewis-1866bba7/">
+                <!--This is the Link to my LinkedIn Profile-->
+                <img src="../Sources/icons/footer/Linkedin_icon_48px.png"
+                    alt="LinkedIn Icon that links to my LinkedIn Profile">
+            </a>
+
+            <a href="https://github.com/Anthony-Lewis-GCU/CST-120-Web-Development">
+                <!--This is the Link to my GitHub Repository-->
+                <img src="../Sources/icons/footer/Github_icon_48px.png"
+                    alt="Github Icon that links to my Repository for this site">
+            </a>
+
+            <!--This is the Link to my Website Landing Page-->
+            <a href="https://anthony-lewis-gcu.github.io/CST-120-Web-Development/">
+                <img src="../Sources/icons/footer/LandingPage_icon_48px.png"
+                    alt="Landing Page Icon that links to my Landing Page">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
