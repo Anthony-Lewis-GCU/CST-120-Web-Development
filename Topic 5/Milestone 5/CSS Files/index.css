@@ -166,19 +166,46 @@
   font-style: italic;
 }
 
-
-
-.CoreValueGrid {
+.CoreValueGrid 
+{
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* 3 equal columns */
   gap: 1rem;
+  background: none;       /* Removes any background image or gradient */
+  background-color: transparent; /* Makes the background fully transparent */
+  align-self: start; /* Prevent vertical stretching */
+
+}
+
+.CoreValueGrid button
+{
+   background: linear-gradient(
+    to right,
+    #d9d9d9,   /* soft silver */
+    #f2f2f2,   /* highlight */
+    #c0c0c0,   /* mid-tone chrome */
+    #e6e6e6,   /* light reflection */
+    #b0b0b0    /* deeper steel */
+  );
+  align-self: start; /* Prevent vertical stretching */
+  align-self: center;
+}
+
+.CoreValueGrid button:hover
+{
+   scale: 1.2em;
+}
+
+.CoreValueMidleRow
+{
+  align-self: center; /* or start/end depending on desired alignment */
+  height: auto;        /* Let the button size itself */
 }
 
 .CoreValueDescription 
 {
   grid-column: 2 / span 3; /* spans columns 2 through 4 */
   grid-row: 2;             /* places it in row 2 */
-  background-color: #f9f9f9;
   padding: 1rem;
   border-radius: 8px;
   font-style: italic;
