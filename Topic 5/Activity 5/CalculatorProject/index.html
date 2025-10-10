@@ -7,51 +7,65 @@
   <link rel="stylesheet" href="./css/CalcStyles.css" />
 </head>
 <body>
-    <div class="calc-wrapper">
-        <div class="calculator">
-            <input type="text" id="display" readonly />
-            <div class="buttons">
-                <button onclick="backspace()">⌫</button>
-                <button onclick="toggleSign()">+/-</button>
-            <button onclick="percentage()">%</button>
-            <button onclick="press('/')">/</button>
-
-
-            <button onclick="press('7')">7</button>
-            <button onclick="press('8')">8</button>
-            <button onclick="press('9')">9</button>
-            <button onclick="press('*')">*</button>
-
-            <button onclick="press('4')">4</button>
-            <button onclick="press('5')">5</button>
-            <button onclick="press('6')">6</button>
-            <button onclick="press('-')">-</button>
-
-            <button onclick="press('1')">1</button>
-            <button onclick="press('2')">2</button>
-            <button onclick="press('3')">3</button>
-            <button onclick="press('+')">+</button>
-
-            <button onclick="">Change Calc Style</button>
-            <button onclick="press('0')">0</button>
-            <button onclick="press('.')">.</button>
-            <button onclick="calculate()">=</button>
-
-            <button class="clear" onclick="clearDisplay()">AC</button>
-
-            
-            </div>
-        </div>
-
-        <div id="Notations">
-            <p>
-                Note: the "Change Calc Style" button does not do anything in this demonstration but I was using the iPhone 
-                layout as my template for this design. If I were to carry this farther, I would have this button allow the 
-                user to choose between basic, scientific, or any other calculation layout option coded into the system.
-            </p>
-        </div>
-    </div>
+  <!-- Main wrapper for calculator, centered and responsive -->
+  <div class="calc-wrapper">
     
+    <!-- Calculator container with ARIA role and label for screen readers -->
+    <div class="calculator" role="application" aria-label="Basic calculator">
+      
+      <!-- Display field: readonly, labeled for screen readers -->
+      <label for="display" class="visually-hidden">Calculator display</label>
+      <input 
+        type="text" 
+        id="display" 
+        readonly 
+        aria-live="polite" 
+        aria-label="Calculator display showing current input or result" 
+        value="0"
+      />
+
+      <!-- Button grid container -->
+      <div class="buttons" role="group" aria-label="Calculator buttons">
+
+        <!-- Calc Button Layout -->
+        <button class="manipulator" id="mode-toggle" onclick="handleModeToggle()" aria-label="Clear Contents">AC</button>
+        <button class="manipulator" onclick="toggleSign()" aria-label="Toggle sign">+/-</button>
+        <button class="manipulator" onclick="percentage()" aria-label="Percentage">%</button>
+        <button class="operator" onclick="press('/')" aria-label="Divide">/</button>
+
+        <button class="number" onclick="press('7')" aria-label="Seven">7</button>
+        <button class="number" onclick="press('8')" aria-label="Eight">8</button>
+        <button class="number" onclick="press('9')" aria-label="Nine">9</button> 
+        <button class="operator" onclick="press('*')" aria-label="Multiply">*</button>
+
+        <button class="number" onclick="press('4')" aria-label="Four">4</button>
+        <button class="number" onclick="press('5')" aria-label="Five">5</button>
+        <button class="number" onclick="press('6')" aria-label="Six">6</button>
+        <button class="operator" onclick="press('-')" aria-label="Subtract">-</button>
+
+        <button class="number" onclick="press('1')" aria-label="One">1</button>
+        <button class="number" onclick="press('2')" aria-label="Two">2</button>
+        <button class="number" onclick="press('3')" aria-label="Three">3</button>
+        <button class="operator" onclick="press('+')" aria-label="Add">+</button>
+
+        <button id="CalcImg" aria-disabled="true" tabindex="-1" aria-label="Layout switch (inactive)"></button>
+        <button class="number" onclick="press('0')" aria-label="Zero">0</button>
+        <button class="number" onclick="press('.')" aria-label="Decimal point">.</button>
+        <button class="operator" onclick="calculate()" aria-label="Equals">=</button>
+      </div>
+    </div>
+
+    <!-- Informational note section -->
+    <div id="Notations" aria-label="Calculator notes">
+      <p>
+        Note: the "Calc" button does not do anything in this demonstration but I was using the iPhone 
+        layout as my template for this design. If I were to carry this farther, I would have this button allow the 
+        user to choose between basic, scientific, or any other calculation layout option coded into the system.
+      </p>
+    </div>
+  </div>
+
+  <!-- JavaScript methods for calculator logic -->
   <script src="./js/CalcMethods.js"></script>
 </body>
 </html>
