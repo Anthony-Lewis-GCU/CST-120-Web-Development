@@ -1,5 +1,6 @@
 // Wait for the DOM to fully load
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => 
+{  
   // Select all core value buttons
   const coreButtons = document.querySelectorAll('.core-btn');
 
@@ -25,3 +26,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector(".TimelineTrack");
+    const events = document.querySelectorAll(".Timeline .Event");
+    const prevBtn = document.getElementById("PreviousEvent");
+    const nextBtn = document.getElementById("next-event");
+
+    const visibleCount = 4;
+    const eventWidth = events[0].offsetWidth + 16; // width + margin
+    let currentIndex = 0;
+
+    function updateSliderPosition() {
+      const offset = currentIndex * eventWidth;
+      track.style.transform = `translateX(-${offset}px)`;
+
+      prevBtn.disabled = currentIndex === 0;
+      nextBtn.disabled = currentIndex + visibleCount >= events.length;
+    }
+
+    prevBtn.addEventListener("click", () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateSliderPosition();
+      }
+    });
+
+    nextBtn.addEventListener("click", () => {
+      if (currentIndex + visibleCount < events.length) {
+        currentIndex++;
+        updateSliderPosition();
+      }
+    });
+
+    updateSliderPosition();
+  });
