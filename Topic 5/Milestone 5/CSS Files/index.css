@@ -21,6 +21,7 @@
 .TimelineTrack {
   display: flex;
   min-height: 700px;
+  width: max-content;
 }
 
 
@@ -51,7 +52,7 @@
 
 .Event {
   position: relative;
-  flex: 1;
+  flex: 0 0 calc(100% / 4);
   text-align: center;
   width: 100%;
   margin: 0 auto;

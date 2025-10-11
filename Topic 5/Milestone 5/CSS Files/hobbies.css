@@ -38,7 +38,7 @@
   transform: scale(1.05);
 }
 
-#DefaultDescription
+#DefaultAnimeDescription
 {
   display: contents;
   text-align: center;
@@ -162,38 +162,12 @@
 #GameTrailers
 {
     margin-top: 20px;
-    display: none;
 }
 
-#GameDescription
+#GameDescriptions
 {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
   font-style: italic;
-}
-
-.DefaultDescription
-{
-  display: contents;
-}
-
-.ZeldaDescription
-{
-  display: none;
-}
-
-.KingdomHeartsDescription
-{
-  display: none;
-}
-
-.PokemonDescription
-{
-  display: none;
-}
-
-.MagicDescription
-{
-  display: none;
 }
