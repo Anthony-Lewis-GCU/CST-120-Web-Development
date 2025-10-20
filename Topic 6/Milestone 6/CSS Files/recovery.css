@@ -1,6 +1,6 @@
 .RecoveryChipGrid {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 2rem;
   padding: 1rem;
   transform-style: preserve-3d;
@@ -74,28 +74,9 @@
     flex-shrink: 0;
 }
 
-#NavLink 
-{
-    padding: 0.4em 0.8em;
-    font-size: 1rem;
-    cursor: pointer;
-    flex-shrink: 0;
-    border-radius: .5em;
-    background-color: linear-gradient(
-     to right,
-     #d9d9d9,   /* soft silver */
-     #f2f2f2,   /* highlight */
-     #c0c0c0,   /* mid-tone chrome */
-     #e6e6e6,   /* light reflection */
-     #b0b0b0    /* deeper steel */
-    );
-
-    box-shadow: 0 0 10px var(--silver-glow), 0 0 20px var(--silver-glow), 0 0 40px var(--silver-glow);
-}
-
 .ResourceChipGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 2rem;
   padding: 1rem;
   transform-style: preserve-3d;
@@ -153,69 +134,75 @@
 }
 
 .BodySection form {
-  width: 60%;
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 16px;
-}
-
-.BodySection input[type="text"],
-.BodySection select,
-.BodySection textarea {
-  width: 100%;
+  padding: 1rem;
   box-sizing: border-box;
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
 }
 
-.BodySection textarea {
-  resize: vertical;
-  min-height: 120px;
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 
-.form-actions 
-{
-    display: flex;
-    align-items: Center; 
-    justify-content: center;
-    gap: 12px;               
-    flex-wrap: nowrap;  
-    margin: 0 auto;     
+.consent-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 300px;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #CCCCCC;
+  line-height: 1.4;
 }
 
-.consent-wrapper 
-{
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;                 
-    font-size: 0.9rem;        
-    color: #CCCCCC;
-    line-height: 1.3;        
-    flex-grow: 0;             
+.consent-wrapper input[type="checkbox"] {
+  margin-top: 3px;
+  flex-shrink: 0;
 }
 
-.consent-wrapper input[type="checkbox"] 
-{
-  margin-top: 3px;          
-}
-
-button[type="submit"] 
-{
+button[type="submit"] {
   padding: 0.4em 0.8em;
-    font-size: 1rem;
-    cursor: pointer;
-    flex-shrink: 0;
-    border-radius: .5em;
-    background-color: linear-gradient(
-     to right,
-     #d9d9d9,   /* soft silver */
-     #f2f2f2,   /* highlight */
-     #c0c0c0,   /* mid-tone chrome */
-     #e6e6e6,   /* light reflection */
-     #b0b0b0    /* deeper steel */
-    );
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  border-radius: 0.5em;
+  background: linear-gradient(
+    to right,
+    #d9d9d9,
+    #f2f2f2,
+    #c0c0c0,
+    #e6e6e6,
+    #b0b0b0
+  );
 }
+
+@media screen and (max-width: 451px) {
+  .form-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .consent-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  button[type="submit"] {
+    align-self: stretch;
+    text-align: center;
+  }
+
+}
+

@@ -5,8 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Bootstrap 5.3.8 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+    
     <link rel="stylesheet" href="../CSS Files/SiteWide.css">
     <link rel="stylesheet" href="../CSS Files/hobbies.css">
+
+    <script src="../JS/sitewide.js"></script>
     <script src="../JS/hobbies.js"></script>
 </head>
 
@@ -18,12 +31,18 @@
         </div>
 
         <!--This is the main navigation section of the webpage that links to all the other pages on the site-->
-        <nav>
-            <a class="NavLink" href="index.html">About Me</a>
+        <button class="nav-toggle d-md-none" aria-label="Toggle navigation" aria-expanded="false">
+            &#9776;
+            <!-- Unicode hamburger icon -->
+        </button>
+
+        <!--This is the main navigation section of the webpage that links to all the other pages on the site-->
+        <nav class="NavLinks">
+            <a class="NavLink" href="index.html">About</a>
             <a class="NavLink active" href="hobbies.html">Hobbies</a>
             <a class="NavLink" href="music.html">Music</a>
             <a class="NavLink" href="recovery.html">Recovery</a>          
-            <a class="NavLink" href="contact.html">Contact Me</a>
+            <a class="NavLink" href="contact.html">Contact</a>
         </nav>
     </header>
 
@@ -698,23 +717,32 @@
         <div id="SocialLinks">
             <a id="FirstLink" href="https://www.facebook.com/anthony.lewis.37">
                 <!--This is the Link to my Facebook Profile-->
-                <img src="../Sources/icons/footer/Facebook_icon_48px.png" alt="Facebook Icon that links to my Facebook profile">
+                <img src="../Sources/icons/footer/Facebook_icon_48px.png"
+                    alt="Facebook Icon that links to my Facebook profile">
             </a>
 
             <a href="https://www.linkedin.com/in/anthony-lewis-1866bba7/">
                 <!--This is the Link to my LinkedIn Profile-->
-                <img src="../Sources/icons/footer/Linkedin_icon_48px.png" alt="LinkedIn Icon that links to my LinkedIn Profile">
+                <img src="../Sources/icons/footer/Linkedin_icon_48px.png"
+                    alt="LinkedIn Icon that links to my LinkedIn Profile">
             </a>
 
             <a href="https://github.com/Anthony-Lewis-GCU/CST-120-Web-Development">
                 <!--This is the Link to my GitHub Repository-->
-                <img src="../Sources/icons/footer/Github_icon_48px.png" alt="Github Icon that links to my Repository for this site">
+                <img src="../Sources/icons/footer/Github_icon_48px.png"
+                    alt="Github Icon that links to my Repository for this site">
+            </a>
+
+            <a href="../HTML Files/attributions.html">
+                <!--This is the Link to my Flaticon Attributions page-->
+                <img src="../Sources/icons/footer/attributions.png" alt="Link to my internal attributions page">
             </a>
 
             <!--This is the Link to my Website Landing Page-->
             <a href="https://anthony-lewis-gcu.github.io/CST-120-Web-Development/">
-                <img src="../Sources/icons/footer/LandingPage_icon_48px.png" alt="Landing Page Icon that links to my Landing Page">
-            </a>                
+                <img src="../Sources/icons/footer/LandingPage_icon_48px.png"
+                    alt="Landing Page Icon that links to my Landing Page">
+            </a>
         </div>
     </footer>
 </body>

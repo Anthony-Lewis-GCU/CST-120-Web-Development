@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music</title>
 
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+          crossorigin="anonymous">
+
+    <!-- Bootstrap 5.3.8 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+            crossorigin="anonymous"></script>
+
     <!-- CSS Stylesheets-->
     <link rel="stylesheet" href="../CSS Files/SiteWide.css">
     <link rel="stylesheet" href="../CSS Files/music.css">
@@ -14,6 +24,7 @@
     <link rel="icon" href="data:,">
 
     <!-- Script File-->
+     <script src="../JS/sitewide.js"></script>
     <script src="../JS/music.js"></script>
 </head>
 
@@ -24,12 +35,18 @@
         </div>
 
         <!--This is the main navigation section of the webpage that links to all the other pages on the site-->
-        <nav>
-            <a class="NavLink" href="index.html">About Me</a>
+        <button class="nav-toggle d-md-none" aria-label="Toggle navigation" aria-expanded="false">
+            &#9776;
+            <!-- Unicode hamburger icon -->
+        </button>
+
+        <!--This is the main navigation section of the webpage that links to all the other pages on the site-->
+        <nav class="NavLinks">
+            <a class="NavLink" href="index.html">About</a>
             <a class="NavLink" href="hobbies.html">Hobbies</a>
             <a class="NavLink active" href="music.html">Music</a>
             <a class="NavLink" href="recovery.html">Recovery</a>
-            <a class="NavLink" href="contact.html">Contact Me</a>
+            <a class="NavLink" href="contact.html">Contact</a>
         </nav>
     </header>
 
@@ -426,22 +443,16 @@
                     alt="Github Icon that links to my Repository for this site">
             </a>
 
+            <a href="../HTML Files/attributions.html">
+                <!--This is the Link to my Flaticon Attributions page-->
+                <img src="../Sources/icons/footer/attributions.png" alt="Link to my internal attributions page">
+            </a>
+
             <!--This is the Link to my Website Landing Page-->
             <a href="https://anthony-lewis-gcu.github.io/CST-120-Web-Development/">
                 <img src="../Sources/icons/footer/LandingPage_icon_48px.png"
                     alt="Landing Page Icon that links to my Landing Page">
             </a>
-        </div>
-
-        <div id="Attribution">
-            <a href="https://www.flaticon.com/free-icons/drum-set" title="drum set icons">Drum set icons created by
-                Icongeek26 - Flaticon</a>
-            <a href="https://www.flaticon.com/free-icons/electric-guitar" title="electric guitar icons">Electric guitar
-                icons created by juicy_fish - Flaticon</a>
-            <a href="https://www.flaticon.com/free-icons/piano" title="piano icons">Piano icons created by Freepik -
-                Flaticon</a>
-            <a href="https://www.flaticon.com/free-icons/flute" title="flute icons">Flute icons created by Freepik -
-                Flaticon</a>
         </div>
     </footer>
 </body>

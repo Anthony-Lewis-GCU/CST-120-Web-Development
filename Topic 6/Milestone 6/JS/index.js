@@ -39,33 +39,69 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(updateSliderPosition, 50);
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".core-btn");
+    const descriptions = document.querySelectorAll(".CoreValueDescription .Slide");
 
-//   Core Value Javascript functions
+    function isSmallScreen() {
+        return window.innerWidth <= 600;
+    }
 
-// Wait for the DOM to fully load
-document.addEventListener('DOMContentLoaded', () => {
-  // Select all core value buttons
-  const coreButtons = document.querySelectorAll('.core-btn');
+    function hideAllSlides() {
+        descriptions.forEach(desc => $(desc).hide());
+        $(".CoreValueDescription .default").show();
+    }
 
-  // Select all articles inside the description region
-  const descriptions = document.querySelectorAll('.CoreValueDescription article');
+    function clearAllPlaceholders() {
+        document.querySelectorAll(".core-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        const targetId = btn.getAttribute("aria-controls");
+        const placeholder = document.getElementById(targetId + "PH");
+        const desc = document.getElementById(targetId);
 
-  // Add click event to each button
-  coreButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const targetId = button.getAttribute('aria-controls');
+        // Clear all placeholders
+        document.querySelectorAll(".small-desc-placeholder").forEach(ph => ph.innerHTML = "");
 
-      // Hide all descriptions
-      descriptions.forEach(article => {
-        article.hidden = true;
-      });
-
-      // Show the selected description
-      const targetArticle = document.getElementById(targetId);
-      if (targetArticle) {
-        targetArticle.hidden = false;
-        targetArticle.focus(); // Optional: focus for screen readers
-      }
+        // Clone description and append
+        const clone = desc.cloneNode(true);
+        clone.style.display = "block";
+        placeholder.appendChild(clone);
     });
-  });
+});
+    }
+
+    function showDescription(button) {
+        const targetId = button.getAttribute("aria-controls");
+        const placeholder = document.getElementById(targetId + "PH");
+        const desc = document.getElementById(targetId);
+        if (!placeholder || !desc) return;
+
+        // Clear all other placeholders
+        clearAllPlaceholders();
+
+        // Clone the description and insert into placeholder
+        const clone = desc.cloneNode(true);
+        clone.style.display = "block"; // ensures visibility
+        placeholder.appendChild(clone);
+    }
+
+    function setupButtons() {
+        if (isSmallScreen()) {
+            hideAllSlides();
+            buttons.forEach(btn => {
+                btn.onclick = () => showDescription(btn);
+            });
+        } else {
+            hideAllSlides();
+            $(".core-btn").off("click").on("click", function () {
+                const targetId = $(this).attr("aria-controls");
+                $(".CoreValueDescription .Slide").stop(true,true).hide();
+                $(".CoreValueDescription .default").hide();
+                $("#" + targetId).fadeIn(400);
+            });
+        }
+    }
+
+    setupButtons();
+    window.addEventListener("resize", setupButtons);
 });

@@ -3,7 +3,7 @@
 .AnimePosters 
 {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);  /* Responsive columns */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: .5rem;
   margin-top: 1rem;
 }
@@ -36,6 +36,11 @@
 .AnimePoster:hover 
 {
   transform: scale(1.05);
+}
+
+.AnimeDescription
+{
+  padding-top: 2rem;
 }
 
 #DefaultAnimeDescription

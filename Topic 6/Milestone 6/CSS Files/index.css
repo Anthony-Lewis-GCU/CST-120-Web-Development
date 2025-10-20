@@ -171,74 +171,173 @@
   font-style: italic;
 }
 
-.CoreValueGrid 
-{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 3 equal columns */
-  gap: 1rem;
-  background: none;       /* Removes any background image or gradient */
-  background-color: transparent; /* Makes the background fully transparent */
-  align-self: start; /* Prevent vertical stretching */
-
-}
-
-.CoreValueGrid button
-{
-  align-self: start; /* Prevent vertical stretching */
-  align-self: center;
-  border-radius: 50%;
-  border: 1px solid black;
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(
-    circle at center,
-    #d9d9d9,   /* soft silver */
-    #f2f2f2,   /* highlight */
-    #c0c0c0,   /* mid-tone chrome */
-    #e6e6e6,   /* light reflection */
-    #b0b0b0    /* deeper steel */
-  );
-}
-
-.CoreValueGrid button:hover
-{
-   transform: scale(1.2);
-}
-
-.CoreValueMidleRow
-{
-  align-self: center; /* or start/end depending on desired alignment */
-  height: auto;        /* Let the button size itself */
-}
-
-.CoreValueDescription 
-{
-  grid-column: 2 / span 3; /* spans columns 2 through 4 */
-  grid-row: 2;             /* places it in row 2 */
-  padding: 1rem;
-  border-radius: 8px;
-  font-style: italic;
+.CoreValueDescription article {
   text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.CoreValueDescription article.Default
-{
-  max-height: none;
-  overflow: visible;
+.CoreValueDescription h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-style: italic;;
 }
 
-.CoreValueDescription article.Slide
+.CoreValueDescription p {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.core-btn {
+  border-radius: 50%;
+  width: 80px;       /* or match your image size */
+  height: 80px;
+  padding: 0;
+  overflow: hidden;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc; /* optional: adds a subtle border */
+}
+
+.core-btn:hover {
+  transform: scale(1.2);
+}
+
+#FinalSection
 {
-  transform: translateY(-20px);
-  opacity: 0;
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  padding-bottom: 40px;
 }
 
 #Disclaimer
 {
   text-align: center;
   font-style: italic;
+}
 
+@media screen and (max-width: 1100px) {
+  header, main, footer {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  
+  .core-btn {
+    width: 60px;       
+    height: 60px;
+  }
+
+  .core-btn img {
+    transform: scale(0.6);
+  }
+
+  #SocialLinks 
+  {
+    gap: 6rem;                
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #SocialLinks 
+  {
+    gap: 4rem;                
+  }
+}
+
+@media screen and (max-width: 650px) {
+  h3.SiteTitle
+  {  
+    font-size: 48pt; 
+  }
+
+.row[role="grid"] {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .row[role="grid"] > .col-2 {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
+
+  .core-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .core-btn img {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .CoreValueDescription {
+    position: relative; /* parent container for positioning */
+  }
+
+  .Slide {
+    position: absolute;
+    width: 90%;           /* adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 0.75rem;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .Slide.show {
+    display: block;
+  }
+
+  .row[role="grid"] {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .row[role="grid"] > .col-2.core-btn-container {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column; /* button on top, placeholder below */
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .core-btn {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .core-btn img {
+        max-width: 70%;
+        height: auto;
+    }
+
+    .small-desc-placeholder {
+        width: 90%;            /* almost full width */
+        margin-top: 0.5rem;
+    }
+
+    .small-desc-placeholder .Slide {
+        display: block;
+        position: static;       /* critical: remove overlay behavior */
+        border: 1px solid #ccc;
+        padding: 1rem;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        text-align: center;
+        font-style: italic;
+    }
 }
 
 

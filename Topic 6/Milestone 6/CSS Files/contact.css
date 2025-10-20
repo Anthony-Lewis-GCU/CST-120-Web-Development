@@ -31,6 +31,7 @@
 
 .form-img img {
   max-width: 100%;
+  width: 200px;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -99,4 +100,20 @@ button[type="submit"] {
   border: 0;
 }
 
+@media screen and (max-width: 451px) {
+  .form-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
+  .consent-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  button[type="submit"] {
+    align-self: stretch;
+    text-align: center;
+  }
+
+}

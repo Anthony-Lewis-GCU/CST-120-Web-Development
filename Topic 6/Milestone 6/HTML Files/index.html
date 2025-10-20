@@ -5,27 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Bootstrap 5.3.8 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+
     <link rel="stylesheet" href="../CSS Files/SiteWide.css">
     <link rel="stylesheet" href="../CSS Files/index.css">
 
+    <script src="../JS/sitewide.js"></script>
     <script src="../JS/index.js"></script>
 </head>
 
 <body>
     <header>
-
         <!-- This is the in place styling of the main Website Name Font -->
         <div id="SiteTitle">
             <h3 class="SiteTitle">Anthony S. Lewis</h3>
         </div>
 
         <!--This is the main navigation section of the webpage that links to all the other pages on the site-->
-        <nav>
-            <a class="NavLink active" href="index.html">About Me</a>
+        <button class="nav-toggle d-md-none" aria-label="Toggle navigation" aria-expanded="false">
+            &#9776;
+            <!-- Unicode hamburger icon -->
+        </button>
+
+        <nav class="NavLinks">
+            <a class="NavLink active" href="index.html">About</a>
             <a class="NavLink" href="hobbies.html">Hobbies</a>
             <a class="NavLink" href="music.html">Music</a>
             <a class="NavLink" href="recovery.html">Recovery</a>
-            <a class="NavLink" href="contact.html">Contact Me</a>
+            <a class="NavLink" href="contact.html">Contact</a>
         </nav>
     </header>
 
@@ -132,10 +148,10 @@
 
                 <!-- Slider container for scrolling through timeline events -->
                 <div class="TimelineSlider">
-                    <div class="TimelineBar"></div>   <!-- this is the horizontal bar in the timeline-->
+                    <div class="TimelineBar"></div> <!-- this is the horizontal bar in the timeline-->
 
                     <div class="TimelineTrack">
-                        
+
                         <!-- Container that holds all the events in the timeline -->
                         <div class="Timeline">
 
@@ -526,30 +542,59 @@
             </div> <!-- End of TimelineNav -->
         </section>
 
-        <section class="BodySection" aria-labelledby="core-values-heading">
+        <!-- Core value Grid using Bootstrap Framework-->
+        <section class="BodySection container" id="FinalSection" aria-labelledby="core-values-heading">
             <h2 id="core-values-heading">Core Values</h2>
 
-            <!-- Grid container using CSS Grid -->
-            <div class="CoreValueGrid" role="grid" aria-describedby="core-values-grid">
-                <!-- Row 1 -->
-                <button class="core-btn" title="Integrity" role="gridcell" aria-label="Core value: Integrity"
-                    aria-controls="Integrity"><img src="../Sources/icons/Index/integrity.png"></button>
-                <button class="core-btn" title="Resilience" role="gridcell" aria-label="Core value: Resilience"
-                    aria-controls="Resilience"><img src="../Sources/icons/Index/resilience.png"></button>
-                <button class="core-btn" title="Curiosity" role="gridcell" aria-label="Core value: Curiosity"
-                    aria-controls="Curiosity"><img src="../Sources/icons/Index/curiosity.png"></button>
-                <button class="core-btn" title="Authenticity" role="gridcell" aria-label="Core value: Authenticity"
-                    aria-controls="Authenticity"><img src="../Sources/icons/Index/authenticity.png"></button>
-                <button class="core-btn" title="Discipline" role="gridcell" aria-label="Core value: Discipline"
-                    aria-controls="Discipline"><img src="../Sources/icons/Index/discipline.png"></button>
+            <!-- Row 1: First 6 Core Value Buttons -->
+            <div class="row text-center mb-3" role="grid">
+                <div class="col-2 .core-btn-container">
+                    <button class="core-btn" title="Integrity" role="gridcell" aria-label="Core value: Integrity"
+                        aria-controls="Integrity">
+                        <img src="../Sources/icons/Index/integrity.png" alt="Integrity">
+                    </button>
+                    <div class="small-desc-placeholder" id="IntegrityPH"></div>
+                </div>
+                <div class="col-2 .core-btn-container">
+                    <button class="core-btn" title="Resilience" role="gridcell" aria-label="Core value: Resilience"
+                        aria-controls="Resilience">
+                        <img src="../Sources/icons/Index/resilience.png" alt="Resilience">
+                    </button>
+                    <div class="small-desc-placeholder" id="ResiliencePH"></div>
+                </div>
+                <div class="col-2 .core-btn-container">
+                    <button class="core-btn" title="Curiosity" role="gridcell" aria-label="Core value: Curiosity"
+                        aria-controls="Curiosity">
+                        <img src="../Sources/icons/Index/curiosity.png" alt="Curiosity">
+                    </button>
+                    <div class="small-desc-placeholder" id="CuriosityPH"></div>
+                </div>
+                <div class="col-2 .core-btn-container">
+                    <button class="core-btn" title="Authenticity" role="gridcell" aria-label="Core value: Authenticity"
+                        aria-controls="Authenticity">
+                        <img src="../Sources/icons/Index/authenticity.png" alt="Authenticity">
+                    </button>
+                    <div class="small-desc-placeholder" id="AuthenticityPH"></div>
+                </div>
+                <div class="col-2 .core-btn-container">
+                    <button class="core-btn" title="Discipline" role="gridcell" aria-label="Core value: Discipline"
+                        aria-controls="Discipline">
+                        <img src="../Sources/icons/Index/discipline.png" alt="Discipline">
+                    </button>
+                    <div class="small-desc-placeholder" id="DisciplinePH"></div>
+                </div>
+                <div class="col-2 .core-btn-container">
+                    <button class="core-btn" title="Growth" role="gridcell" aria-label="Core value: Growth"
+                        aria-controls="Growth">
+                        <img src="../Sources/icons/Index/growth.png" alt="Growth">
+                    </button>
+                    <div class="small-desc-placeholder" id="GrowthPH"></div>
+                </div>
+            </div>
 
-                <!-- Row 2 -->
-                <button class="core-btn CoreValueMiddleRow" title="Growth" role="gridcell"
-                    aria-label="Core value: Growth" aria-controls="Growth"><img
-                        src="../Sources/icons/Index/growth.png"></button>
-
-                <!-- Description field goes here -->
-                <div class="CoreValueDescription" role="region" aria-live="polite"
+            <!-- Row 2: Central Description Area -->
+            <div class="row mb-3">
+                <div class="col-12 CoreValueDescription" role="region" aria-live="polite"
                     aria-label="Core value description area" id="core-values-grid">
                     <article class="default">
                         <p><i>Click on one of the core value Icons for more information</i></p>
@@ -582,7 +627,7 @@
                             </i></p>
                     </article>
 
-                    <article id="Authenticity" class="Slide" class="slide" aria-labelledby="Authenticity-heading">
+                    <article id="Authenticity" class="Slide" aria-labelledby="Authenticity-heading">
                         <h4 id="Authenticity-heading">Authenticity</h4>
                         <p><i>
                                 I do not hide behind filters or polish. My story is raw, real, and mine.
@@ -663,37 +708,55 @@
                             </i></p>
                     </article>
                 </div>
-
-                <button class="core-btn CoreValueMiddleRow" title="Accountability" role="gridcell"
-                    aria-label="Core value: Accountability" aria-controls="Accountability"><img
-                        src="../Sources/icons/Index/accountability.png"></button>
-
-                <!-- Row 3 -->
-
-                <button class="core-btn" title="Empathy" role="gridcell" aria-label="Core value: Empathy"
-                    aria-controls="Empathy"><img src="../Sources/icons/Index/empathy.png"></button>
-                <button class="core-btn" title="Creatitvity" role="gridcell" aria-label="Core value: Creativity"
-                    aria-controls="Creativity"><img src="../Sources/icons/Index/creativity.png"></button>
-                <button class="core-btn" title="Mastery" role="gridcell" aria-label="Core value: Mastery"
-                    aria-controls="Mastery"><img src="../Sources/icons/Index/mastery.png"></button>
-                <button class="core-btn" title="Community" role="gridcell" aria-label="Core value: Community"
-                    aria-controls="Community"><img src="../Sources/icons/Index/community.png"></button>
-                <button class="core-btn" title="Courage" role="gridcell" aria-label="Core value: Courage"
-                    aria-controls="Courage"><img src="../Sources/icons/Index/courage.png"></button>
             </div>
 
-            <!-- Disclaimer message -->
-            <div id="Disclaimer" role="note" aria-labelledby="core-values-disclaimer-heading">
-                <h4 id="core-values-disclaimer-heading">Disclaimer:</h4>
-                <p id="core-values-disclaimer"><em>
-                        I definitely do not adhere to these core values with perfection, by any means.
-                        I strive to get as close as I can, making weekly reflections, so that I may make any
-                        necessary adjustments to my actions as needed.
-                    </em></p>
+            <!-- Row 3: Last 6 Core Value Buttons -->
+            <div class="row text-center" role="grid">
+                <div class="col-2 .core-btn-container">
+                    <button class="core-btn" title="Accountability" role="gridcell"
+                        aria-label="Core value: Accountability" aria-controls="Accountability">
+                        <img src="../Sources/icons/Index/accountability.png" alt="Accountability">
+                    </button>
+                    <div class="small-desc-placeholder" id="AccountabilityPH"></div>
+                </div>
+                <div class="col-2 .core-btn-container">
+                    <button class="core-btn" title="Empathy" role="gridcell" aria-label="Core value: Empathy"
+                        aria-controls="Empathy">
+                        <img src="../Sources/icons/Index/empathy.png" alt="Empathy">
+                    </button>
+                    <div class="small-desc-placeholder" id="EmpathyPH"></div>
+                </div>
+                <div class="col-2 .core-btn-container">
+                    <button class="core-btn" title="Creativity" role="gridcell" aria-label="Core value: Creativity"
+                        aria-controls="Creativity">
+                        <img src="../Sources/icons/Index/creativity.png" alt="Creativity">
+                    </button>
+                    <div class="small-desc-placeholder" id="CreativityPH"></div>
+                </div>
+                <div class="col-2 .core-btn-container">
+                    <button class="core-btn" title="Mastery" role="gridcell" aria-label="Core value: Mastery"
+                        aria-controls="Mastery">
+                        <img src="../Sources/icons/Index/mastery.png" alt="Mastery">
+                    </button>
+                    <div class="small-desc-placeholder" id="MasteryPH"></div>
+                </div>
+                <div class="col-2 .core-btn-container">
+                    <button class="core-btn" title="Community" role="gridcell" aria-label="Core value: Community"
+                        aria-controls="Community">
+                        <img src="../Sources/icons/Index/community.png" alt="Community">
+                    </button>
+                    <div class="small-desc-placeholder" id="CommunityPH"></div>
+                </div>
+                <div class="col-2 .core-btn-container">
+                    <button class="core-btn" title="Courage" role="gridcell" aria-label="Core value: Courage"
+                        aria-controls="Courage">
+                        <img src="../Sources/icons/Index/courage.png" alt="Courage">
+                    </button>
+                    <div class="small-desc-placeholder" id="CouragePH"></div>
+                </div>
             </div>
         </section>
     </main>
-
     <footer>
         <div id="SocialLinks">
             <a id="FirstLink" href="https://www.facebook.com/anthony.lewis.37">
@@ -712,6 +775,11 @@
                 <!--This is the Link to my GitHub Repository-->
                 <img src="../Sources/icons/footer/Github_icon_48px.png"
                     alt="Github Icon that links to my Repository for this site">
+            </a>
+
+            <a href="../HTML Files/attributions.html">
+                <!--This is the Link to my Flaticon Attributions page-->
+                <img src="../Sources/icons/footer/attributions.png" alt="Link to my internal attributions page">
             </a>
 
             <!--This is the Link to my Website Landing Page-->
