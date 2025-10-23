@@ -1,0 +1,172 @@
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(7deg);
+    }
+
+    50% {
+        transform: rotate(-7deg);
+    }
+
+    75% {
+        transform: rotate(7deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#ContentHeader {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.article p {
+    text-indent: 2em;
+}
+
+.MoodboardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin-top: 1rem;
+    grid-auto-flow: row;
+    gap: 0;
+}
+
+.Genre {
+    font-weight: bold;
+    color: #CCCCCC;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Artist {
+    text-align: center;
+}
+
+.Artist img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#MusicExperienceHeading {
+    display: none;
+}
+
+#MusicExperience .Instruments {
+    display: none;
+}
+
+.MusicIcons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 16px;
+    margin-top: 1rem;
+}
+
+.MusicItem {
+    padding: 8px;
+    border-radius: 6px;
+    text-align: center;
+
+}
+
+.MusicItem:hover {
+    animation: wiggle 0.5s ease-in-out infinite;
+    display: inline-block;
+    /* Ensures transform works properly */
+
+}
+
+.MusicItem img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.MusicItem figcaption {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: #f9f9f9;
+}
+
+
+#MusicExperience {
+    width: 100%;
+}
+
+#FluteExperience {
+    display: none;
+}
+
+#PianoExperience {
+    display: none;
+}
+
+#GuitarExperience {
+    display: none;
+}
+
+#DrumsExperience {
+    display: none;
+}
+
+#FLStudioExperience {
+    display: none;
+}
+
+#AudioVideoEmbed table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#AudioVideoEmbed table tr {
+    width: 100%;
+}
+
+.Spotify iframe {
+    border-radius: 12px;
+}
+
+
+.GenreSelection td {
+    width: 20%;
+}
+
+.GenreSelection button {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 4px;
+}
+
+#DefaultMessage {
+    text-align: Center;
+    font-style: italic;
+    display: contents;
+}
+
+#DubstepPlaylist {
+    display: none;
+}
+
+#AlternativePlaylist {
+    display: none;
+}
+
+#RockPlaylist {
+    display: none;
+}
+
+#FolkPlaylist {
+    display: none;
+}

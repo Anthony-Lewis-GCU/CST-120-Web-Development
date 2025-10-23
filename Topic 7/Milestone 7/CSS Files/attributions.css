@@ -1,0 +1,63 @@
+.list-group-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: #ccc;
+  font-size: 0.9rem;
+  margin: 0 auto;
+}
+
+.list-group {
+  background-color: transparent !important;
+  border: none !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  justify-content: center; /* ⬅️ This centers items when there's only one per row */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+p
+{
+    padding-top: 20px !important;
+    font-style: italic;
+    text-indent: 2em;
+}
+
+li
+{
+  color: #CCCCCC !important;
+}
+
+a
+{
+  color: #CCCCCC !important;
+}
+
+.BodySection .list-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  list-style: none;
+}
+
+.list-group-item img {
+  width: 100px;
+  height: auto;
+}
+
+@media screen and (max-width: 451px) {
+  .first-item {
+    text-align: center;
+  }
+
+  .first-item img {
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,162 @@
+
+/**      Anime Posters Section      **/
+.AnimePosters 
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: .5rem;
+  margin-top: 1rem;
+}
+
+.AnimePoster 
+{
+  text-align: center;
+  background-color: #1a1a1a;
+  color: #D6C3FF;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(214, 195, 255, 0.3);
+  margin: 0px;
+  border-radius: 4px;
+}
+
+.AnimePoster img 
+{
+  height: auto;
+  width: 100%;
+  border-bottom: 2px solid #D6C3FF;
+}
+
+.AnimeTitle, .Seasons 
+{
+  margin-top: 0.1rem;
+  font-weight: bold;
+}
+
+.AnimePoster:hover 
+{
+  transform: scale(1.05);
+}
+
+.AnimeDescription
+{
+  padding-top: 2rem;
+}
+
+#DefaultAnimeDescription
+{
+  text-align: center;
+  font-style: italic;
+}
+
+/**      Plex Section      **/
+
+.PlexBannerWrapper
+{
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    cursor: default;
+}
+
+.PlexBannerWrapper:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+
+.AccordianBannerIcon
+{
+    margin-right: 10px;
+}
+
+.AccordianBannerTitle {
+  display: flex;
+  flex-direction: column;
+  height: 110px; 
+  border: 1px solid #000; 
+  background-color: black; 
+  color:yellow; 
+  justify-content: center;
+  align-items: center;
+  padding: 8px; 
+  flex: 1;
+}
+
+/* Default hidden state */
+
+.accordion-content {
+  display: none;
+}
+
+/* Visible state */
+
+.accordion-content.visible {
+  display: block;
+}
+
+
+
+/**      Game Posters Section      **/
+
+.GamesPosters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+  gap: 0;
+  padding-top: 10px;
+}
+
+.Titles {
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    #d9d9d9,   
+    #f2f2f2,   
+    #c0c0c0,
+    #e6e6e6,   
+    #b0b0b0   
+  );
+  border-radius: 8px;
+  padding: 5px;
+  width: 90%;
+  margin: 0px;
+  transition: transform 0.3s ease;
+}
+
+.Titles:hover {
+  transform: scale(1.05);
+}
+
+.Titles img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.Titles figcaption.title,
+.Titles figcaption.seasons,
+.Titles figcaption.Title,
+.Titles figcaption.TitleCount {
+  font-size: 1rem;
+  margin-top: 8px;
+  color: #333;
+}
+
+/* Optional: unify caption styling */
+.Titles figcaption {
+  font-weight: 500;
+}
+
+
+#GameTrailers
+{
+    margin-top: 20px;
+}
+
+#GameDescriptions
+{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-style: italic;
+}

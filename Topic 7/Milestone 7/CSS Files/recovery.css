@@ -1,0 +1,208 @@
+.RecoveryChipGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+  transform-style: preserve-3d;
+  will-change: transform;
+
+}
+
+.RecoveryChip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.RecoveryChipInner {
+  position: relative;
+  width: 135%;
+  aspect-ratio: 1 / 1;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.RecoveryChip.flipped .RecoveryChipInner {
+  transform: rotateY(180deg);
+}
+
+.RecoveryChipFace {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.RecoveryChipFront {
+  transform: rotateY(0deg);
+}
+
+.RecoveryChipBack {
+  transform: rotateY(180deg);
+}
+
+.RecoveryChipImg {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.SectionHeader 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    width: 100%; /* ensures full horizontal stretch */
+    box-sizing: border-box; /* includes padding in width */
+}
+
+.SectionHeader h2 
+{
+    margin: 0;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.ResourceChipGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+  transform-style: preserve-3d;
+  will-change: transform;
+
+}
+
+.ResourceChip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.ResourceChipInner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.ResourceChip.flipped .ResourceChipInner {
+  transform: rotateY(180deg);
+}
+
+.ResourceChipFace {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ResourceChipFront {
+  transform: rotateY(0deg);
+}
+
+.ResourceChipBack {
+  transform: rotateY(180deg);
+}
+
+.ResourceChipImg {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.BodySection form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+
+.consent-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 300px;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #CCCCCC;
+  line-height: 1.4;
+}
+
+.consent-wrapper input[type="checkbox"] {
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+button[type="submit"] {
+  padding: 0.4em 0.8em;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  border-radius: 0.5em;
+  background: linear-gradient(
+    to right,
+    #d9d9d9,
+    #f2f2f2,
+    #c0c0c0,
+    #e6e6e6,
+    #b0b0b0
+  );
+}
+
+@media screen and (max-width: 451px) {
+  .form-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .consent-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  button[type="submit"] {
+    align-self: stretch;
+    text-align: center;
+  }
+
+}
+

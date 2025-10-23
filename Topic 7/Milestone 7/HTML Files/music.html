@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+          crossorigin="anonymous">
+
+    <!-- Bootstrap 5.3.8 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+            crossorigin="anonymous"></script>
+
+    <!-- CSS Stylesheets-->
+    <link rel="stylesheet" href="../CSS Files/SiteWide.css">
+    <link rel="stylesheet" href="../CSS Files/music.css">
+
+    <!-- Favicon Grab Nullification-->
+    <link rel="icon" href="data:,">
+
+    <!-- Script File-->
+     <script src="../JS/sitewide.js"></script>
+    <script src="../JS/music.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="SiteTitle">
+            <h3 class="SiteTitle">Anthony S. Lewis</h3>
+        </div>
+
+        <!--This is the main navigation section of the webpage that links to all the other pages on the site-->
+        <button class="nav-toggle d-md-none" aria-label="Toggle navigation" aria-expanded="false">
+            &#9776;
+            <!-- Unicode hamburger icon -->
+        </button>
+
+        <!--This is the main navigation section of the webpage that links to all the other pages on the site-->
+        <nav class="NavLinks">
+            <a class="NavLink" href="index.html">About</a>
+            <a class="NavLink" href="hobbies.html">Hobbies</a>
+            <a class="NavLink active" href="music.html">Music</a>
+            <a class="NavLink" href="recovery.html">Recovery</a>
+            <a class="NavLink" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!--This is the main body content, it will be divided into sections that will hold individual components of the content to be held within the body-->
+    <main>
+        <section id="ContentHeader">
+            <h1>Music</h1>
+        </section>
+
+        <section class="BodySection" id="Introduction" aria-labelledby="IntroductionHeading">
+            <h2 id="IntroductionHeading" class="visually-hidden">Musical Journey</h2>
+
+            <p class="article" aria-label="Beginning of musical journey"><i>
+                    My journey into music started in the third grade, when I joined the school band and picked up the
+                    flute for the first time. I didn’t know it then, but that moment would spark a lifelong relationship
+                    with sound, rhythm, and creative expression. The flute was my gateway — delicate, precise, and
+                    surprisingly challenging for a kid just learning to read sheet music. But I stuck with it, and
+                    something about the process of learning, experimenting, and performing began to feel natural to
+                    me.
+                </i></p>
+
+            <p class="article" aria-label="Exploration of multiple instruments"><i>
+                    As I grew older, my curiosity expanded beyond the flute. I found myself drawn to other instruments —
+                    the piano, guitar, drums, and even the trumpet. I never formally mastered any of them, but that
+                    didn’t stop me. I had a knack for figuring things out on my own. Whether it was learning chords on
+                    the piano by ear, picking up guitar riffs from songs I loved, or experimenting with drum patterns, I
+                    could usually get to an intermediate level without much outside help. I wasn’t chasing perfection —
+                    I was chasing connection. Each instrument offered a new way to express myself, and I loved the
+                    challenge of unlocking its unique voice.
+                </i></p>
+
+            <p class="article" aria-label="Introduction to music production"><i>
+                    Eventually, I ventured into music production. I started dabbling with Fruity Loops, mostly creating
+                    EDM-style tracks. That opened up a whole new world for me — one where I wasn’t just playing music, I
+                    was building it from scratch. Layering synths, tweaking beats, experimenting with effects — it was
+                    like painting with sound. I didn’t have a formal background in production, but again, my instincts
+                    kicked in. I could feel what worked and what didn’t, and I learned by doing.
+                </i></p>
+
+            <p class="article" aria-label="Musical preferences and emotional connection"><i>
+                    Over the years, I’ve listened to just about every genre imaginable. I don’t believe in labeling
+                    music as good or bad based solely on style — every genre has its gems and its misses. What matters
+                    to me is how the music makes me feel. That said, alternative rock has always held a special place in
+                    my heart. There’s something about its raw emotion, its introspective lyrics, and its gritty energy
+                    that resonates with me on a deeper level. It hits my soul in a way that few other genres
+                    can.
+                </i></p>
+
+            <p class="article" aria-label="Music as a lifelong companion"><i>
+                    Music has never been just a hobby for me — it’s been a companion, a teacher, and a mirror. I may not
+                    be a virtuoso, but I’m a lifelong learner, always exploring, always listening, always creating. My
+                    journey is far from over, and I wouldn’t have it any other way.
+                </i></p>
+        </section>
+
+
+
+        <section class="BodySection" id="Moodboard" aria-labelledby="moodboard-heading">
+            <h2 id="moodboard-heading">Moodboard</h2>
+
+            <!-- Grid container for music genres and artists -->
+            <div class="MoodboardGrid" role="grid" aria-label="Music genres and favorite artists">
+
+                <!-- Metal Row -->
+                <div class="Genre" role="rowheader" aria-label="Genre: Metal">Metal</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Lamb Of God"><img
+                        src="../Sources/images/music/Metal/LambOfGod.jpg" title="Lamb of God"
+                        alt="Lamb of God Album Art"></div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Megadeath"><img
+                        src="../Sources/images/music/Metal/Megadeath.jpg" title="Megadeath" alt="Megadeath Album Art">
+                </div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Pantera"><img
+                        src="../Sources/images/music/Metal/Pantera.jpg" title="Pantera" alt="Pantera Album Art"></div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Trivium"><img
+                        src="../Sources/images/music/Metal/Trivium.jpg" title="Trivium" alt="Trivium Album Art"></div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Slayer"><img
+                        src="../Sources/images/music/Metal/Slayer.jpg" title="Slayer" alt="Slayer Album Art"></div>
+
+                <!-- Dubstep Row -->
+                <div class="Genre" role="rowheader" aria-label="Genre: Dubstep">Dubstep</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Skrillex"><img
+                        src="../Sources/images/music/Dubstep/Skrillex.png" title="Skrillex" alt="Skrillex Album Art">
+                </div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Zeds Dead"><img
+                        src="../Sources/images/music/Dubstep/ZedsDead.jpg" title="Zeds Dead" alt="Zeds Dead Album Art">
+                </div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Apex"><img
+                        src="../Sources/images/music/Dubstep/Apex.jpg" title="Apex" alt="Apex Album Art"></div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Modestep"><img
+                        src="../Sources/images/music/Dubstep/Modestep.jpg" title="Modestep" alt="Modestep Album Art">
+                </div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Deadmau5"><img
+                        src="../Sources/images/music/Dubstep/Deadmau5.jpg" title="Deadmau5" alt="Deadmau5 Album Art">
+                </div>
+
+                <!-- Alternative Row -->
+                <div class="Genre" role="rowheader" aria-label="Genre: Alternative">Alternative</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Breaking Benjamin"><img
+                        src="../Sources/images/music/Alternative/BreakingBenjamin.jpg" title="Breaking Benjamin"
+                        alt="Breaking Benjamin Album Art"></div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Three Days Grace"><img
+                        src="../Sources/images/music/Alternative/ThreeDaysGrace.jpg" title="Three Days Grace"
+                        alt="Three Days Grace Album Art"></div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Shinedown"><img
+                        src="../Sources/images/music/Alternative/Shinedown.jpg" title="Shinedown"
+                        alt="Shinedown Album Art"></div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Evanescence"><img
+                        src="../Sources/images/music/Alternative/Evanescence.png" title="Evanescence"
+                        alt="Evanescence Album Art"></div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Lincoln Park"><img
+                        src="../Sources/images/music/Alternative/LinkinPark.jpg" title="Linkin Park"
+                        alt="Linkin Park Album Art"></div>
+
+                <!-- Rock Row -->
+                <div class="Genre" role="rowheader" aria-label="Genre: Rock">Rock</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Journey"><img
+                        src="../Sources/images/music/Rock/Journey.jpg" title="Journey" alt="Journey Album Art"></div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Queen"><img
+                        src="../Sources/images/music/Rock/Queen.jpg" title="Queen" alt="Queen Album Art"></div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Motley Crue"><img
+                        src="../Sources/images/music/Rock/MotleyCrue.jpg" title="Motley Crue"
+                        alt="Motley Crue Album Art"></div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Metallica"><img
+                        src="../Sources/images/music/Rock/Metallica.jpg" title="Metallica" alt="Metallica Album Art">
+                </div>
+                <div class="Artist" role="gridcell" aria-label="Artist: The Eagles"><img
+                        src="../Sources/images/music/Rock/TheEagles.jpg" title="The Eagles" alt="The Eagles Album Art">
+                </div>
+
+                <!-- Folk Rock Row -->
+                <div class="Genre" role="rowheader" aria-label="Genre: Folk Rock">Folk</div>
+                <div class="Artist" role="gridcell" aria-label="Artist: The Beatles"><img
+                        src="../Sources/images/music/Folk/TheBeatles.jpg" title="The Beatles"
+                        alt="The Beatles Album Art"></div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Simon & Garfunkel"><img
+                        src="../Sources/images/music/Folk/SimonGarfunkle.jpg" title="Simon & Garfunkel"
+                        alt="Simon & Garfunkel Album Art"></div>
+                <div class="Artist" role="gridcell" aria-label="Artist: John Denver"><img
+                        src="../Sources/images/music/Folk/JohnDenver.jpg" title="John Denver"
+                        alt="John Denver Album Art"></div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Neil Young"><img
+                        src="../Sources/images/music/Folk/NeilYoung.jpg" title="Neil Young" alt="Neil Young Album Art">
+                </div>
+                <div class="Artist" role="gridcell" aria-label="Artist: Don Mclean"><img
+                        src="../Sources/images/music/Folk/DonMclean.jpg" title="Don Mclean" alt="Don Mclean Album Art">
+                </div>
+            </div>
+        </section>
+
+        <section class="BodySection" id="MusicTheory">
+            <h2>Music Theory</h2>
+
+            <!-- Audio Tags-->
+
+            <audio id="FluteSound" src="../Sources/audio/music/FluteSolo.mp3" preload="auto"></audio>
+            <audio id="PianoSound" src="../Sources/audio/music/PianoSolo.mp3" preload="auto"></audio>
+            <audio id="GuitarSound" src="../Sources/audio/music/GuitarSolo.mp3" preload="auto"></audio>
+            <audio id="DrumsSound" src="../Sources/audio/music/DrumSolo.mp3" preload="auto"></audio>
+            <audio id="FLStudioSound" src="../Sources/audio/music/DubstepIntro.mp3" preload="auto"></audio>
+
+
+            <div class="MusicIcons" role="grid" aria-label="Musical instrument icons">
+                <figure class="MusicItem" role="gridcell" aria-label="Flute">
+                    <img src="../Sources/icons/music/flute.png" alt="Flute icon">
+                    <figcaption>Flute</figcaption>
+                </figure>
+
+                <figure class="MusicItem" role="gridcell" aria-label="Piano">
+                    <img src="../Sources/icons/music/piano.png" alt="Piano icon">
+                    <figcaption>Piano</figcaption>
+                </figure>
+
+                <figure class="MusicItem" role="gridcell" aria-label="Guitar">
+                    <img src="../Sources/icons/music/electric-guitar.png" alt="Electric guitar icon">
+                    <figcaption>Guitar</figcaption>
+                </figure>
+
+                <figure class="MusicItem" role="gridcell" aria-label="Drums">
+                    <img src="../Sources/icons/music/drums.png" alt="Drums icon">
+                    <figcaption>Drums</figcaption>
+                </figure>
+
+                <figure class="MusicItem" role="gridcell" aria-label="FLStudio">
+                    <img src="../Sources/icons/music/FLStudio.png" alt="FL Studio icon">
+                    <figcaption>FL Studio</figcaption>
+                </figure>
+            </div>
+
+            <div id="MusicExperience" aria-labelledby="MusicExperienceHeading">
+                <h2 id="MusicExperienceHeading" class="visually-hidden">Musical Experiences</h2>
+
+                <article class="Instruments" id="FluteExperience" aria-labelledby="FluteHeading">
+                    <h4 id="FluteHeading">Flute:</h4>
+                    <p aria-label="Flute experience narrative"><i>
+                            I started playing the flute in 3rd grade, drawn to its silvery tone and expressive range.
+                            What began as curiosity
+                            quickly turned into commitment—I practiced intensely, mastering fingerings and breath
+                            control while exploring
+                            school band repertoire. By junior high, I had outpaced the standard curriculum. I tackled
+                            more complex pieces,
+                            refined my tone, and developed a keen ear for ensemble dynamics.<br><br>
+
+                            In 8th grade, all that dedication paid off: I earned a spot in the honors band. It wasn’t
+                            just about technical
+                            ability—it was a recognition of my musical intuition and discipline. That experience marked
+                            a turning point,
+                            affirming my place among the top young musicians in the district and deepening my connection
+                            to performance.
+                        </i></p>
+                </article>
+
+                <article class="Instruments" id="PianoExperience" aria-labelledby="PianoHeading">
+                    <h4 id="PianoHeading">Piano:</h4>
+                    <p aria-label="Piano experience narrative"><i>
+                            I started piano in freshman year of high school—not as a long-term pursuit, but more as a
+                            way to
+                            play the songs I loved from movies. I wasn’t interested in scales or theory; I just wanted
+                            to
+                            recreate those cinematic moments on the keys. So I’d pick a theme, figure it out by ear or
+                            sheet
+                            music, and play until it felt right.<br><br>
+
+                            I didn’t keep studying piano after that year, but for the final project, I wrote my own
+                            original
+                            song. It was my way of tying everything together—taking what I’d learned and turning it into
+                            something personal. That piece was more than just a grade; it was a snapshot of how I
+                            connect
+                            with music: emotionally, intuitively, and on my own terms.
+                        </i></p>
+                </article>
+
+                <article class="Instruments" id="GuitarExperience" aria-labelledby="GuitarHeading">
+                    <h4 id="GuitarHeading">Guitar:</h4>
+                    <p aria-label="Guitar experience narrative"><i>
+                            I’ve played guitar loosely my whole life, mostly because my dad really wanted me to learn
+                            it. He
+                            was passionate about it, and I gave it a shot out of respect and curiosity. But it never
+                            fully
+                            clicked for me. I’d pick it up now and then, try a few chords or riffs, but it always felt
+                            like
+                            I was borrowing someone else’s instrument—not speaking my own musical language.<br><br>
+
+                            I never got good with it, and honestly, that’s okay. It just wasn’t for me. I connect more
+                            deeply with other instruments, ones that feel intuitive and expressive in a way guitar never
+                            did. Still, I appreciate what it taught me—about persistence, about listening, and about
+                            finding
+                            my own path in music.
+                        </i></p>
+                </article>
+
+                <article class="Instruments" id="DrumsExperience" aria-labelledby="DrumsHeading">
+                    <h4 id="DrumsHeading">Drums:</h4>
+                    <p aria-label="Drums experience narrative"><i>
+                            I bought a drum set in high school and instantly felt most at home behind it. There was
+                            something visceral and grounding about the rhythm—the way it connected body and sound. I’d
+                            spend
+                            hours experimenting, locking into grooves, trying to emulate the energy I heard in my
+                            favorite
+                            tracks. It felt natural, like the instrument matched my instincts.<br><br>
+
+                            But technique was always a challenge. I struggled with consistency, coordination, and the
+                            finer
+                            points of control. Despite how much I loved the feel of it, I never felt like I got good
+                            enough.
+                            Eventually, the hobby drifted to the sidelines. Still, drums gave me a deeper appreciation
+                            for
+                            rhythm and structure, and that influence shows up in everything else I play.
+                        </i></p>
+                </article>
+
+                <article class="Instruments" id="FLStudioExperience" aria-labelledby="FLStudioHeading">
+                    <h4 id="FLStudioHeading">FL Studio:</h4>
+                    <p aria-label="FL Studio experience narrative"><i>
+                            After high school, I discovered Fruity Loops and everything changed. I started hanging out
+                            with
+                            DJs, soaking in the energy of live sets and studio sessions. That world pulled me in—hard. I
+                            wasn’t just listening anymore; I wanted to build the sound myself. Fruity Loops became my
+                            playground for designing EDM tracks, layering synths, tweaking effects, and crafting drops
+                            that
+                            hit just right.<br><br>
+
+                            It wasn’t about formal training—it was instinct, experimentation, and pure passion. I’d lose
+                            hours chasing a vibe, sculpting beats, and learning how to make a track move people. That’s
+                            where my production journey really began.
+                        </i></p>
+                </article>
+            </div>
+
+        </section>
+
+        <section class="BodySection" id="AudioVideoEmbed" aria-labelledby="SpotifySamplesHeading">
+            <h3 id="SpotifySamplesHeading">Spotify Samples</h3>
+
+            <table role="presentation" aria-describedby="PlaylistInstructions">
+                <tr id="MetalPlaylist">
+                    <td class="Spotify" colspan="5">
+                        <!-- Link to Metal Spotify Playlist -->
+                        <iframe id="Metal" title="Metal Spotify Playlist" data-testid="embed-iframe" width="100%"
+                            height="400px"
+                            src="https://open.spotify.com/embed/playlist/6HoLBdXMzv0BeLuywoWrVa?utm_source=generator&theme=0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            frameBorder="0" loading="lazy">
+                        </iframe>
+                    </td>
+                </tr>
+
+                <tr id="DubstepPlaylist">
+                    <td class="Spotify" colspan="5">
+                        <!-- Link to Dubstep Spotify Playlist -->
+                        <iframe class="Spotify" id="Dubstep" title="Dubstep Spotify Playlist" data-testid="embed-iframe"
+                            width="100%" height="400px"
+                            src="https://open.spotify.com/embed/playlist/1oCqn0z2YhsnGmb8Xwe45q?utm_source=generator&theme=0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            frameBorder="0" loading="lazy">
+                        </iframe>
+                    </td>
+                </tr>
+
+                <tr id="AlternativePlaylist">
+                    <td class="Spotify" colspan="5">
+                        <iframe id="Alternative" title="Alternative Rock Spotify Playlist" data-testid="embed-iframe"
+                            width="100%" height="400px"
+                            src="https://open.spotify.com/embed/playlist/5kMMy71Z23ZYWwWn3Pnwiw?utm_source=generator&theme=0"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            frameBorder="0" loading="lazy">
+                        </iframe>
+                    </td>
+                </tr>
+
+                <tr id="RockPlaylist">
+                    <td class="Spotify" colspan="5">
+                        <!-- Link to Rock Spotify Playlist-->
+                        <iframe id="Rock" title="Rock Spotify Playlist" data-testid="embed-iframe" width="100%"
+                            height="400px"
+                            src="https://open.spotify.com/embed/playlist/5NOiy06pjBvySue4dpsBYU?utm_source=generator&theme=0"
+                            loading="lazy"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            frameBorder="0">
+                        </iframe>
+                    </td>
+                </tr>
+
+                <tr id="FolkPlaylist">
+                    <td class="Spotify" colspan="5">
+                        <!-- Link to Folk Rock Spotify Playlist-->
+                        <iframe id="Folk" title="Folk Rock Spotify Playlist" data-testid="embed-iframe" width="100%"
+                            height="400px"
+                            src="https://open.spotify.com/embed/playlist/3pCatVALi27pxALYI7R1vJ?utm_source=generator&theme=0"
+                            loading="lazy"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            frameBorder="0">
+                        </iframe>
+                    </td>
+                </tr>
+
+                <!-- Third row that Lists Genre Selections (the same ones from the mood board)-->
+                <tr class="GenreSelection" aria-label="Genre selection buttons">
+                    <!-- These table items will display while the Spotify player is selected-->
+                    <td class="metal"><button aria-label="Select Metal playlist">Metal</button></td>
+                    <td class="dubstep"><button aria-label="Select Dubstep playlist">Dubstep</button></td>
+                    <td class="alternative"><button aria-label="Select Alternative playlist">Alternative</button></td>
+                    <td class="rock"><button aria-label="Select Rock playlist">Rock</button></td>
+                    <td class="folk"><button aria-label="Select Folk playlist">Folk</button></td>
+                </tr>
+
+                <tr id="DefaultMessage">
+                    <td class="Spotify" colspan="5">
+                        <p id="PlaylistInstructions"><i>Click on a genre selection below to access a sample Spotify
+                                playlist</i></p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="SocialLinks">
+            <a id="FirstLink" href="https://www.facebook.com/anthony.lewis.37">
+                <!--This is the Link to my Facebook Profile-->
+                <img src="../Sources/icons/footer/Facebook_icon_48px.png"
+                    alt="Facebook Icon that links to my Facebook profile">
+            </a>
+
+            <a href="https://www.linkedin.com/in/anthony-lewis-1866bba7/">
+                <!--This is the Link to my LinkedIn Profile-->
+                <img src="../Sources/icons/footer/Linkedin_icon_48px.png"
+                    alt="LinkedIn Icon that links to my LinkedIn Profile">
+            </a>
+
+            <a href="https://github.com/Anthony-Lewis-GCU/CST-120-Web-Development">
+                <!--This is the Link to my GitHub Repository-->
+                <img src="../Sources/icons/footer/Github_icon_48px.png"
+                    alt="Github Icon that links to my Repository for this site">
+            </a>
+
+            <a href="../HTML Files/attributions.html">
+                <!--This is the Link to my Flaticon Attributions page-->
+                <img src="../Sources/icons/footer/attributions.png" alt="Link to my internal attributions page">
+            </a>
+
+            <!--This is the Link to my Website Landing Page-->
+            <a href="https://anthony-lewis-gcu.github.io/CST-120-Web-Development/">
+                <img src="../Sources/icons/footer/LandingPage_icon_48px.png"
+                    alt="Landing Page Icon that links to my Landing Page">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
