@@ -16,13 +16,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
     </script>
-    
+
     <!-- CSS Stylesheets-->
     <link rel="stylesheet" href="../CSS Files/SiteWide.css">
     <link rel="stylesheet" href="../CSS Files/contact.css">
     <!--<link rel="stylesheet" href="../CSS Files/music.css">-->
 
     <script src="../JS/sitewide.js"></script>
+    <script src="../JS/contact.js"></script>
 </head>
 
 <body>
@@ -53,86 +54,90 @@
             <h1>Contact Me</h1>
         </section>
 
-        <section class="BodySection">
+        <section class="BodySection container mt-4" id="AnonymousContactSection" role="form"
+            aria-labelledby="anonymous-contact-heading">
             <h2>Send a Message</h2>
 
-            <form action="#" method="post" class="grid-form" role="form" aria-labelledby="contact-form-heading"
-                aria-describedby="contact-form-description">
-                <h2 id="contact-form-heading" class="visually-hidden">Contact Form</h2>
-                <p id="contact-form-description" class="visually-hidden">
-                    This form allows users to submit inquiries, feedback, or support requests anonymously. Required
-                    fields are marked and must be completed before submission.
-                </p>
-
-                <div class="form-grid">
-                    <!-- Left Column -->
-                    <div class="form-column">
-                        <label for="reason">Reason for Contact:</label>
-                        <select id="reason" name="reason" required aria-required="true">
-                            <option value="" disabled selected>Select a reason</option>
-                            <option value="general">General Inquiry</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="support">Support</option>
-                            <option value="other">Other</option>
-                        </select>
-
-                        <label for="name">Your Name:</label>
-                        <input type="text" id="name" name="name" required aria-required="true">
-
-                        <label for="email">Your Email:</label>
-                        <input type="email" id="email" name="email" required aria-required="true">
-                    </div>
-
-                    <!-- Right Column -->
-                    <div class="form-column">
-                        <figure class="form-img" role="img" aria-label="Personal photo with caption">
-                            <img src="../Sources/images/contact/Myself1.jpg" alt="Picture of myself">
-                            <figcaption>HighSchool Me</figcaption>
-                        </figure>
-                    </div>
-
-                    <!-- Second Row -->
-                    <div class="form-column">
-                        <label for="SubjectLine">Subject:</label>
-                        <input type="text" id="SubjectLine" name="subject" required aria-required="true">
-
-                        <label for="message">Your Message:</label>
-                        <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
-                    </div>
-
-                    <div class="form-column">
-                        <figure class="form-img" role="img" aria-label="Personal photo with caption">
-                            <img src="../Sources/images/contact/Myself2.jpg" alt="Picture of myself">
-                            <figcaption>Young adult me</figcaption>
-                        </figure>
-                    </div>
-
-                    <!-- Full Width Row -->
-                    <div class="form-full">
-                        <div class="form-actions" role="group" aria-label="Form submission and consent">
-                            <button class="NavLink" type="submit" aria-label="Submit Contact Form">Submit</button>
-                            <label class="consent-wrapper">
-                                <input type="checkbox" name="consent" required aria-required="true"
-                                    aria-describedby="consent-description">
-                                <span id="consent-description">
-                                    I consent to having the information I submit stored and sent to Anthony's email
-                                    for the purpose of responding to my message. I understand this data may be
-                                    retained for future reference.
-                                </span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="form-full">
-                        <p id="disclaimer" role="note">
-                            <i>This webpage is intended for educational purposes only.
-                                Responses submitted through this form may not be monitored closely or receive immediate
-                                attention.</i>
+            <div class="form-grid-two-columns">
+                <!-- Left Column: Form fields -->
+                <div class="form-column form-fields">
+                    <form action="https://postman-echo.com/post" method="post" class="needs-validation" novalidate
+                        role="form" aria-labelledby="contact-form-heading" aria-describedby="contact-form-description">
+                        <h2 id="contact-form-heading" class="visually-hidden">Contact Form</h2>
+                        <p id="contact-form-description" class="visually-hidden">
+                            This form allows users to submit inquiries, feedback, or support requests anonymously.
+                            Required
+                            fields must be completed before submission.
                         </p>
-                    </div>
-                </div>
-            </form>
 
+                        <div class="mb-3">
+                            <label for="reason" class="form-label">Reason for Contact:</label>
+                            <select id="reason" name="reason" class="form-select" required>
+                                <option value="" disabled selected>Select a reason</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="support">Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="invalid-feedback">Please select a reason for contact.</div>
+                        </div>
+
+                        <div class="mb-3" id="otherReasonGroup" style="display:none;">
+                            <label for="otherReason" class="form-label">If Other, please specify:</label>
+                            <input type="text" id="otherReason" name="otherReason" class="form-control">
+                            <div class="invalid-feedback">Please specify your reason.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name:</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                            <div class="invalid-feedback">Please enter your name.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email:</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject:</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                            <div class="invalid-feedback">Please enter a subject.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message:</label>
+                            <textarea id="message" name="message" rows="6" class="form-control" required></textarea>
+                            <div class="invalid-feedback">Please enter your message.</div>
+                        </div>
+
+                        <!-- Consent Checkbox -->
+                        <div class="form-check mb-3">
+                            <input type="checkbox" name="consent" id="consent" class="form-check-input" required>
+                            <label for="consent" class="form-check-label">
+                                I consent to having the information I submit stored and sent to Anthony's email.
+                            </label>
+                            <div class="invalid-feedback">You must provide consent to submit this form.</div>
+                        </div>
+
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <!-- Right Column: Images stacked vertically -->
+                <div class="form-column form-images">
+                    <figure class="form-img">
+                        <img src="../Sources/images/contact/Myself1.jpg" alt="Picture of myself">
+                        <figcaption>HighSchool Me</figcaption>
+                    </figure>
+                    <figure class="form-img">
+                        <img src="../Sources/images/contact/Myself2.jpg" alt="Picture of myself">
+                        <figcaption>Young adult me</figcaption>
+                    </figure>
+                </div>
+
+            </div>
         </section>
     </main>
 

@@ -1,6 +1,6 @@
 .RecoveryChipGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   gap: 2rem;
   padding: 1rem;
   transform-style: preserve-3d;
@@ -186,6 +186,20 @@ button[type="submit"] {
     #e6e6e6,
     #b0b0b0
   );
+  color: #9400D3;
+}
+
+form button[type="submit"]:hover,
+.btn.btn-primary:hover {
+  background: linear-gradient(
+    to right,
+    #4b0082,
+    #8000c0,
+    #6a0dad,
+    #9932cc,
+    #9400d3
+  ) !important;
+  color: #cccccc !important;
 }
 
 @media screen and (max-width: 451px) {

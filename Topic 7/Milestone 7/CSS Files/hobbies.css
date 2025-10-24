@@ -102,9 +102,10 @@
 
 .GamesPosters {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 0;
   padding-top: 10px;
+  row-gap: 10px;
 }
 
 .Titles {
@@ -160,3 +161,15 @@
   padding-bottom: 20px;
   font-style: italic;
 }
+
+@media screen and (max-width: 650px) {
+  .AccordianBannerIcon {
+    margin-right: 10px;
+    width: 80px;
+  }
+
+.AccordianBannerTitle {
+  height: 80px; 
+}
+}
+

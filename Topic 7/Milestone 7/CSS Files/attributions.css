@@ -28,12 +28,12 @@ p
     text-indent: 2em;
 }
 
-li
+main li
 {
   color: #CCCCCC !important;
 }
 
-a
+main a
 {
   color: #CCCCCC !important;
 }

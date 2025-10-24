@@ -41,65 +41,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll(".core-btn");
-    const descriptions = document.querySelectorAll(".CoreValueDescription .Slide");
+    const descriptions = document.querySelectorAll(".Slide");
 
     function isSmallScreen() {
         return window.innerWidth <= 600;
     }
 
-    function hideAllSlides() {
-        descriptions.forEach(desc => $(desc).hide());
-        $(".CoreValueDescription .default").show();
+    // Hide all slides
+    function initializeSlides() {
+        descriptions.forEach(desc => desc.classList.remove("show"));
     }
 
-    function clearAllPlaceholders() {
-        document.querySelectorAll(".core-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-        const targetId = btn.getAttribute("aria-controls");
-        const placeholder = document.getElementById(targetId + "PH");
-        const desc = document.getElementById(targetId);
-
-        // Clear all placeholders
-        document.querySelectorAll(".small-desc-placeholder").forEach(ph => ph.innerHTML = "");
-
-        // Clone description and append
-        const clone = desc.cloneNode(true);
-        clone.style.display = "block";
-        placeholder.appendChild(clone);
-    });
-});
-    }
-
+    // Show selected slide
     function showDescription(button) {
         const targetId = button.getAttribute("aria-controls");
-        const placeholder = document.getElementById(targetId + "PH");
-        const desc = document.getElementById(targetId);
-        if (!placeholder || !desc) return;
+        const slide = document.getElementById(targetId);
+        if (!slide) return;
 
-        // Clear all other placeholders
-        clearAllPlaceholders();
+        // Hide all slides
+        descriptions.forEach(d => d.classList.remove("show"));
 
-        // Clone the description and insert into placeholder
-        const clone = desc.cloneNode(true);
-        clone.style.display = "block"; // ensures visibility
-        placeholder.appendChild(clone);
+        // Show selected
+        slide.classList.add("show");
+
+        // Scroll into view on small screens
+        if (isSmallScreen()) {
+            slide.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
     }
 
+    // Setup button handlers
     function setupButtons() {
-        if (isSmallScreen()) {
-            hideAllSlides();
-            buttons.forEach(btn => {
-                btn.onclick = () => showDescription(btn);
-            });
-        } else {
-            hideAllSlides();
-            $(".core-btn").off("click").on("click", function () {
-                const targetId = $(this).attr("aria-controls");
-                $(".CoreValueDescription .Slide").stop(true,true).hide();
-                $(".CoreValueDescription .default").hide();
-                $("#" + targetId).fadeIn(400);
-            });
-        }
+        initializeSlides();
+        buttons.forEach(btn => {
+            btn.onclick = () => showDescription(btn);
+        });
     }
 
     setupButtons();
