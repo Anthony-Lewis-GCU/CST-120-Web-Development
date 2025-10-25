@@ -209,6 +209,19 @@
   transform: scale(1.2);
 }
 
+.Slide {
+  display: none !important;
+  background-color: #f9f9f9 !important;
+  border-radius: 8px !important;
+  padding: 1rem !important;
+  text-align: center !important;
+  z-index: 10 !important;
+}
+
+.Slide.show {
+  display: block !important;
+}
+
 #FinalSection {
   padding-bottom: 40px;
 }
@@ -300,12 +313,6 @@
     width: 90% !important;
     max-width: 400px !important;
     margin: 0 auto 1rem auto !important;
-    display: none !important;
-    background-color: #f9f9f9 !important;
-    border-radius: 8px !important;
-    padding: 1rem !important;
-    text-align: center !important;
-    z-index: 10 !important;
   }
 
   .Slide.show {

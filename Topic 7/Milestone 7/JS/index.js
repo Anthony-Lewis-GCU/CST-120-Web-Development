@@ -40,44 +40,57 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll(".core-btn");
-    const descriptions = document.querySelectorAll(".Slide");
+  const buttons = document.querySelectorAll(".core-btn");    // All Corte Value Buttons buttons
+  const descriptions = document.querySelectorAll(".Slide");  // All slide descriptions
+  const defaultArticle = document.querySelector(".default"); // Intro message
 
-    function isSmallScreen() {
-        return window.innerWidth <= 600;
+  function isSmallScreen() {
+    return window.innerWidth <= 650;
+  }
+
+  // Hide all slides
+  function initializeSlides() {
+    descriptions.forEach(desc => desc.classList.remove("show"));
+  }
+
+  // Show selected slide
+  function showDescription(button) {
+    const targetId = button.getAttribute("aria-controls");
+    const slide = document.getElementById(targetId);
+    if (!slide) return;
+
+    // Hide the default article once the first button is clicked
+    if (defaultArticle) {
+      defaultArticle.style.display = "none";
     }
 
-    // Hide all slides
-    function initializeSlides() {
-        descriptions.forEach(desc => desc.classList.remove("show"));
-    }
+    // Hide all other slides
+    descriptions.forEach(d => d.classList.remove("show"));
 
     // Show selected slide
-    function showDescription(button) {
-        const targetId = button.getAttribute("aria-controls");
-        const slide = document.getElementById(targetId);
-        if (!slide) return;
+    slide.classList.add("show");
 
-        // Hide all slides
-        descriptions.forEach(d => d.classList.remove("show"));
+    // Scroll if the element is not fully visible
+    const rect = slide.getBoundingClientRect();
+    const isVisible =
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth);
 
-        // Show selected
-        slide.classList.add("show");
-
-        // Scroll into view on small screens
-        if (isSmallScreen()) {
-            slide.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
+    if (!isVisible) {
+      slide.scrollIntoView({ behavior: "smooth", block: "center" });
     }
+  }
 
-    // Setup button handlers
-    function setupButtons() {
-        initializeSlides();
-        buttons.forEach(btn => {
-            btn.onclick = () => showDescription(btn);
-        });
-    }
+  // Setup button handlers
+  function setupButtons() {
+    initializeSlides();
+    buttons.forEach(btn => {
+      btn.onclick = () => showDescription(btn);
+    });
+  }
 
-    setupButtons();
-    window.addEventListener("resize", setupButtons);
+  setupButtons();
+  window.addEventListener("resize", setupButtons);
 });

@@ -18,22 +18,43 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function showDescription(key) {
-    hideAllDescriptions();
-    const descId = animeMap[key];
-    const target = document.getElementById(descId);
+  hideAllDescriptions();
 
-    if (target) {
-      target.style.display = "block";
-      // Only show notification on small screens
-      if (window.innerWidth <= 768) {
-        showExpandNotification("Section expanded! Scroll down to see it.", target);
-      }
-    } else {
-      defaultDescription.style.display = "block";
-      if (window.innerWidth <= 768) {
-        showExpandNotification("Section expanded! Scroll down to see it.", defaultDescription);
-      }
+  const descId = animeMap[key];
+  const target = document.getElementById(descId);
+
+  // Helper: check if element is visible in viewport
+  function isElementVisible(el) {
+    if (!el) return false;
+    const rect = el.getBoundingClientRect();
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+    const vw = window.innerWidth || document.documentElement.clientWidth;
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= vh &&
+      rect.right <= vw
+    );
+  }
+
+  if (target) {
+    target.style.display = "block";
+
+    const isVisible = isElementVisible(target);
+
+    // Show notification if on small screen OR element is off-screen
+    if (window.innerWidth <= 768 || !isVisible) {
+      showExpandNotification("Section expanded! Scroll down to see it.", target);;
     }
+  } else {
+    defaultDescription.style.display = "block";
+
+    const isVisible = isElementVisible(defaultDescription);
+
+    if (window.innerWidth <= 768 || !isVisible) {
+      showExpandNotification("Section expanded! Scroll down to see it.", defaultDescription);
+    }
+  }
   }
 
   posters.forEach(poster => {
@@ -50,16 +71,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Plex section
 document.addEventListener('DOMContentLoaded', () => {
+
+  // Helper to check if element is fully visible in viewport
+  function isElementVisible(el) {
+    if (!el) return false;
+    const rect = el.getBoundingClientRect();
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+    const vw = window.innerWidth || document.documentElement.clientWidth;
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= vh &&
+      rect.right <= vw
+    );
+  }
+
   document.querySelectorAll('.PlexBannerWrapper').forEach(banner => {
     banner.addEventListener('click', () => {
       const targetId = banner.getAttribute('aria-controls');
       const target = document.getElementById(targetId);
       const isExpanded = banner.getAttribute('aria-expanded') === 'true';
 
+      // Toggle expanded state
       banner.setAttribute('aria-expanded', String(!isExpanded));
       target.classList.toggle('visible');
 
-      if (!isExpanded && window.innerWidth <= 768) {
+      // Check visibility
+      const isVisible = isElementVisible(target);
+
+      // Show notification if the section just expanded AND it's small screen OR off-screen
+      if (!isExpanded && (window.innerWidth <= 768 || !isVisible)) {
         showExpandNotification("Section expanded! Scroll down to see it.", target);
       }
     });
@@ -108,37 +149,74 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function showGameContent(key) {
-    hideAllContent();
+  hideAllContent();
 
-    const descEl = document.getElementById(descriptionMap[key]);
-    const videoContainer = document.getElementById(videoMap[key]);
-    const videoEl = videoContainer?.querySelector("video");
+  const descEl = document.getElementById(descriptionMap[key]);
+  const videoContainer = document.getElementById(videoMap[key]);
+  const videoEl = videoContainer?.querySelector("video");
 
-    if (descEl) {
-      descEl.style.display = "block";
-      if (window.innerWidth <= 768) {
-        showExpandNotification("Section expanded! Scroll down to see it.", descEl);
-      }
-    }
-    if (videoContainer) videoContainer.style.display = "block";
-    if (videoEl) videoEl.play();
+  // Helper to check if element is fully visible in viewport
+  function isElementVisible(el) {
+    if (!el) return false;
+    const rect = el.getBoundingClientRect();
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+    const vw = window.innerWidth || document.documentElement.clientWidth;
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= vh &&
+      rect.right <= vw
+    );
   }
+
+  if (descEl) {
+    descEl.style.display = "block";
+
+    const isVisible = isElementVisible(descEl);
+
+    // Show notification if small screen OR element is off-screen
+    if (window.innerWidth <= 768 || !isVisible) {
+      showExpandNotification("Section expanded! Scroll down to see it.", descEl);
+    }
+  }
+
+  if (videoContainer) videoContainer.style.display = "block";
+  if (videoEl) videoEl.play();
+}
 
   posters.forEach(poster => {
     poster.addEventListener("click", () => {
-      const labelId = poster.getAttribute("aria-labelledby")?.split(" ")[0]; 
-      const key = labelId?.split("-")[0]; 
+  const labelId = poster.getAttribute("aria-labelledby")?.split(" ")[0]; 
+  const key = labelId?.split("-")[0]; 
 
-      if (key && descriptionMap[key] && videoMap[key]) {
-        showGameContent(key);
-      } else {
-        hideAllContent();
-        if (defaultDesc) defaultDesc.style.display = "block";
-        if (window.innerWidth <= 768) {
-          showExpandNotification("Section expanded! Scroll down to see it.", defaultDesc);
-        }
-      }
-    });
+  // Helper to check if element is fully visible
+  function isElementVisible(el) {
+    if (!el) return false;
+    const rect = el.getBoundingClientRect();
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+    const vw = window.innerWidth || document.documentElement.clientWidth;
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= vh &&
+      rect.right <= vw
+    );
+  }
+
+  if (key && descriptionMap[key] && videoMap[key]) {
+    showGameContent(key);
+  } else {
+    hideAllContent();
+    if (defaultDesc) defaultDesc.style.display = "block";
+
+    const isVisible = isElementVisible(defaultDesc);
+
+    // Show notification if small screen OR element is off-screen
+    if (window.innerWidth <= 768 || !isVisible) {
+      showExpandNotification("Section expanded! Scroll down to see it.", defaultDesc);
+    }
+  }
+});
   });
 
   // Initial state
