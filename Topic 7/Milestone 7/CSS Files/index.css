@@ -13,16 +13,16 @@
 }
 
 .TimelineSlider {
-  overflow: hidden;
   width: 100%;
   max-width: 1000px;
+  overflow: hidden;
   position: relative;
 }
 
 .TimelineTrack {
   position: relative;
   display: flex;
-  min-height: 700px;
+  min-height: 1000px;
   width: max-content;
   transition: transform 0.5s ease;
   will-change: transform;
@@ -58,12 +58,13 @@
 }
 
 .Event {
-
+  overflow: visible;
   position: relative;
   flex: 0 0 calc(100% / 4);
   text-align: center;
   margin: 0 auto;
   flex: 0 0 10%;
+  height: max-content;
   /* 5 events per view */
   box-sizing: border-box;
   padding: 2rem 1rem;
